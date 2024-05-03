@@ -131,8 +131,8 @@
         "enable_autoplay": false
       }
     },
-    "featured_product_K6bwGr": {
-      "type": "featured-product",
+    "featured_product_choc_almond_3Tgdw4": {
+      "type": "featured-product-choc-almond",
       "blocks": {
         "title_pEmrpQ": {
           "type": "title",
@@ -190,11 +190,11 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#product-chocolate_almond .featured-product.product-details.product-default {background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%);}",
+        "#feat-choc_almond .featured-product.product-details.product-default {background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%);}",
         ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
       ],
       "settings": {
-        "id_section": "product-chocolate_almond",
+        "id_section": "feat-choc_almond",
         "container": "fullwidth",
         "padding_full_width": 25,
         "show_sticky_info": false,
@@ -236,10 +236,223 @@
         "show_badge": false,
         "show_qty": false
       }
+    },
+    "featured_product_coco_vanilla_ULcwTX": {
+      "type": "featured-product-coco-vanilla",
+      "blocks": {
+        "title_pEmrpQ": {
+          "type": "title",
+          "settings": {
+            "fontsize_text": 48,
+            "fontsize_text_mb": 24,
+            "color_title": "#000000",
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "meta_GyiFpc": {
+          "type": "meta",
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "show_review": true,
+            "show_sold_in": false,
+            "sold_in_number": "3,5,6,7,8,10,12,15",
+            "sold_in_hours": "10,15,16,17,18,20,25,35",
+            "color_text_sold_in": "#000000"
+          }
+        },
+        "short_description_yGqe9y": {
+          "type": "short_description",
+          "settings": {
+            "word_number": "17",
+            "fontsize_text": 16,
+            "color_text": "#000000",
+            "spacing_top": 0,
+            "spacing_bottom": 24
+          }
+        },
+        "product_text_Y7wyYM": {
+          "type": "product_text",
+          "settings": {
+            "text": "Choose Your 4-Pack Bundle",
+            "text_icon": "",
+            "text_description": "Bundle Content Goes Here",
+            "fontsize_text": 32,
+            "content_spacing": 25,
+            "custom_block_align": "center",
+            "color_title": "#232323",
+            "background_color_block": "#ffffff",
+            "background_gradient_color_block": "",
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "title_pEmrpQ",
+        "meta_GyiFpc",
+        "short_description_yGqe9y",
+        "product_text_Y7wyYM"
+      ],
+      "custom_css": [
+        "#feat-coco_vanilla .featured-product.product-details.product-default {background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%);}",
+        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
+      ],
+      "settings": {
+        "id_section": "feat-coco_vanilla",
+        "container": "fullwidth",
+        "padding_full_width": 25,
+        "show_sticky_info": false,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "bg_color_product": "#bcbcbc",
+        "title": "",
+        "color_title": "#000000",
+        "fontsize_title": 60,
+        "fontsize_title_mb": 34,
+        "margin_bottom_title": 43,
+        "margin_bottom_title_mb": 20,
+        "des": "",
+        "color_des": "#000000",
+        "fontsize_des": 16,
+        "margin_bottom_des": 45,
+        "margin_bottom_des_mb": 30,
+        "title_align": "left",
+        "featured_product": "coconutvanilla",
+        "main_image_arrows_desktop": true,
+        "main_image_counter_mobile": false,
+        "main_image_position": "left",
+        "main_image_bg_color": "#121212",
+        "show_thumbnail_mobile": true,
+        "thumnail_layout": "2",
+        "thumbnail_to_show": 5,
+        "thumbnail_active_color": "#e11ecb",
+        "thumbnail_arrow_color_mb": "#ffffff",
+        "thumbnail_image_bg_color": "#121212",
+        "product_image_ratio": "adapt",
+        "portrait_aspect_ratio": 100,
+        "media_fit": "unset",
+        "product_image_popup": "fancybox",
+        "video_layout": "thumbnail",
+        "show_badge": false,
+        "show_qty": false
+      }
+    },
+    "featured_product_honey_cinn_CQUmb7": {
+      "type": "featured-product-honey-cinn",
+      "blocks": {
+        "title_pEmrpQ": {
+          "type": "title",
+          "settings": {
+            "fontsize_text": 48,
+            "fontsize_text_mb": 24,
+            "color_title": "#000000",
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "meta_GyiFpc": {
+          "type": "meta",
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "show_review": true,
+            "show_sold_in": false,
+            "sold_in_number": "3,5,6,7,8,10,12,15",
+            "sold_in_hours": "10,15,16,17,18,20,25,35",
+            "color_text_sold_in": "#000000"
+          }
+        },
+        "short_description_yGqe9y": {
+          "type": "short_description",
+          "settings": {
+            "word_number": "17",
+            "fontsize_text": 16,
+            "color_text": "#000000",
+            "spacing_top": 0,
+            "spacing_bottom": 24
+          }
+        },
+        "product_text_Y7wyYM": {
+          "type": "product_text",
+          "settings": {
+            "text": "Choose Your 4-Pack Bundle",
+            "text_icon": "",
+            "text_description": "Bundle Content Goes Here",
+            "fontsize_text": 32,
+            "content_spacing": 25,
+            "custom_block_align": "center",
+            "color_title": "#232323",
+            "background_color_block": "#ffffff",
+            "background_gradient_color_block": "",
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "title_pEmrpQ",
+        "meta_GyiFpc",
+        "short_description_yGqe9y",
+        "product_text_Y7wyYM"
+      ],
+      "custom_css": [
+        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
+      ],
+      "settings": {
+        "id_section": "feat-honey_cinn",
+        "container": "fullwidth",
+        "padding_full_width": 25,
+        "show_sticky_info": false,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "bg_color_product": "#fffac2",
+        "title": "",
+        "color_title": "#000000",
+        "fontsize_title": 60,
+        "fontsize_title_mb": 34,
+        "margin_bottom_title": 43,
+        "margin_bottom_title_mb": 20,
+        "des": "",
+        "color_des": "#000000",
+        "fontsize_des": 16,
+        "margin_bottom_des": 45,
+        "margin_bottom_des_mb": 30,
+        "title_align": "left",
+        "featured_product": "honeycinnamon",
+        "main_image_arrows_desktop": true,
+        "main_image_counter_mobile": false,
+        "main_image_position": "left",
+        "main_image_bg_color": "#121212",
+        "show_thumbnail_mobile": true,
+        "thumnail_layout": "2",
+        "thumbnail_to_show": 5,
+        "thumbnail_active_color": "#e11ecb",
+        "thumbnail_arrow_color_mb": "#ffffff",
+        "thumbnail_image_bg_color": "#121212",
+        "product_image_ratio": "adapt",
+        "portrait_aspect_ratio": 100,
+        "media_fit": "unset",
+        "product_image_popup": "fancybox",
+        "video_layout": "thumbnail",
+        "show_badge": false,
+        "show_qty": false
+      }
     }
   },
   "order": [
     "image_banner_PXwejr",
-    "featured_product_K6bwGr"
+    "featured_product_choc_almond_3Tgdw4",
+    "featured_product_coco_vanilla_ULcwTX",
+    "featured_product_honey_cinn_CQUmb7"
   ]
 }
