@@ -6,7 +6,7 @@
         "large_img_3q3B9e": {
           "type": "largeImg",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Header.png",
+            "image": "shopify:\/\/shop_images\/bahamii-placeholder.png",
             "enable_max_width_image": false,
             "custom_width_image": 1210,
             "enable_scroll_down": false,
@@ -104,7 +104,7 @@
         "id_section": "",
         "container": "fullwidth",
         "padding_full_width": 0,
-        "mg_top_desktop": 30,
+        "mg_top_desktop": 45,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 0,
@@ -120,8 +120,8 @@
         "color_des": "#202020",
         "fontsize_des": 16,
         "title_align": "center",
-        "style_bg": "none",
-        "bg_color": "",
+        "style_bg": "full",
+        "bg_color": "#facad3",
         "bg_color_gradient": "",
         "display_type": "slide",
         "list_gap": 0,
@@ -190,8 +190,9 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#feat-choc_almond .featured-product.product-details.product-default {background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%);}",
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
+        "#feat-choc_almond .featured-product.product-details.product-default {background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%); height: 1500px;}",
+        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
+        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
       ],
       "settings": {
         "id_section": "feat-choc_almond",
@@ -216,14 +217,14 @@
         "fontsize_des": 16,
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
-        "title_align": "left",
+        "title_align": "center",
         "featured_product": "chocolatealmond",
-        "main_image_arrows_desktop": true,
+        "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
         "main_image_bg_color": "#121212",
         "show_thumbnail_mobile": true,
-        "thumnail_layout": "2",
+        "thumnail_layout": "4",
         "thumbnail_to_show": 5,
         "thumbnail_active_color": "#e11ecb",
         "thumbnail_arrow_color_mb": "#ffffff",
@@ -296,8 +297,9 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#feat-coco_vanilla .featured-product.product-details.product-default {background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%);}",
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
+        "#feat-coco_vanilla .featured-product.product-details.product-default {background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%); height: 1500px;}",
+        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
+        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
       ],
       "settings": {
         "id_section": "feat-coco_vanilla",
@@ -322,14 +324,14 @@
         "fontsize_des": 16,
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
-        "title_align": "left",
+        "title_align": "center",
         "featured_product": "coconutvanilla",
-        "main_image_arrows_desktop": true,
+        "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
         "main_image_bg_color": "#121212",
         "show_thumbnail_mobile": true,
-        "thumnail_layout": "2",
+        "thumnail_layout": "4",
         "thumbnail_to_show": 5,
         "thumbnail_active_color": "#e11ecb",
         "thumbnail_arrow_color_mb": "#ffffff",
@@ -402,7 +404,9 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}"
+        "#feat-honey_cinn .featured-product.product-details.product-default {height: 1500px;}",
+        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
+        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
       ],
       "settings": {
         "id_section": "feat-honey_cinn",
@@ -427,14 +431,14 @@
         "fontsize_des": 16,
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
-        "title_align": "left",
+        "title_align": "center",
         "featured_product": "honeycinnamon",
-        "main_image_arrows_desktop": true,
+        "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
         "main_image_bg_color": "#121212",
         "show_thumbnail_mobile": true,
-        "thumnail_layout": "2",
+        "thumnail_layout": "4",
         "thumbnail_to_show": 5,
         "thumbnail_active_color": "#e11ecb",
         "thumbnail_arrow_color_mb": "#ffffff",
@@ -447,12 +451,126 @@
         "show_badge": false,
         "show_qty": false
       }
+    },
+    "instagram_4jfRGm": {
+      "type": "instagram",
+      "blocks": {
+        "instagram_P6f6mE": {
+          "type": "instagram",
+          "settings": {
+            "enable": true,
+            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "link": ""
+          }
+        },
+        "instagram_zHyyfH": {
+          "type": "instagram",
+          "settings": {
+            "enable": true,
+            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "link": ""
+          }
+        },
+        "instagram_feMtcW": {
+          "type": "instagram",
+          "settings": {
+            "enable": true,
+            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "link": ""
+          }
+        },
+        "instagram_FYXpBf": {
+          "type": "instagram",
+          "settings": {
+            "enable": true,
+            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "instagram_P6f6mE",
+        "instagram_zHyyfH",
+        "instagram_feMtcW",
+        "instagram_FYXpBf"
+      ],
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 100,
+        "disable_padding_content": false,
+        "type_instagram": "default",
+        "block_layout": "grid",
+        "scroll_from": "rtl",
+        "scroll_time": "30",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "enable_border_instagram": false,
+        "instagram_border_color": "#e6e6e6",
+        "instagram_bg": "#facad3",
+        "instagram_bg_gradient": "",
+        "style_block_header": "style1",
+        "instagram_title": "Customer Reviews & Recipes",
+        "enable_border_title": false,
+        "border_color_title": "#232323",
+        "color_title": "#000000",
+        "mg_bottom_title": 15,
+        "fontsize_title": 48,
+        "fontsize_title_mb": 16,
+        "instagram_des": "",
+        "color_des": "#3c3c3c",
+        "fontsize_des": 16,
+        "margin_bottom_des": 35,
+        "content_width": 375,
+        "title_align": "center",
+        "view_all": "",
+        "view_all_fs": 12,
+        "view_all_align": "center",
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 30,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "display_instagram_button": true,
+        "instagram_button_text": "View Gallery",
+        "type_button_more": "load",
+        "instagram_button_link": "",
+        "enable_underline_button": false,
+        "color_button": "#fff",
+        "border_color_button": "#232323",
+        "bg_color_button": "#232323",
+        "bg_color_gradient_button": "",
+        "color_button_hover": "#232323",
+        "border_color_button_hover": "#232323",
+        "bg_color_button_hover": "#fff",
+        "bg_color_gradient_button_hover": "",
+        "maxwidth_button": 230,
+        "mg_top_button": 30,
+        "embed_code": "",
+        "type_instagram_by_gallery": "popup_image",
+        "images_per_row": "4",
+        "instagram_item_limit": 5,
+        "grid_gap": 15,
+        "enable_hide_portion": false,
+        "slide_ins": "default_ins",
+        "display_arrow": true,
+        "enable_hover_arrow": false,
+        "display_dots": false,
+        "icon_for_image": "",
+        "icon_style": "style_1",
+        "effects_bg": "",
+        "effects_opacity": 0
+      }
     }
   },
   "order": [
     "image_banner_PXwejr",
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
-    "featured_product_honey_cinn_CQUmb7"
+    "featured_product_honey_cinn_CQUmb7",
+    "instagram_4jfRGm"
   ]
 }
