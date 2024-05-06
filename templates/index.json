@@ -460,7 +460,7 @@
           "settings": {
             "enable": true,
             "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": ""
+            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
         "instagram_zHyyfH": {
@@ -468,7 +468,7 @@
           "settings": {
             "enable": true,
             "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": ""
+            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
         "instagram_feMtcW": {
@@ -476,7 +476,7 @@
           "settings": {
             "enable": true,
             "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": ""
+            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
         "instagram_FYXpBf": {
@@ -484,7 +484,7 @@
           "settings": {
             "enable": true,
             "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": ""
+            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         }
       },
@@ -493,6 +493,11 @@
         "instagram_zHyyfH",
         "instagram_feMtcW",
         "instagram_FYXpBf"
+      ],
+      "custom_css": [
+        ".container-full {padding-left: 190px; padding-right: 190px;}",
+        ".halo-row {display: flex; justify-content: space-between;}",
+        ".halo-item {padding-right: 0; padding-left: 0; width: 24%;}"
       ],
       "settings": {
         "container": "fullwidth",
@@ -505,7 +510,7 @@
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
+        "mg_bottom_desktop": 20,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
         "enable_border_instagram": false,
@@ -531,26 +536,26 @@
         "view_all_align": "center",
         "font_weight_view_all": "400",
         "mg_bottom_view": 30,
-        "enable_border_view_all": true,
+        "enable_border_view_all": false,
         "link_view_all": "",
         "color_view_all": "#3c3c3c",
-        "display_instagram_button": true,
-        "instagram_button_text": "View Gallery",
+        "display_instagram_button": false,
+        "instagram_button_text": "Viewfdf",
         "type_button_more": "load",
         "instagram_button_link": "",
         "enable_underline_button": false,
-        "color_button": "#fff",
+        "color_button": "#ffffff",
         "border_color_button": "#232323",
         "bg_color_button": "#232323",
         "bg_color_gradient_button": "",
         "color_button_hover": "#232323",
         "border_color_button_hover": "#232323",
-        "bg_color_button_hover": "#fff",
+        "bg_color_button_hover": "#ffffff",
         "bg_color_gradient_button_hover": "",
         "maxwidth_button": 230,
         "mg_top_button": 30,
         "embed_code": "",
-        "type_instagram_by_gallery": "popup_image",
+        "type_instagram_by_gallery": "link",
         "images_per_row": "4",
         "instagram_item_limit": 5,
         "grid_gap": 15,
@@ -564,6 +569,112 @@
         "effects_bg": "",
         "effects_opacity": 0
       }
+    },
+    "customer_review_block_CVhC63": {
+      "type": "customer-review-block",
+      "blocks": {
+        "review_bwKGUk": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+          }
+        },
+        "review_RG4Lyk": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+          }
+        },
+        "review_q4BVwQ": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+          }
+        }
+      },
+      "block_order": [
+        "review_bwKGUk",
+        "review_RG4Lyk",
+        "review_q4BVwQ"
+      ],
+      "custom_css": [
+        ".container-full {overflow: visible;}",
+        ".customer-review-block {padding-left: 190px; padding-right: 190px;}",
+        ".customer-review__item {background: white; border: 3px solid #ed1068; width: 32%;}",
+        ".customer-review__item:last-of-type {margin-right: 0;}",
+        ".customer-review__content {padding-top: 11px; text-align: left; line-height: 32px; font-weight: 300;}",
+        ".star-reviews {display: none;}",
+        ".name {text-align: left;}"
+      ],
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 70,
+        "section_style": "style_1",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "review_bg": "#facad3",
+        "review_bg_gradient": "",
+        "review_title": "",
+        "color_title": "#232323",
+        "mg_bottom_title": 18,
+        "fontsize_title": 16,
+        "fontsize_title_mb": 16,
+        "review_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 35,
+        "fontsize_des": 19,
+        "title_align": "center",
+        "block_layout_style": "layout2",
+        "review_rows": "3",
+        "show_arrow": false,
+        "center_mode": false,
+        "avatar_margin_bottom": 0,
+        "color_heading": "#202020",
+        "fontsize_heading": 20,
+        "heading_margin_bottom": 14,
+        "heading_font_weight": "400",
+        "color_sub_heading": "#808080",
+        "fontsize_sub_heading": 13,
+        "sub_heading_margin_bottom": 20,
+        "color_name": "#232323",
+        "fontsize_name": 24,
+        "name_margin_bottom": 0,
+        "color_date": "#808080",
+        "fontsize_date": 13,
+        "color_body": "#000000",
+        "fontsize_body": 24,
+        "body_margin_bottom": 0,
+        "color_icon": "#ffffff",
+        "bg_color_icon": "#cbcbcb",
+        "star_font_size": 12,
+        "star_margin_bottom": 0,
+        "show_avatar": false,
+        "start_position": "above_title",
+        "star_color": "",
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444"
+      }
     }
   },
   "order": [
@@ -571,6 +682,7 @@
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
     "featured_product_honey_cinn_CQUmb7",
-    "instagram_4jfRGm"
+    "instagram_4jfRGm",
+    "customer_review_block_CVhC63"
   ]
 }
