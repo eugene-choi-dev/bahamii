@@ -1,0 +1,205 @@
+<div class="why-dates-section" style="background-image:url('{{ section.settings.bg_image | img_url: 'master' }}');background-repeat: no-repeat; background-size: contain;">
+  <div class="top-wrapper">
+    <h1 class="section-heading">{{ section.settings.heading }}</h1>
+    <div class="description-text-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
+    <div class="badges-container">
+      {% for block in section.blocks %}
+        <img src="{{ block.settings.badge_image | img_url: 'master' }}" alt="Badge">
+      {% endfor %}
+    </div>
+  </div>
+  <h1 class="table-header">How Does Bahamii Stack Up?</h1>
+  <div class="compare-table-wrap">
+    <div class="compare-table">
+      <div class="left">
+        <div class="text-item-container">
+          <div class="text-item">No Added Sugar</div>
+          <div class="text-item">Vegan & Plant-Based</div>
+          <div class="text-item">No Preservatives or Additives</div>
+          <div class="text-item">Low-Glycemic Index</div>
+        </div>
+        <div class="left-image-container">
+          <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image">
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-image-container">
+          <div class="text-item right-image-heading">Traditional Bar</div>
+          <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Right Image">
+        </div>
+        <div class="text-item-container">
+          <div class="text-item">Added Sugars & Flavors</div>
+          <div class="text-item">Includes Preservatives & Additives</div>
+          <div class="text-item">2x Calories</div>
+          <div class="text-item">12% Higher Fat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .why-dates-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-wrapper {
+    padding: 40px 260px;
+  }
+
+  .section-heading {
+    color: #110A0A;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .description-text-container {
+    color: #110A0A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 15px;
+  }
+
+  .badges-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-header {
+    text-align: center;
+    color: #110A0A;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .compare-table-wrap {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .compare-table {
+    display: flex;
+    justify-content: center;
+    height: 41vw;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .left {
+    justify-content: flex-end;
+    padding-right: 100px;
+  }
+
+  .right {
+    justify-content: flex-start;
+  }
+
+  .text-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    height: 100%;
+  }
+
+  .right .text-item-container {
+    width: 35%;
+    height: 75%;
+  }
+
+  .text-item {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+  }
+
+  .left .text-item {
+    text-align: right;
+  }
+
+  .right .text-item {
+    text-align: left;
+    color: #6C6669;
+  }
+
+  .left-image-container,
+  .right-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  .left-image-container img,
+  .right-image-container img {
+    max-width: 87%;
+  }
+
+  .right-image-container {
+    flex-direction: column;
+  }
+
+  .right-image-container img {
+    width: 71%;
+  }
+
+
+</style>
+
+{% schema %}
+  {
+    "name": "Why Dates",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading Text",
+        "default": "Why Dates?"
+      }, {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+      }, {
+        "type": "image_picker",
+        "id": "left_image",
+        "label": "Left Image"
+      }, {
+        "type": "image_picker",
+        "id": "right_image",
+        "label": "Right Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Badge Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "badge_image",
+            "label": "Upload Badge"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Why Dates",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

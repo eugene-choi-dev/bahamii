@@ -131,6 +131,40 @@
         "enable_autoplay": false
       }
     },
+    "why_dates_RbdNHy": {
+      "type": "why-dates",
+      "blocks": {
+        "image_DkLFtw": {
+          "type": "image",
+          "settings": {
+            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_2.svg"
+          }
+        },
+        "image_BTqwf8": {
+          "type": "image",
+          "settings": {
+            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_3.svg"
+          }
+        },
+        "image_anmNg9": {
+          "type": "image",
+          "settings": {
+            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_DkLFtw",
+        "image_BTqwf8",
+        "image_anmNg9"
+      ],
+      "settings": {
+        "heading": "Why Dates?",
+        "bg_image": "shopify:\/\/shop_images\/Vector_1.png",
+        "left_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
+        "right_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png"
+      }
+    },
     "featured_product_choc_almond_3Tgdw4": {
       "type": "featured-product-choc-almond",
       "blocks": {
@@ -495,8 +529,13 @@
         "instagram_FYXpBf"
       ],
       "custom_css": [
-        ".container-full {padding-left: 190px; padding-right: 190px;}",
-        ".halo-row {display: flex; justify-content: space-between;}",
+        ".container-full:first-of-type {height: 150px; overflow: visible;}",
+        ".container-full {padding-left: 197px; padding-right: 196px;}",
+        ".halo-block-header,.title,.text {height: 100%;}",
+        ".title .text {display: flex; justify-content: center; align-items: center; line-height: 42px;}",
+        ".halo-row .text {display: flex; justify-content: space-between;}",
+        ".title .text {width: 100%;}",
+        ".halo-row {justify-content: space-between;}",
         ".halo-item {padding-right: 0; padding-left: 0; width: 24%;}"
       ],
       "settings": {
@@ -507,7 +546,7 @@
         "block_layout": "grid",
         "scroll_from": "rtl",
         "scroll_time": "30",
-        "mg_top_desktop": 50,
+        "mg_top_desktop": 0,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 20,
@@ -522,7 +561,7 @@
         "enable_border_title": false,
         "border_color_title": "#232323",
         "color_title": "#000000",
-        "mg_bottom_title": 15,
+        "mg_bottom_title": 0,
         "fontsize_title": 48,
         "fontsize_title_mb": 16,
         "instagram_des": "",
@@ -613,10 +652,10 @@
         "review_q4BVwQ"
       ],
       "custom_css": [
-        ".container-full {overflow: visible;}",
-        ".customer-review-block {padding-left: 190px; padding-right: 190px;}",
-        ".customer-review__item {background: white; border: 3px solid #ed1068; width: 32%;}",
-        ".customer-review__item:last-of-type {margin-right: 0;}",
+        ".container-full,.customer-review-slide > div,.customer-review__item:last-of-type {overflow: visible; margin-right: 0;}",
+        ".customer-review-block {padding: 0 190px;}",
+        ".customer-review-slide > div > div {display: flex; justify-content: space-between;}",
+        ".customer-review__item {background: #fff; border: 3px solid #ed1068; margin-right: 17px;}",
         ".customer-review__content {padding-top: 11px; text-align: left; line-height: 32px; font-weight: 300;}",
         ".star-reviews {display: none;}",
         ".name {text-align: left;}"
@@ -662,7 +701,7 @@
         "fontsize_date": 13,
         "color_body": "#000000",
         "fontsize_body": 24,
-        "body_margin_bottom": 0,
+        "body_margin_bottom": 5,
         "color_icon": "#ffffff",
         "bg_color_icon": "#cbcbcb",
         "star_font_size": 12,
@@ -679,6 +718,7 @@
   },
   "order": [
     "image_banner_PXwejr",
+    "why_dates_RbdNHy",
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
     "featured_product_honey_cinn_CQUmb7",
