@@ -1,0 +1,279 @@
+<div class="vendors-shopify-section">
+  <div class="hero-section">
+    <h1>{{ section.settings.hero_title }}</h1>
+    <p>{{ section.settings.hero_description }}</p>
+    <div class="hero-thumbnails">
+      {% for i in (1..4) %}
+        {% assign thumbnail_image = 'thumbnail_image_' | append: i %}
+        {% assign thumbnail_desc = 'thumbnail_desc_' | append: i %}
+        {% if section.settings[thumbnail_image] %}
+          <div class="thumbnail">
+            <div class="thumbnail-img" style="background-image: url('{{ section.settings[thumbnail_image] | img_url: '300x300' }}'); background-size: cover; background-position: center;"></div>
+            <p>{{ section.settings[thumbnail_desc] }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="vendors-section" style="background-color: {{ section.settings.vendor_bg_color }}">
+    <div class="vendor-logos">
+      {% for i in (1..5) %}
+        {% assign vendor_logo = 'vendor_logo_' | append: i %}
+        {% if section.settings[vendor_logo] %}
+          <img
+            class="vendor-logo"
+            src="{{ section.settings[vendor_logo] | img_url: 'original' }}"
+            alt="Vendor Logo {{ i }}">
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    {% for i in (1..4) %}
+      {% assign gallery_image = 'gallery_image_' | append: i %}
+      {% assign gallery_desc = 'gallery_desc_' | append: i %}
+      {% if section.settings[gallery_image] %}
+        <div class="gallery-image {% if forloop.first %}large{% endif %}">
+          <img src="{{ section.settings[gallery_image] | img_url: '600x600' }}" alt="Gallery Image {{ i }}">
+          <p>{{ section.settings[gallery_desc] }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .hero-section h1,
+  .hero-section p,
+  .thumbnail p{
+    text-align: center;
+  }
+
+  .hero-section {
+    margin-left: 185px;
+    margin-right: 185px;
+  }
+
+  .hero-section h1 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hero-section p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .thumbnail-img {
+    display: block !important;
+    width: 250px;
+    height: 250px;
+  }
+
+  .thumbnail p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .gallery-image p {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .hero-thumbnails,
+  .vendor-logos,
+  .gallery-section {
+    display: flex;
+  }
+
+  .hero-thumbnails {
+  }
+
+  .thumbnail {
+  }
+
+  .vendors-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    margin-top: 50px;
+  }
+
+  .vendor-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gallery-section {
+    margin-left: 185px;
+    margin-right: 185px;
+  }
+
+  .thumbnail,
+  .gallery-image {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-image.large {
+    flex-basis: 100%;
+  }
+
+  .gallery-image {
+    margin-top: 0;
+    flex-basis: 47%;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Vendors",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "Hero Title",
+        "default": "Snack Wherever You Go"
+      },
+      {
+        "type": "textarea",
+        "id": "hero_description",
+        "label": "Hero Description",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "type": "header",
+        "content": "Hero Thumbnails"
+      },
+      {
+        "type": "image_picker",
+        "id": "thumbnail_image_1",
+        "label": "Thumbnail Image 1"
+      }, {
+        "type": "text",
+        "id": "thumbnail_desc_1",
+        "label": "Thumbnail Description 1",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "image_picker",
+        "id": "thumbnail_image_2",
+        "label": "Thumbnail Image 2"
+      }, {
+        "type": "text",
+        "id": "thumbnail_desc_2",
+        "label": "Thumbnail Description 2",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "image_picker",
+        "id": "thumbnail_image_3",
+        "label": "Thumbnail Image 3"
+      }, {
+        "type": "text",
+        "id": "thumbnail_desc_3",
+        "label": "Thumbnail Description 3",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "image_picker",
+        "id": "thumbnail_image_4",
+        "label": "Thumbnail Image 4"
+      }, {
+        "type": "text",
+        "id": "thumbnail_desc_4",
+        "label": "Thumbnail Description 4",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "header",
+        "content": "Vendors"
+      }, {
+        "type": "color",
+        "id": "vendor_bg_color",
+        "label": "Vendor Background Color",
+        "default": "#FFD700"
+      }, {
+        "type": "image_picker",
+        "id": "vendor_logo_1",
+        "label": "Vendor Logo 1"
+      }, {
+        "type": "image_picker",
+        "id": "vendor_logo_2",
+        "label": "Vendor Logo 2"
+      }, {
+        "type": "image_picker",
+        "id": "vendor_logo_3",
+        "label": "Vendor Logo 3"
+      }, {
+        "type": "image_picker",
+        "id": "vendor_logo_4",
+        "label": "Vendor Logo 4"
+      }, {
+        "type": "image_picker",
+        "id": "vendor_logo_5",
+        "label": "Vendor Logo 5"
+      }, {
+        "type": "header",
+        "content": "Gallery"
+      }, {
+        "type": "image_picker",
+        "id": "gallery_image_1",
+        "label": "Gallery Image 1 (Large)"
+      }, {
+        "type": "textarea",
+        "id": "gallery_desc_1",
+        "label": "Gallery Description 1",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "type": "image_picker",
+        "id": "gallery_image_2",
+        "label": "Gallery Image 2"
+      }, {
+        "type": "textarea",
+        "id": "gallery_desc_2",
+        "label": "Gallery Description 2",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "type": "image_picker",
+        "id": "gallery_image_3",
+        "label": "Gallery Image 3"
+      }, {
+        "type": "textarea",
+        "id": "gallery_desc_3",
+        "label": "Gallery Description 3",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "type": "image_picker",
+        "id": "gallery_image_4",
+        "label": "Gallery Image 4"
+      }, {
+        "type": "textarea",
+        "id": "gallery_desc_4",
+        "label": "Gallery Description 4",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Vendors",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

@@ -121,7 +121,7 @@
         "fontsize_des": 16,
         "title_align": "center",
         "style_bg": "full",
-        "bg_color": "#facad3",
+        "bg_color": "#ffffff",
         "bg_color_gradient": "",
         "display_type": "slide",
         "list_gap": 0,
@@ -134,6 +134,54 @@
     "why_dates_RbdNHy": {
       "type": "why-dates",
       "blocks": {
+        "left_text_xM9ABk": {
+          "type": "left_text",
+          "settings": {
+            "text": "No Added Sugar"
+          }
+        },
+        "left_text_FNiCpt": {
+          "type": "left_text",
+          "settings": {
+            "text": "Vegan & Plant-Based"
+          }
+        },
+        "left_text_NqiCLd": {
+          "type": "left_text",
+          "settings": {
+            "text": "No Preservatives or Additives"
+          }
+        },
+        "left_text_g8bhC7": {
+          "type": "left_text",
+          "settings": {
+            "text": "Low-Glycemic Index"
+          }
+        },
+        "right_text_nRfXFr": {
+          "type": "right_text",
+          "settings": {
+            "text": "Added Sugars & Flavors"
+          }
+        },
+        "right_text_mb6VRL": {
+          "type": "right_text",
+          "settings": {
+            "text": "Includes Preservatives & Additives"
+          }
+        },
+        "right_text_y3HWJ6": {
+          "type": "right_text",
+          "settings": {
+            "text": "2x Calories"
+          }
+        },
+        "right_text_UFpbLe": {
+          "type": "right_text",
+          "settings": {
+            "text": "12% Higher Fat"
+          }
+        },
         "image_DkLFtw": {
           "type": "image",
           "settings": {
@@ -154,12 +202,22 @@
         }
       },
       "block_order": [
+        "left_text_xM9ABk",
+        "left_text_FNiCpt",
+        "left_text_NqiCLd",
+        "left_text_g8bhC7",
+        "right_text_nRfXFr",
+        "right_text_mb6VRL",
+        "right_text_y3HWJ6",
+        "right_text_UFpbLe",
         "image_DkLFtw",
         "image_BTqwf8",
         "image_anmNg9"
       ],
       "settings": {
         "heading": "Why Dates?",
+        "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "table_header": "How Does Bahamii Stack Up?",
         "bg_image": "shopify:\/\/shop_images\/Vector_1.png",
         "left_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
         "right_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png"
@@ -714,6 +772,33 @@
         "scroll_thumb_color": "#000000",
         "scroll_thumb_hover_color": "#444444"
       }
+    },
+    "vendors_4LgqpJ": {
+      "type": "vendors",
+      "settings": {
+        "hero_title": "Snack Wherever You Go",
+        "hero_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+        "thumbnail_image_1": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
+        "thumbnail_desc_1": "Lorem ipsum dolor sit amet",
+        "thumbnail_image_2": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
+        "thumbnail_desc_2": "Lorem ipsum dolor sit amet",
+        "thumbnail_image_3": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
+        "thumbnail_desc_3": "Lorem ipsum dolor sit amet",
+        "thumbnail_image_4": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
+        "thumbnail_desc_4": "Lorem ipsum dolor sit amet",
+        "vendor_bg_color": "#fffac2",
+        "vendor_logo_1": "shopify:\/\/shop_images\/Vector_2.png",
+        "vendor_logo_2": "shopify:\/\/shop_images\/Path_6510.png",
+        "vendor_logo_3": "shopify:\/\/shop_images\/Amazon.png",
+        "vendor_logo_4": "shopify:\/\/shop_images\/Andronicos.png",
+        "gallery_image_1": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
+        "gallery_desc_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "gallery_image_2": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
+        "gallery_desc_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "gallery_image_3": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
+        "gallery_desc_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "gallery_desc_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
     }
   },
   "order": [
@@ -723,6 +808,7 @@
     "featured_product_coco_vanilla_ULcwTX",
     "featured_product_honey_cinn_CQUmb7",
     "instagram_4jfRGm",
-    "customer_review_block_CVhC63"
+    "customer_review_block_CVhC63",
+    "vendors_4LgqpJ"
   ]
 }
