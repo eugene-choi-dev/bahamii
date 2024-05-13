@@ -1,0 +1,85 @@
+<div class="image-banner-simple">
+    <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner Image" class="banner-image">
+    <h1 class="header-text">{{ section.settings.header_text }}</h1>
+    <h2 class="description-text">{{ section.settings.description_text }}</h2>
+</div>
+
+<style>
+    .image-banner-simple {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .banner-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        animation: fadeIn 0.75s ease-in-out forwards; 
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .header-text, .description-text {
+        position: relative;
+        z-index: 1;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .description-text {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
+
+{% schema %}
+    {
+        "name": "Simple Image Banner",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "banner_image",
+                "label": "Banner Image"
+            },
+            {
+                "type": "text",
+                "id": "header_text",
+                "label": "Header Text"
+            },
+            {
+                "type": "text",
+                "id": "description_text",
+                "label": "Description Text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Simple Image Banner",
+                "category": "Custom"
+            }
+        ]
+    }
+{% endschema %}

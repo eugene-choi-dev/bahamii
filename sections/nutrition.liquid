@@ -1,0 +1,124 @@
+<div class="nutrition-shopify-section">
+  <div class="nutrition-label-section">
+    {% if section.settings.nutrition_label != blank %}
+      <img src="{{ section.settings.nutrition_label | img_url: 'master' }}" alt="Nutrition Label">
+    {% endif %}
+  </div>
+
+  <div class="ingredients-section">
+    <div class="ingredients-text-wrap">
+      {% if section.settings.header_text != blank %}
+        <h2>{{ section.settings.header_text }}</h2>
+      {% endif %}
+
+      {% if section.settings.ingredients_text != blank %}
+        <div class="ingredients-text">
+          {{ section.settings.ingredients_text }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="additional-info-wrap">
+      {% if section.settings.additional_info != blank %}
+        <div class="additional-info">
+          {{ section.settings.additional_info }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .nutrition-shopify-section {
+    display: flex;
+    background: #FACAD3;
+  }
+
+  .nutrition-label-section {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nutrition-label-section img {
+  }
+
+  .ingredients-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 160px;
+  }
+
+  .ingredients-text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ingredients-text-wrap h2 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .ingredients-text {
+    color: #000;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  .ingredients-text p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .additional-info-wrap {
+  }
+
+  .additional-info {
+    color: #000;
+    font-size: 24px;
+    line-height: 32px;
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Nutrition",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "nutrition_label",
+        "label": "Nutrition Label Image"
+      }, {
+        "type": "text",
+        "id": "header_text",
+        "label": "Header Text",
+        "default": "Nutrition Information"
+      }, {
+        "type": "richtext",
+        "id": "ingredients_text",
+        "label": "Ingredients Text",
+        "default": "<p>List your ingredients here...</p>"
+      }, {
+        "type": "richtext",
+        "id": "additional_info",
+        "label": "Additional Info",
+        "default": "<p>Any additional information...</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nutrition",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

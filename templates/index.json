@@ -131,6 +131,14 @@
         "enable_autoplay": false
       }
     },
+    "image_banner_simple_MNUGmJ": {
+      "type": "image-banner-simple",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/92884fc67535b2b097c9881452dabc80.jpg",
+        "header_text": "How It's Made",
+        "description_text": "The #1 Organic Ingredient The World Over"
+      }
+    },
     "why_dates_RbdNHy": {
       "type": "why-dates",
       "blocks": {
@@ -803,6 +811,7 @@
   },
   "order": [
     "image_banner_PXwejr",
+    "image_banner_simple_MNUGmJ",
     "why_dates_RbdNHy",
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
