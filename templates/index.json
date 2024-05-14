@@ -914,6 +914,54 @@
       ],
       "settings": {
       }
+    },
+    "text_image_9zpfz8": {
+      "type": "text-image",
+      "settings": {
+        "text": "<p>Living with diabetes or managing a low-glycemic  diet presents unique challenges, particularly when it comes to finding  natural sweeteners that won't adversely affect blood sugar levels. The  hunt for a sweet treat that satisfies cravings without causing a spike  in glucose levels can be Challenging. However, there's good news for  those trying to balance things!<br\/>Let’s explore the potential  benefits of Bahamii date bars as a delicious and nutritious alternative  for individuals with diabetes or those seeking low-glycemic options.<br\/><br\/>For many, the struggle to find a natural sweetener  that not only suits dietary restrictions but also offers health benefits  is an ongoing journey. Maintaining your blood sugar is incredibly  important and choosing the right sweeteners is crucial in achieving this  delicate balance. Bahamii date energy bites, with their natural  sweetness and promising nutritional profile, offer hope for those  following diabetic-friendly and low-glycemic diets.<br\/>Come along on  this sweet and nutritious journey with Bahamii date energy bites, where  indulging your sweet tooth becomes a joyous experience that keeps you  feeling great, without compromising your well-being, and helping you  make smart choices for your health.<\/p>",
+        "font_size": 16,
+        "image": "shopify:\/\/shop_images\/Accueils-de-Loisirs_2.png",
+        "image_position": "left-bahamii",
+        "image_width": 450,
+        "background_color": "#ffffff",
+        "background_height": 700,
+        "max_width": 1200,
+        "padding_left": 70,
+        "padding_right": 50,
+        "center_align_text": false
+      }
+    },
+    "text_image_CQfzwQ": {
+      "type": "text-image",
+      "settings": {
+        "text": "<p>It is crucial to  understand the concept of the glycemic index or GI. The GI measures how  quickly a specific food raises your blood sugar levels. This index is  particularly significant for individuals managing diabetes or those  aiming for a low-glycemic diet. Opting for foods with a low GI is  essential, as it contributes to maintaining stable blood sugar levels, a  key element of overall health for those with diabetes. Sticking to a  low-GI diet regularly not only helps in managing blood sugar but also  supports broader health goals, promoting sustained energy levels and  overall well-being. Making informed choices about the GI of foods can  help individuals to take control of their diets and proactively manage  their health.<\/p>",
+        "font_size": 20,
+        "image": "shopify:\/\/shop_images\/honey-cinnamon.png",
+        "image_position": "left-bahamii",
+        "image_width": 570,
+        "background_color": "#fffac2",
+        "background_height": 495,
+        "max_width": 1440,
+        "padding_left": 40,
+        "padding_right": 180,
+        "center_align_text": true
+      }
+    },
+    "text_image_4cz8RN": {
+      "type": "text-image",
+      "settings": {
+        "text": "<p>It is crucial to  understand the concept of the glycemic index or GI. The GI measures how  quickly a specific food raises your blood sugar levels. This index is  particularly significant for individuals managing diabetes or those  aiming for a low-glycemic diet. Opting for foods with a low GI is  essential, as it contributes to maintaining stable blood sugar levels, a  key element of overall health for those with diabetes. Sticking to a  low-GI diet regularly not only helps in managing blood sugar but also  supports broader health goals, promoting sustained energy levels and  overall well-being. Making informed choices about the GI of foods can  help individuals to take control of their diets and proactively manage  their health.<\/p>",
+        "font_size": 20,
+        "image": "shopify:\/\/shop_images\/coco-vanilla.png",
+        "image_position": "right-bahamii",
+        "image_width": 500,
+        "background_color": "#f2dab2",
+        "background_height": 495,
+        "max_width": 1200,
+        "padding_left": 70,
+        "padding_right": 20,
+        "center_align_text": false
+      }
     }
   },
   "order": [
@@ -926,6 +974,9 @@
     "customer_review_block_CVhC63",
     "vendors_4LgqpJ",
     "image_banner_simple_6XjYaB",
-    "badge_grid_8m4CAx"
+    "badge_grid_8m4CAx",
+    "text_image_9zpfz8",
+    "text_image_CQfzwQ",
+    "text_image_4cz8RN"
   ]
 }
