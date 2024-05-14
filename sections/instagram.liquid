@@ -71,7 +71,7 @@
     endif
 -%}
 
-<div class="instagram-slide section-block-{{section.id}} {% if section.settings.padding_full_width == 0 and section.settings.slide_ins == 'centermode' %}padding-full-width-0{% endif %} {% if as_grid_gap == 30 %}instagram-slide-pad-15{% endif %}{% if section.settings.enable_underline_button %} enable_underline_button{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" id="new-instagram-{{section.id}}" {% if section.settings.block_layout == 'slider' %}data-loader-script="{{ 'halo.slide-instagram.js' | asset_url }}"{% endif %} style="--grid-gap: {{ grid_gap }}">
+<div class="instagram-bahamii-custom instagram-slide section-block-{{section.id}} {% if section.settings.padding_full_width == 0 and section.settings.slide_ins == 'centermode' %}padding-full-width-0{% endif %} {% if as_grid_gap == 30 %}instagram-slide-pad-15{% endif %}{% if section.settings.enable_underline_button %} enable_underline_button{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" id="new-instagram-{{section.id}}" {% if section.settings.block_layout == 'slider' %}data-loader-script="{{ 'halo.slide-instagram.js' | asset_url }}"{% endif %} style="--grid-gap: {{ grid_gap }}">
     <div class="{% if section.settings.block_layout == 'infinite' %}container-full{% else %}{% if section.settings.container == 'fullwidth' %}container-full{% elsif section.settings.container == '1170' %}container-1170{% elsif section.settings.container == '1770' %}container-1770{% else %}container{% endif %}{% endif %}">
         {%- if section.settings.instagram_title != blank or section.settings.instagram_des != blank or section.settings.view_all != blank -%}
             <div class="halo-block-header text-{{ section.settings.title_align }}{% if section.settings.view_all != blank %} viewAll--{{ section.settings.view_all_align }}{% endif %}{% if section.settings.style_block_header == 'style2' %} style_2_block_header{% endif %}"{% if section.settings.style_block_header == 'style2' %} style="--margin-bottom-title: {{ section.settings.mg_bottom_title | append: 'px' }}"{% endif %}>
@@ -439,6 +439,47 @@
             .instagram-slide .halo-row .halo-item {margin-bottom: 0 !important}
         {%- endif -%}
     }
+
+    /* BAHAMII CUSTOM STYLES ---> */
+
+@media (min-width: 1025px) {
+    .instagram-bahamii-custom .container-full:first-of-type {
+        height: 150px !important;
+        overflow: visible !important;
+    }
+    .instagram-bahamii-custom .container-full {
+        padding-left: 197px !important;
+        padding-right: 196px !important;
+    }
+    .instagram-bahamii-custom .halo-block-header,
+    .instagram-bahamii-custom .title,
+    .instagram-bahamii-custom .text {
+        height: 100% !important;
+    }
+    .instagram-bahamii-custom .title .text {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        line-height: 42px !important;
+    }
+    .instagram-bahamii-custom .halo-row .text {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .instagram-bahamii-custom .title .text {
+        width: 100% !important;
+    }
+    .instagram-bahamii-custom .halo-row {
+        justify-content: space-between !important;
+    }
+    .instagram-bahamii-custom .halo-item {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 24% !important;
+    }
+}
+
+    /* <--- BAHAMII CUSTOM STYLES */
 </style>
 {%- if check_load and section.settings.display_instagram_button -%}
 <script>

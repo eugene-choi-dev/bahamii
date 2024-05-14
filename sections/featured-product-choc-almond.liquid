@@ -234,6 +234,26 @@
             padding-bottom: {{ mg_bottom_desktop | append: 'px' }};
         }
     }
+
+    /* BAHAMII CUSTOM STYLES ---> */
+
+@media (min-width: 1025px) {
+    .featured-product-choc-almond-bahamii-custom.featured-product.product-details.product-default {
+        background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%) !important;
+        height: 1500px !important;
+    }
+
+    .featured-product-choc-almond-bahamii-custom .moreItem-productText {
+        --background-style: rgba(255, 0, 0, 0) !important;
+    }
+
+    .featured-product-choc-almond-bahamii-custom .productView-image-wrapper {
+        width: 100% !important;
+        padding-right: 15px !important;
+    }
+}
+
+    /* <--- BAHAMII CUSTOM STYLES */
 </style>
 <script>
     window.product_inven_array_{{ product.id }} = {
@@ -266,7 +286,7 @@
 {%- if section.settings.id_section != blank -%}
 <div id="{{ section.settings.id_section }}">
 {%- endif -%}
-    <div class="featured-product product-details product-default" data-section-id="{{ section.id }}" data-section-type="product" id="ProductSection-{{ section.id }}" data-custom-featured-product-block data-image-opo>
+    <div class="featured-product-choc-almond-bahamii-custom featured-product product-details product-default" data-section-id="{{ section.id }}" data-section-type="product" id="ProductSection-{{ section.id }}" data-custom-featured-product-block data-image-opo>
         <div class="{% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %} productView-container">
             {% if section.settings.title != blank or section.settings.des != blank %}
                 <div class="halo-block-header text-{{ section.settings.title_align }}">

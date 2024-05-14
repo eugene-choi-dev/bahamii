@@ -209,11 +209,35 @@
                 }
             }
         {% endif %}
+
+        /* BAHAMII CUSTOM STYLES ---> */
+    .image-banner-bahamii-custom .banner-heading {
+    text-transform: none;
+    }
+
+    .image-banner-bahamii-custom .button {
+    border: none !important;
+    }
+
+    @media (min-width: 1025px) {
+        .image-banner-bahamii-custom .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 77px;
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: none;
+        }
+    }
+    /* <--- BAHAMII CUSTOM STYLES */
     </style>
     {%- if section.settings.id_section != blank -%}
     <div id="{{ section.settings.id_section }}">
     {%- endif -%}
-        <div class="halo-block halo-banner image-banner style_bg--{{ section.settings.style_bg }}{%- if section.settings.bg_image != blank -%} image-banner--bg-image{%- endif -%}" id="halo-image-banner-{{ section.id }}" style="--section_margin: {{ list_gap }};--mg_top_desktop: {{ mg_top_desktop | append: 'px' }};--mg_top_tablet:{{ mg_top_tablet | append: 'px' }};--mg_top_mobile: {{ mg_top_mobile | append: 'px' }};--mg_bottom_desktop:{{ mg_bottom_desktop | append: 'px' }};--mg_bottom_tablet:{{ mg_bottom_tablet | append: 'px' }};--mg_bottom_mobile:{{ mg_bottom_mobile | append: 'px' }};--padding_full_width:{{ padding_full_width | append: 'px' }};
+        <div class="image-banner-bahamii-custom halo-block halo-banner image-banner style_bg--{{ section.settings.style_bg }}{%- if section.settings.bg_image != blank -%} image-banner--bg-image{%- endif -%}" id="halo-image-banner-{{ section.id }}" style="--section_margin: {{ list_gap }};--mg_top_desktop: {{ mg_top_desktop | append: 'px' }};--mg_top_tablet:{{ mg_top_tablet | append: 'px' }};--mg_top_mobile: {{ mg_top_mobile | append: 'px' }};--mg_bottom_desktop:{{ mg_bottom_desktop | append: 'px' }};--mg_bottom_tablet:{{ mg_bottom_tablet | append: 'px' }};--mg_bottom_mobile:{{ mg_bottom_mobile | append: 'px' }};--padding_full_width:{{ padding_full_width | append: 'px' }};
                 {%- if section.settings.bg_image != blank -%}
                     background: url({{ section.settings.bg_image | img_url: '1920x' }});background-repeat: no-repeat;background-size: cover
                 {%- else -%}

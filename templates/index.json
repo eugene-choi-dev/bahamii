@@ -29,8 +29,8 @@
             "font_size_heading_mb": 24,
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
-            "color_heading": "#232323",
-            "color_heading_mb": "#ffffff",
+            "color_heading": "#000000",
+            "color_heading_mb": "#000000",
             "border_title": "none",
             "border_color_title": "#232323",
             "border_color_title_mobile": "#ffffff",
@@ -60,7 +60,7 @@
             "link": "shopify:\/\/collections",
             "btn_icon": "",
             "button_1_width": 295,
-            "enable_button_custom_border": true,
+            "enable_button_custom_border": false,
             "button_color": "#ffffff",
             "button_border": "#facad3",
             "button_background": "#ffffff",
@@ -97,8 +97,7 @@
         "large_img_3q3B9e"
       ],
       "custom_css": [
-        ".banner-heading {text-transform: none;}",
-        ".button {display: flex; justify-content: center; align-items: center; height: 77px; font-size: 3.2rem; font-style: normal; font-weight: 700; line-height: normal; text-transform: none;}"
+
       ],
       "settings": {
         "id_section": "",
@@ -112,7 +111,7 @@
         "mg_bottom_mobile": 0,
         "image_banner_title": "",
         "enable_border_title": false,
-        "color_title": "#202020",
+        "color_title": "#000000",
         "fontsize_title": 24,
         "fontsize_title_mb": 20,
         "margin_bottom_title": 25,
@@ -129,14 +128,6 @@
         "arrows_position": "",
         "enable_dots": false,
         "enable_autoplay": false
-      }
-    },
-    "image_banner_simple_MNUGmJ": {
-      "type": "image-banner-simple",
-      "settings": {
-        "banner_image": "shopify:\/\/shop_images\/92884fc67535b2b097c9881452dabc80.jpg",
-        "header_text": "How It's Made",
-        "description_text": "The #1 Organic Ingredient The World Over"
       }
     },
     "why_dates_RbdNHy": {
@@ -290,9 +281,7 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#feat-choc_almond .featured-product.product-details.product-default {background: linear-gradient(180deg, #facad3 87%, #f2dab2 100%); height: 1500px;}",
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
-        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
+
       ],
       "settings": {
         "id_section": "feat-choc_almond",
@@ -397,9 +386,7 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#feat-coco_vanilla .featured-product.product-details.product-default {background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%); height: 1500px;}",
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
-        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
+
       ],
       "settings": {
         "id_section": "feat-coco_vanilla",
@@ -504,9 +491,7 @@
         "product_text_Y7wyYM"
       ],
       "custom_css": [
-        "#feat-honey_cinn .featured-product.product-details.product-default {height: 1500px;}",
-        ".moreItem-productText {--background-style: rgba(255, 0, 0, 0) !important;}",
-        ".productView-image-wrapper {width: 100%; padding-right: 15px;}"
+
       ],
       "settings": {
         "id_section": "feat-honey_cinn",
@@ -595,14 +580,7 @@
         "instagram_FYXpBf"
       ],
       "custom_css": [
-        ".container-full:first-of-type {height: 150px; overflow: visible;}",
-        ".container-full {padding-left: 197px; padding-right: 196px;}",
-        ".halo-block-header,.title,.text {height: 100%;}",
-        ".title .text {display: flex; justify-content: center; align-items: center; line-height: 42px;}",
-        ".halo-row .text {display: flex; justify-content: space-between;}",
-        ".title .text {width: 100%;}",
-        ".halo-row {justify-content: space-between;}",
-        ".halo-item {padding-right: 0; padding-left: 0; width: 24%;}"
+
       ],
       "settings": {
         "container": "fullwidth",
@@ -718,13 +696,7 @@
         "review_q4BVwQ"
       ],
       "custom_css": [
-        ".container-full,.customer-review-slide > div,.customer-review__item:last-of-type {overflow: visible; margin-right: 0;}",
-        ".customer-review-block {padding: 0 190px;}",
-        ".customer-review-slide > div > div {display: flex; justify-content: space-between;}",
-        ".customer-review__item {background: #fff; border: 3px solid #ed1068; margin-right: 17px;}",
-        ".customer-review__content {padding-top: 11px; text-align: left; line-height: 32px; font-weight: 300;}",
-        ".star-reviews {display: none;}",
-        ".name {text-align: left;}"
+
       ],
       "settings": {
         "container": "fullwidth",
@@ -807,17 +779,153 @@
         "gallery_desc_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "gallery_desc_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       }
+    },
+    "image_banner_simple_6XjYaB": {
+      "type": "image-banner-simple",
+      "blocks": {
+        "heading_8McPmf": {
+          "type": "heading",
+          "settings": {
+            "heading": "How It's Made",
+            "heading_size": 64,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#ffffff"
+          }
+        },
+        "text_gMRnJa": {
+          "type": "text",
+          "settings": {
+            "text": "The #1 Organic Ingredient The World Over",
+            "text_size": 36,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 40,
+            "text_color": "#ffffff",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8McPmf",
+        "text_gMRnJa"
+      ],
+      "settings": {
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_image": "shopify:\/\/shop_images\/92884fc67535b2b097c9881452dabc80.jpg",
+        "content_align": "center"
+      }
+    },
+    "badge_grid_8m4CAx": {
+      "type": "badge-grid",
+      "blocks": {
+        "badge_8Cc6p8": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_CKEK8r": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_3KMTdE": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_XLnQQn": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_ejfTeT": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_dBVXn9": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_YbXLMJ": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_94U9Hj": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        },
+        "badge_NWeFFx": {
+          "type": "badge",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
+            "url": "#",
+            "title": "Lorem ipsum dolor sit",
+            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+        }
+      },
+      "block_order": [
+        "badge_8Cc6p8",
+        "badge_CKEK8r",
+        "badge_3KMTdE",
+        "badge_XLnQQn",
+        "badge_ejfTeT",
+        "badge_dBVXn9",
+        "badge_YbXLMJ",
+        "badge_94U9Hj",
+        "badge_NWeFFx"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner_PXwejr",
-    "image_banner_simple_MNUGmJ",
     "why_dates_RbdNHy",
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
     "featured_product_honey_cinn_CQUmb7",
     "instagram_4jfRGm",
     "customer_review_block_CVhC63",
-    "vendors_4LgqpJ"
+    "vendors_4LgqpJ",
+    "image_banner_simple_6XjYaB",
+    "badge_grid_8m4CAx"
   ]
 }
