@@ -1,0 +1,110 @@
+{%- assign contact_form_id = 'ContactForm-' | append: section.id -%}
+
+{%- form 'contact', id: contact_form_id, class: 'contact-form' -%}
+    {%- if form.posted_successfully? -%}
+        <div class="form-message hidden" data-form-message="contact">
+            <div class="alertBox alertBox--success">
+                <p class="alertBox-message">
+                    {{ 'templates.contact.form.post_success' | t }}
+                </p>
+            </div>
+        </div>
+    {%- elsif form.errors -%}
+        <div class="form-message hidden" data-form-message="contact">
+            <div class="alertBox alertBox--error">
+                <p class="alertBox-message">
+                    <ul>
+                        {% for field in form.errors %}
+                            <li>
+                                {{ form.errors.translated_fields[field] | capitalize }} - {{ form.errors.messages[field] }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </p>
+            </div>
+        </div>
+    {%- endif -%}
+    <div class="form-field">
+        <input class="form-input form-input-placeholder"
+            type="text"
+            id="contactFormFirstName-{{ section.id }}"
+            name="contact[first_name]"
+            placeholder="First Name"
+            autocomplete="given-name"
+            autocapitalize="words"
+            value="{% if form.first_name %}{{ form.first_name }}{% endif %}"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field">
+
+        <input class="form-input form-input-placeholder"
+            type="text"
+            id="contactFormLastName-{{ section.id }}"
+            name="contact[last_name]"
+            placeholder="Last Name"
+            autocomplete="family-name"
+            autocapitalize="words"
+            value="{% if form.last_name %}{{ form.last_name }}{% endif %}"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field{% if form.errors contains "email" %} form-field--error{% endif %}">
+        <input class="form-input form-input-placeholder{% if form.errors contains "email" %} error{% endif %}"
+            type="email"
+            name="contact[email]"
+            id="contactFormEmail-{{ section.id }}"
+            placeholder="Email"
+            spellcheck="false"
+            autocomplete="email"
+            autocorrect="off"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+            {% endif %}
+            required
+        >
+    </div>
+    <div class="form-field">
+        <input class="form-input form-input-placeholder"
+            type="tel"
+            id="ContactFormPhone-{{ section.id }}"
+            name="contact[phone]"
+            placeholder="Phone"
+            autocomplete="tel"
+            pattern="[0-9]*"
+            value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field">
+        <input class="form-input form-input-placeholder"
+            type="text"
+            id="contactFormZip-{{ section.id }}"
+            name="contact[zip]"
+            placeholder="Zip Code"
+            autocomplete="postal-code"
+            pattern="[0-9]*"
+            value="{% if form.zip %}{{ form.zip }}{% endif %}"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field">
+        <input class="form-input form-input-placeholder"
+            type="url"
+            id="contactFormWebsite-{{ section.id }}"
+            name="contact[website]"
+            placeholder="Website"
+            autocomplete="url"
+            value="{% if form.website %}{{ form.website }}{% endif %}"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-actions">
+        {% comment %} <input type="submit" class="button button--primary" value="{{ 'templates.contact.form.send' | t }}" role="button" data-button-message="contact"> {% endcomment %}
+        <input type="submit" class="button button--primary" value="Submit" role="button" data-button-message="contact">
+    </div>
+{%- endform -%}

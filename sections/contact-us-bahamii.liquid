@@ -1,0 +1,173 @@
+<link
+  rel="stylesheet"
+  href="{{ 'component-contact.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'component-contact-form.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<noscript>{{ 'component-contact.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-contact-form.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="contact"
+  id="ContactSection-{{ section.id }}"
+  class="contact-us-shopify-section-bahamii">
+  <div class="contact-container container">
+    <div class="page-content contact-content">
+      <div class="contact contact-1">
+        <div class="image-wrap">
+          <img src="{{ section.settings.contact_image | img_url: 'master' }}" alt="Contact Image">
+        </div>
+        <div class="contact-item">
+          <h2 class="page-subheader contact-title">
+            Wholesale & Bulk Orders
+          </h2>
+          <div class="contact-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+          </div>
+          {% render 'contact-form-wholesale' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css" media="screen">
+  #ContactSection-{{ section.id }} .contact.contact-1 {
+    display: flex;
+  }
+
+  #ContactSection-{{ section.id }}
+  .image-wrap {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  #ContactSection-{{ section.id }}
+  .contact-item {
+    flex: 2;
+  }
+
+  #ContactSection-{{ section.id }} {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contact-form .form-field {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+  }
+
+  .contact-form .form-field:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .contact-form::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* temp, hacky styles - clean these up ---> */
+  .contact-form .form-field {
+    margin-right: 2%;
+  }
+
+  .contact-form .form-field:first-of-type {
+    margin-top: 17px;
+  }
+
+  .contact-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .contact-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .form-input {
+    background: #f2dab2;
+    border: none;
+  }
+
+  #ContactSection-{{ section.id }} .form-input::placeholder, #ContactSection-{{ section.id }} input {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  #ContactSection-{{ section.id }} .form-input::placeholder {
+    color: black;
+  }
+
+  .form-actions .button {
+    transform: translateY(16px);
+  }
+  /* <--- temp, hacky styles - clean these up */
+
+  @media (max-width: 1024px) {
+    #ContactSection-{{ section.id }} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .contact-form .form-field {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
+
+    #ContactSection-{{ section.id }}
+    .contact.contact-1 {
+      flex-direction: column;
+    }
+
+    #ContactSection-{{ section.id }}
+    .image-wrap {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    #ContactSection-{{ section.id }}
+    .contact-item {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 550px) {
+    #ContactSection-{{ section.id }} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Contact Us Bahamii",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "contact_image",
+        "label": "Contact Us Image"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Custom",
+        "name": "Contact Us Bahamii"
+      }
+    ]
+  }
+{% endschema %}

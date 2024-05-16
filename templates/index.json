@@ -130,12 +130,6 @@
         "enable_autoplay": false
       }
     },
-    "store_locator_stockist_3yGfyj": {
-      "type": "store-locator-stockist",
-      "settings": {
-        "embed_code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u22504\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->"
-      }
-    },
     "why_dates_RbdNHy": {
       "type": "why-dates",
       "blocks": {
@@ -968,11 +962,27 @@
         "padding_right": 20,
         "center_align_text": false
       }
+    },
+    "contact_us_bahamii_JwGQtD": {
+      "type": "contact-us-bahamii",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "contact_image": "shopify:\/\/shop_images\/contact-us-placeholder.png"
+      }
+    },
+    "store_locator_stockist_3yGfyj": {
+      "type": "store-locator-stockist",
+      "settings": {
+        "embed_code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u22504\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->",
+        "section_header": "Store Locator",
+        "section_header_size": 64
+      }
     }
   },
   "order": [
     "image_banner_PXwejr",
-    "store_locator_stockist_3yGfyj",
     "why_dates_RbdNHy",
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
@@ -984,6 +994,8 @@
     "badge_grid_8m4CAx",
     "text_image_9zpfz8",
     "text_image_CQfzwQ",
-    "text_image_4cz8RN"
+    "text_image_4cz8RN",
+    "contact_us_bahamii_JwGQtD",
+    "store_locator_stockist_3yGfyj"
   ]
 }

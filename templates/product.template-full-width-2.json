@@ -33,12 +33,28 @@
             "enable_btn_show_more": false,
             "maximum_des_to_show": 300
           }
+        },
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tqnzjA": {
+          "type": "shopify:\/\/apps\/appstle-subscriptions-app\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {
+          }
+        },
+        "quantity_selector_A7GFQf": {
+          "type": "quantity_selector",
+          "settings": {
+            "qty_style": "2",
+            "qty_layout": "1",
+            "spacing_top": 0,
+            "spacing_bottom": 10
+          }
         }
       },
       "block_order": [
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "0e4ea696-4820-4c98-aaa6-806d41782a3d",
-        "bd066b80-c8e3-4f3e-8280-b27fbf6e9423"
+        "bd066b80-c8e3-4f3e-8280-b27fbf6e9423",
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tqnzjA",
+        "quantity_selector_A7GFQf"
       ],
       "custom_css": [
         ".product-details {background: #facad3;}",
