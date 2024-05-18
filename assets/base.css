@@ -6958,3 +6958,104 @@ summary::-webkit-details-marker {
         transition: none !important;
     }
 }
+
+/* ===== BAHAMII CUSTOM STYLES ===== ---> */
+:root {
+    --color-black: #201D0E;
+    --color-deep-orange: #EE7623;
+    --color-light-orange: #F5B21F;
+    --color-magenta: #ED1068;
+    --color-pale-yellow: #FFFAC2;
+    --color-pink: #FACAD3;
+    --color-sand: #F2DAB2;
+    --color-yellow: #FFF200;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, .h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h2, .h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h3, .h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h4, .h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h5, .h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h6, .h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  p, .p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .h1-display {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.4%; /* 78.976px */
+  }
+
+  .p-sm {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+  }
+
+  .p-lrg {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+
+  .nav-item {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+
+
+/* <--- ===== BAHAMII CUSTOM STYLES ===== */

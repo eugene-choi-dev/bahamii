@@ -104,45 +104,118 @@
     display: flex;
   }
 
-  .hero-thumbnails {}
+  .vendors-section {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 50px;
+  }
 
-.thumbnail {}
+  .vendor-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
-.vendors-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 210px;
-  margin-top: 50px;
-}
+  .vendor-logo {
+    margin: 35px 25px;
+  }
 
-.vendor-logos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
+  .gallery-section {
+    margin-left: 185px;
+    margin-right: 185px;
+  }
 
-.gallery-section {
-  margin-left: 185px;
-  margin-right: 185px;
-}
+  .thumbnail,
+  .gallery-image {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.thumbnail,
-.gallery-image {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
+  .gallery-image.large {
+    flex-basis: 100%;
+  }
 
-.gallery-image.large {
-  flex-basis: 100%;
-}
+  .gallery-image {
+    margin-top: 0;
+    flex-basis: 47%;
+  }
 
-.gallery-image {
-  margin-top: 0;
-  flex-basis: 47%;
-}
+  @media (max-width: 1024px) {
+    .hero-section {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .hero-section h1 {
+      font-size: 32px;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+    }
+
+    .hero-thumbnails {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .thumbnail {
+      margin: 15px;
+      align-items: center;
+      width: 100%;
+      max-width: 330px;
+    }
+
+    .thumbnail p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .thumbnail-img {
+      width: 100%;
+    }
+
+    .thumbnail p {
+      font-size: 18px;
+    }
+
+    .vendors-section {
+      height: auto;
+      margin-top: 25px;
+      margin-bottom: 40px;
+    }
+
+    .vendor-logos {
+      flex-wrap: wrap;
+      margin: 40px 20px;
+      justify-content: center;
+    }
+
+    .vendor-logo {
+      margin: 35px 25px;
+    }
+
+    .gallery-section {
+      margin-left: 15px;
+      margin-right: 15px;
+      flex-direction: column;
+    }
+
+    .gallery-image {
+      flex-basis: 100%;
+    }
+
+    .gallery-image p {
+      font-size: 24px;
+    }
+  }
 </style>
 
 {% schema %}
