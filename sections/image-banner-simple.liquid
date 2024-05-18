@@ -165,6 +165,8 @@
   {%- endif -%}
 }
 
+/* BAHAMII CUSTOM STYLES ---> */
+
 .image-banner-simple {
     background-size: cover;
     background-position: center;
@@ -175,7 +177,7 @@
     font-weight: 300;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .image-banner-simple {
     height: 450px;
     display: flex;
@@ -183,6 +185,30 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1024px) {
+  .image-banner-simple {
+    height: 450px;
+    padding: 30px 0;
+  }
+
+  .image-banner-simple .container, .rich-text__blocks {
+    height: 100%;
+  }
+
+  .image-banner-simple .rich-text__blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-banner-simple .rich-text__text {
+    font-size: 16px;
+  }
+}
+
+/* <--- BAHAMII CUSTOM STYLES */
 
 </style>
 <script type="text/javascript">

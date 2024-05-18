@@ -1,52 +1,190 @@
+{% comment %} <div class="badge-grid">
+    <div class="badges-wrapper">
+      {% for block in section.blocks %}
+        <div class="badge">
+          <a href="{{ block.settings.url }}">
+            <img src="{{ block.settings.image | img_url: '300x300' }}" alt="{{ block.settings.title }}">
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.description }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <style>
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .badge-grid .badges-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1075px;
+      margin: 0 auto;
+      margin-top: 45px;
+      margin-bottom: 70px;
+    }
+
+    .badge-grid .badge {
+      width: calc(33.3333% - 30px);
+      margin: 15px;
+      text-align: center;
+    }
+
+    .badge-grid .badge a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .badge-grid .badge img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .badge-grid .badge h3 {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 15px;
+    }
+
+    .badge-grid .badge p {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0;
+      text-align: left;
+    }
+
+    @media (max-width: 1024px) {
+      .badge-grid .badge {
+        width: calc(100% - 30px);
+        max-width: 345px;
+      }
+    }
+</style> {% endcomment %}
+
 <div class="badge-grid">
   <div class="badges-wrapper">
-    {% for block in section.blocks %}
-      <div class="badge">
-        <a href="{{ block.settings.url }}">
-          <img src="{{ block.settings.image | img_url: '300x300' }}" alt="{{ block.settings.title }}">
-          <h3>{{ block.settings.title }}</h3>
-          <p>{{ block.settings.description }}</p>
-        </a>
-      </div>
-    {% endfor %}
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
+    <div class="badge">
+      <a href="#">
+        <img src="//bahamii.com/cdn/shop/files/vegan-icon_300x300.svg?v=1715641296" alt="Lorem ipsum dolor sit">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      </a>
+    </div>
+
   </div>
 </div>
 
 <style>
   .badge-grid {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .badges-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  .badge-grid .badges-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
     width: 100%;
-    max-width: 1075px;
-    margin: 0 auto;
-    margin-top: 45px;
-    margin-bottom: 70px;
+    max-width: 1200px;
+    padding: 80px;
   }
 
-  .badge {
-    width: calc(33.3333% - 30px);
-    margin: 15px;
+  .badge-grid .badge {
     text-align: center;
+    margin: 20px;
+    /* max-width: 325px; */
   }
 
-  .badge a {
+  .badge-grid .badge a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .badge img {
+  .badge-grid .badge img {
     max-width: 100%;
     height: auto;
   }
 
-  .badge h3 {
+  .badge-grid .badge h3 {
     color: #000;
     font-size: 20px;
     font-style: normal;
@@ -55,7 +193,7 @@
     margin: 15px;
   }
 
-  .badge p {
+  .badge-grid .badge p {
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -64,7 +202,21 @@
     margin: 0;
     text-align: left;
   }
+
+  @media (max-width: 1024px) {
+    .badge-grid .badges-wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+    }
+  }
+
+  @media (max-width: 767px) {
+    .badge-grid .badges-wrapper {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
 </style>
+
 
 {% schema %}
   {

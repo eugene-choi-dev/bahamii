@@ -1,12 +1,12 @@
-<div class="text-image-section {{ section.settings.image_position }}">
-  <div class="text-image-background" style="background-color: {{ section.settings.background_color }}; height: {{ section.settings.background_height }}px;">
+<div class="text-image-section-{{ section.id }} {{ section.settings.image_position }}" style="height: {{ section.settings.container_height }}px;">
+  <div class="text-image-background" style="background-color: {{ section.settings.background_color }}; height: {{ section.settings.background_height }}%;">
     <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}" style="max-width: {{ section.settings.max_width }}px; padding-left: {{ section.settings.padding_left }}px; padding-right: {{ section.settings.padding_right }}px;">
-      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px;">
+      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px; flex: {{ section.settings.text_width }};">
         {{ section.settings.text }}
       </div>
-      <div class="image-wrapper">
+      <div class="image-wrapper" style="flex: {{ section.settings.image_width }};">
         {% if section.settings.image %}
-          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section" style="width: {{ section.settings.image_width }}px;">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section">
         {% endif %}
       </div>
     </div>
@@ -14,146 +14,181 @@
 </div>
 
 <style>
-  .text-image-section {
-    padding: 40px 0;
+  .text-image-section-{{ section.id }} {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  .text-image-background {
+  .text-image-section-{{ section.id }} .text-image-background {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .text-image-wrap {
+  .text-image-section-{{ section.id }} .text-image-wrap {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    /* background: tomato; */
+    align-items: center;
+    justify-content: center;
   }
 
-  .text-image-wrap.center-align-text {
+  .text-image-section-{{ section.id }} .center-align-text {
     align-items: center;
     height: 100%;
   }
 
-  .text-image-section.left-bahamii .text-image-wrap {
+  .text-image-section-{{ section.id }}.left-bahamii .text-image-wrap {
     flex-direction: row-reverse;
   }
 
-  .text-image-section .text-wrapper {
-    flex: 3;
+  .text-image-section-{{ section.id }} .text-wrapper {
+    flex: {{ section.settings.text_width }};
     padding: 0 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     display: flex;
     align-items: center;
-    /* background: teal; */
+    word-break: break-word;
   }
 
-  .text-image-section .text-wrapper p {
+  .text-image-section-{{ section.id }} .text-wrapper p {
     margin: 0;
   }
 
-  .text-image-section .image-wrapper {
-    flex: 2;
+  .text-image-section-{{ section.id }} .image-wrapper {
+    flex: {{ section.settings.image_width }};
     padding: 0 10px;
     display: flex;
     align-items: center;
-    /* background: pink; */
   }
 
-  .text-image-section .image-wrapper img {
+  .text-image-section-{{ section.id }} .image-wrapper img {
+    width: 100%;
+    height: auto;
     max-width: unset;
+  }
+
+  @media (max-width: 1024px) {
+    .text-image-section-{{ section.id }} {
+      height: auto !important;
+      margin: 20px 0;
+    }
+
+    .text-image-section-{{ section.id }} .text-image-background {
+      padding: 20px 0;
+    }
+
+    .text-image-section-{{ section.id }}.left-bahamii .text-image-wrap,
+    .text-image-section-{{ section.id }}.right-bahamii .text-image-wrap {
+      flex-direction: column-reverse;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .text-image-section-{{ section.id }} .image-wrapper {
+      padding: 0;
+    }
+
+    .text-image-section-{{ section.id }} .image-wrapper img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-image-section-{{ section.id }} .text-wrapper {
+      padding-top: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 </style>
 
 {% schema %}
-    {
-      "name": "Text and Image",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text"
-        },
-        {
-          "type": "number",
-          "id": "font_size",
-          "label": "Font Size (px)",
-          "default": 16
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "select",
-          "id": "image_position",
-          "label": "Image Position",
-          "default": "left-bahamii",
-          "options": [
-            {
-              "value": "left-bahamii",
-              "label": "Left"
-            },
-            {
-              "value": "right-bahamii",
-              "label": "Right"
-            }
-          ]
-        },
-        {
-          "type": "number",
-          "id": "image_width",
-          "label": "Image Width (px)",
-          "default": 300
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background Color",
-          "default": "#f5f5dc"
-        },
-        {
-          "type": "number",
-          "id": "background_height",
-          "label": "Background Height (px)",
-          "default": 300
-        },
-        {
-          "type": "number",
-          "id": "max_width",
-          "label": "Max Width (px)",
-          "default": 1200
-        },
-        {
-          "type": "number",
-          "id": "padding_left",
-          "label": "Left Padding (px)",
-          "default": 30
-        },
-        {
-          "type": "number",
-          "id": "padding_right",
-          "label": "Right Padding (px)",
-          "default": 30
-        },
-        {
-          "type": "checkbox",
-          "id": "center_align_text",
-          "label": "Center Align Text"
-        }
-      ],
-      "presets": [
-        {
-          "name": "Text and Image",
-          "category": "Custom"
-        }
-      ]
-    }
-    {% endschema %}
+  {
+    "name": "Text and Image",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "number",
+        "id": "font_size",
+        "label": "Font Size (px)",
+        "default": 16
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image Position",
+        "default": "left-bahamii",
+        "options": [
+          {
+            "value": "left-bahamii",
+            "label": "Left"
+          }, {
+            "value": "right-bahamii",
+            "label": "Right"
+          }
+        ]
+      }, {
+        "type": "number",
+        "id": "image_width",
+        "label": "Image Width (flex)",
+        "default": 2
+      }, {
+        "type": "number",
+        "id": "text_width",
+        "label": "Text Width (flex)",
+        "default": 3
+      }, {
+        "type": "number",
+        "id": "container_height",
+        "label": "Container Height (px)",
+        "default": 700
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#f5f5dc"
+      }, {
+        "type": "number",
+        "id": "background_height",
+        "label": "Background Height (%)",
+        "default": 70
+      }, {
+        "type": "number",
+        "id": "max_width",
+        "label": "Max Width (px)",
+        "default": 1200
+      }, {
+        "type": "number",
+        "id": "padding_left",
+        "label": "Left Padding (px)",
+        "default": 30
+      }, {
+        "type": "number",
+        "id": "padding_right",
+        "label": "Right Padding (px)",
+        "default": 30
+      }, {
+        "type": "checkbox",
+        "id": "center_align_text",
+        "label": "Center Align Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text and Image",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
