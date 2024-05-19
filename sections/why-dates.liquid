@@ -10,7 +10,9 @@
       {% endfor %}
     </div>
   </div>
-  <h1 class="table-header">{{ section.settings.table_header }}</h1>
+  <div class="table-header-wrap">
+    <h1 class="table-header">{{ section.settings.table_header }}</h1>
+  </div>
   <div class="compare-table-wrap">
     <div class="compare-table">
       <div class="left">
@@ -25,9 +27,9 @@
           <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image">
         </div>
       </div>
+      <div class="right-image-heading">Traditional Bar</div>
       <div class="right">
         <div class="right-image-container">
-          <div class="text-item right-image-heading">Traditional Bar</div>
           <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Right Image">
         </div>
         <div class="text-item-container">
@@ -161,32 +163,148 @@
   }
 
   @media (max-width: 1024px) {
+    .why-dates-section {
+      display: flex;
+      align-items: center;
+      background-size: cover !important;
+      background-position: left;
+      width: 100%;
+      height: 100%;
+    }
+
     .section-heading {
       margin-top: 20px;
       margin-bottom: 20px;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 123.4%;
+    }
+
+    .top-wrapper,
+    .table-header-wrap,
+    .compare-table-wrap {
+      max-width: 500px;
+      padding: 0 20px;
     }
 
     .top-wrapper {
-      padding: 15px;
+      height: 100%;
     }
 
     .badges-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 
     .badges-container img {
-      width: 50%;
+      width: 27%;
     }
 
     .description-text-container {
       padding-bottom: 25px;
     }
 
+    .table-header-wrap {
+      display: flex;
+      justify-content: center;
+    }
 
-}
+    .table-header {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 123.4%;
+      text-align: left;
+      height: 100%;
+    }
 
+    .compare-table-wrap {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .compare-table {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .left,
+    .right {
+      margin-bottom: 65px;
+    }
+
+    .left {
+      flex-direction: row-reverse;
+      padding-right: 0;
+      justify-content: center;
+    }
+
+    .text-item-container {
+      width: 65%;
+      justify-content: space-between;
+      padding-left: 25px;
+    }
+
+    .left .text-item {
+      text-align: left;
+    }
+
+    .left-image-container {
+      justify-content: flex-start;
+      width: 35%;
+    }
+
+    .left-image-container img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .right {
+      padding-right: 0;
+      justify-content: center;
+    }
+
+    .right-image-heading {
+      margin-bottom: 10px;
+      color: #6C6669;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38px;
+      padding: 0;
+    }
+
+    .right .text-item {
+      text-align: left;
+    }
+
+    .right-image-container {
+      width: 35%;
+      align-items: flex-start;
+    }
+
+    .right-image-container img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .right .text-item-container {
+      width: 65%;
+      height: 100%;
+    }
+
+    .text-item {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding: 20px 0;
+    }
+  }
 
 </style>
 
