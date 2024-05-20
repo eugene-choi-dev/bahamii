@@ -7,7 +7,10 @@
           "type": "largeImg",
           "settings": {
             "image": "shopify:\/\/shop_images\/bahamii-placeholder.png",
-            "mobile_image": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Group_26.png",
+            "flavor_1_img": "shopify:\/\/shop_images\/choc-almond-box.png",
+            "flavor_2_img": "shopify:\/\/shop_images\/coco-van-box.png",
+            "flavor_3_img": "shopify:\/\/shop_images\/hon-cinn-box.png",
             "enable_max_width_image": false,
             "custom_width_image": 1210,
             "enable_scroll_down": false,
@@ -31,7 +34,7 @@
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
             "color_heading": "#000000",
-            "color_heading_mb": "#ffffff",
+            "color_heading_mb": "#232323",
             "border_title": "none",
             "border_color_title": "#232323",
             "border_color_title_mobile": "#ffffff",
@@ -57,7 +60,7 @@
             "position": "left",
             "custom_horizontal": "",
             "custom_vertical": "",
-            "btn_text": "Shop Bahamii",
+            "btn_text": "",
             "link": "shopify:\/\/collections",
             "btn_icon": "",
             "button_1_width": 295,
@@ -242,51 +245,110 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": false,
+            "show_sold_in": true,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
           }
         },
+        "custom_button_yLrbyX": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "false",
+            "button_color": "#ed1068",
+            "button_width": "230px",
+            "button_link": "shopify:\/\/products\/chocolate-almond"
+          }
+        },
         "short_description_yGqe9y": {
           "type": "short_description",
           "settings": {
-            "word_number": "17",
+            "word_number": "1000",
             "fontsize_text": 16,
             "color_text": "#000000",
             "spacing_top": 0,
             "spacing_bottom": 24
           }
         },
-        "product_text_Y7wyYM": {
-          "type": "product_text",
+        "variant_picker_8ePmda": {
+          "type": "variant_picker",
           "settings": {
-            "text": "",
-            "text_icon": "",
-            "text_description": "Bundle Content Goes Here",
-            "fontsize_text": 32,
-            "content_spacing": 25,
-            "custom_block_align": "center",
-            "color_title": "#232323",
-            "background_color_block": "#ffffff",
-            "background_gradient_color_block": "",
+            "picker_type": "button",
+            "show_variant_image_group": false,
+            "color_label": "#ffffff",
+            "enable_border_top": false,
+            "enable_border_bottom": false,
+            "color_border": "#e6e6e6",
             "spacing_top": 0,
-            "spacing_bottom": 0
+            "spacing_bottom": 15
+          }
+        },
+        "buy_buttons_EhcQpa": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "fontsize_text": 14,
+            "checkbox_color": "#ffffff",
+            "checkbox_border_color": "#494a4d",
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "color_qty_label": "#ffffff",
+            "color_qty_input": "#f2f5ff",
+            "bg_color_qty_input": "#ffffff",
+            "wishlist_color": "#ffffff",
+            "wishlist_border_color": "#232323",
+            "wishlist_bg_color": "#232323",
+            "wishlist_color_hover": "#232323",
+            "wishlist_border_color_hover": "#232323",
+            "wishlist_bg_color_hover": "#ffffff",
+            "atc_animation": "horizontal-shaking",
+            "atc_color": "#ffffff",
+            "atc_border_color": "#232323",
+            "atc_bg_color": "#232323",
+            "atc_bg_color_gradient": "",
+            "atc_color_hover": "#232323",
+            "atc_border_color_hover": "#232323",
+            "atc_bg_color_hover": "#ffffff",
+            "atc_bg_color_gradient_hover": "",
+            "bin_color": "#232323",
+            "bin_border_color": "#acacac",
+            "bin_bg_color": "#ffffff",
+            "bin_bg_color_gradient": "",
+            "bin_color_hover": "#ffffff",
+            "bin_border_color_hover": "#232323",
+            "bin_bg_color_hover": "#232323",
+            "bin_bg_color_hover_gradient": ""
+          }
+        },
+        "custom_button_WUnUEb": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "true",
+            "button_color": "#000000",
+            "button_width": "100%",
+            "button_link": ""
           }
         }
       },
       "block_order": [
         "title_pEmrpQ",
         "meta_GyiFpc",
+        "custom_button_yLrbyX",
         "short_description_yGqe9y",
-        "product_text_Y7wyYM"
+        "variant_picker_8ePmda",
+        "buy_buttons_EhcQpa",
+        "custom_button_WUnUEb"
       ],
       "custom_css": [
 
       ],
       "settings": {
         "id_section": "feat-choc_almond",
-        "container": "1770",
+        "container": "container",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,
@@ -308,7 +370,7 @@
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
         "title_align": "center",
-        "featured_product": "chocolatealmond",
+        "featured_product": "chocolate-almond",
         "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
@@ -347,51 +409,110 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": false,
+            "show_sold_in": true,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
           }
         },
+        "custom_button_hgfMAz": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "false",
+            "button_color": "#ed1068",
+            "button_width": "230px",
+            "button_link": ""
+          }
+        },
         "short_description_yGqe9y": {
           "type": "short_description",
           "settings": {
-            "word_number": "17",
+            "word_number": "800",
             "fontsize_text": 16,
             "color_text": "#000000",
             "spacing_top": 0,
             "spacing_bottom": 24
           }
         },
-        "product_text_Y7wyYM": {
-          "type": "product_text",
+        "variant_picker_MrtAix": {
+          "type": "variant_picker",
           "settings": {
-            "text": "",
-            "text_icon": "",
-            "text_description": "Bundle Content Goes Here",
-            "fontsize_text": 32,
-            "content_spacing": 25,
-            "custom_block_align": "center",
-            "color_title": "#232323",
-            "background_color_block": "#ffffff",
-            "background_gradient_color_block": "",
+            "picker_type": "button",
+            "show_variant_image_group": false,
+            "color_label": "#ffffff",
+            "enable_border_top": false,
+            "enable_border_bottom": false,
+            "color_border": "#e6e6e6",
             "spacing_top": 0,
-            "spacing_bottom": 0
+            "spacing_bottom": 15
+          }
+        },
+        "buy_buttons_qrreDr": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "fontsize_text": 14,
+            "checkbox_color": "#ffffff",
+            "checkbox_border_color": "#494a4d",
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "color_qty_label": "#ffffff",
+            "color_qty_input": "#f2f5ff",
+            "bg_color_qty_input": "#ffffff",
+            "wishlist_color": "#ffffff",
+            "wishlist_border_color": "#232323",
+            "wishlist_bg_color": "#232323",
+            "wishlist_color_hover": "#232323",
+            "wishlist_border_color_hover": "#232323",
+            "wishlist_bg_color_hover": "#ffffff",
+            "atc_animation": "horizontal-shaking",
+            "atc_color": "#ffffff",
+            "atc_border_color": "#232323",
+            "atc_bg_color": "#232323",
+            "atc_bg_color_gradient": "",
+            "atc_color_hover": "#232323",
+            "atc_border_color_hover": "#232323",
+            "atc_bg_color_hover": "#ffffff",
+            "atc_bg_color_gradient_hover": "",
+            "bin_color": "#232323",
+            "bin_border_color": "#acacac",
+            "bin_bg_color": "#ffffff",
+            "bin_bg_color_gradient": "",
+            "bin_color_hover": "#ffffff",
+            "bin_border_color_hover": "#232323",
+            "bin_bg_color_hover": "#232323",
+            "bin_bg_color_hover_gradient": ""
+          }
+        },
+        "custom_button_LBLigc": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "true",
+            "button_color": "#000000",
+            "button_width": "100%",
+            "button_link": ""
           }
         }
       },
       "block_order": [
         "title_pEmrpQ",
         "meta_GyiFpc",
+        "custom_button_hgfMAz",
         "short_description_yGqe9y",
-        "product_text_Y7wyYM"
+        "variant_picker_MrtAix",
+        "buy_buttons_qrreDr",
+        "custom_button_LBLigc"
       ],
       "custom_css": [
 
       ],
       "settings": {
         "id_section": "feat-coco_vanilla",
-        "container": "1770",
+        "container": "container",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,
@@ -413,7 +534,7 @@
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
         "title_align": "center",
-        "featured_product": "coconutvanilla",
+        "featured_product": "coconut-vanilla",
         "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
@@ -452,51 +573,110 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": false,
+            "show_sold_in": true,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
           }
         },
+        "custom_button_yLFbK9": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "false",
+            "button_color": "#ed1068",
+            "button_width": "230px",
+            "button_link": ""
+          }
+        },
         "short_description_yGqe9y": {
           "type": "short_description",
           "settings": {
-            "word_number": "17",
+            "word_number": "1000",
             "fontsize_text": 16,
             "color_text": "#000000",
             "spacing_top": 0,
             "spacing_bottom": 24
           }
         },
-        "product_text_Y7wyYM": {
-          "type": "product_text",
+        "variant_picker_wYyMXb": {
+          "type": "variant_picker",
           "settings": {
-            "text": "",
-            "text_icon": "",
-            "text_description": "Bundle Content Goes Here",
-            "fontsize_text": 32,
-            "content_spacing": 25,
-            "custom_block_align": "center",
-            "color_title": "#232323",
-            "background_color_block": "#ffffff",
-            "background_gradient_color_block": "",
+            "picker_type": "button",
+            "show_variant_image_group": false,
+            "color_label": "#ffffff",
+            "enable_border_top": false,
+            "enable_border_bottom": false,
+            "color_border": "#e6e6e6",
             "spacing_top": 0,
-            "spacing_bottom": 0
+            "spacing_bottom": 15
+          }
+        },
+        "buy_buttons_kiXbC7": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "fontsize_text": 14,
+            "checkbox_color": "#ffffff",
+            "checkbox_border_color": "#494a4d",
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "color_qty_label": "#ffffff",
+            "color_qty_input": "#f2f5ff",
+            "bg_color_qty_input": "#ffffff",
+            "wishlist_color": "#ffffff",
+            "wishlist_border_color": "#232323",
+            "wishlist_bg_color": "#232323",
+            "wishlist_color_hover": "#232323",
+            "wishlist_border_color_hover": "#232323",
+            "wishlist_bg_color_hover": "#ffffff",
+            "atc_animation": "horizontal-shaking",
+            "atc_color": "#ffffff",
+            "atc_border_color": "#232323",
+            "atc_bg_color": "#232323",
+            "atc_bg_color_gradient": "",
+            "atc_color_hover": "#232323",
+            "atc_border_color_hover": "#232323",
+            "atc_bg_color_hover": "#ffffff",
+            "atc_bg_color_gradient_hover": "",
+            "bin_color": "#232323",
+            "bin_border_color": "#acacac",
+            "bin_bg_color": "#ffffff",
+            "bin_bg_color_gradient": "",
+            "bin_color_hover": "#ffffff",
+            "bin_border_color_hover": "#232323",
+            "bin_bg_color_hover": "#232323",
+            "bin_bg_color_hover_gradient": ""
+          }
+        },
+        "custom_button_VmeExf": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_text_color": "#ffffff",
+            "button_text_uppercase": "true",
+            "button_color": "#000000",
+            "button_width": "100%",
+            "button_link": ""
           }
         }
       },
       "block_order": [
         "title_pEmrpQ",
         "meta_GyiFpc",
+        "custom_button_yLFbK9",
         "short_description_yGqe9y",
-        "product_text_Y7wyYM"
+        "variant_picker_wYyMXb",
+        "buy_buttons_kiXbC7",
+        "custom_button_VmeExf"
       ],
       "custom_css": [
 
       ],
       "settings": {
         "id_section": "feat-honey_cinn",
-        "container": "1770",
+        "container": "container",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,
@@ -518,7 +698,7 @@
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
         "title_align": "center",
-        "featured_product": "honeycinnamon",
+        "featured_product": "honey-cinnamon",
         "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",

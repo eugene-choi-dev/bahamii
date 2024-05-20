@@ -213,25 +213,148 @@
         /* BAHAMII CUSTOM STYLES ---> */
     .image-banner-bahamii-custom .banner-heading {
     text-transform: none;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.4%;
     }
 
     .image-banner-bahamii-custom .button {
     border: none !important;
     }
 
-    @media (min-width: 1025px) {
-        .image-banner-bahamii-custom .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 77px;
-            font-size: 3.2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-transform: none;
-        }
+    .image-banner-bahamii-custom .content-box {
+        overflow: hidden;
+        max-height: unset;
     }
+
+    .flavor-mobile {
+        display: none;
+    }
+
+    .flavor-item-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flavor-item {
+        border: 1px solid black;
+        width: 205px;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .flavor-img-container {
+        height: 150px;
+        flex: 2;
+    }
+
+    .flavor-img-container img {
+        object-fit: none;
+    }
+
+    .flavor-item .flavor-text {
+        background: white;
+        width: 100%;
+        flex:1;
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .flavor-1 {
+        background: #FACAD3;
+    }
+
+    .flavor-2 {
+        background: #EE7623;
+    }
+
+    .flavor-3 {
+        background: #F5B21F;
+    }
+
+@media (max-width: 1199px) {
+    .image-banner-bahamii-custom .image.image-adapt.adaptive_height {
+        padding-top: 60% !important;
+    }
+}
+
+    @media (max-width: 1024px) {
+        .image-banner-bahamii-custom .banner-heading {
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 113.4%;
+    }
+
+    }
+
+@media (max-width: 767px) {
+    .image-banner-bahamii-custom .image.image-adapt.adaptive_height {
+        padding-top: 100% !important;
+    }
+
+    .flavor-desktop {
+        display: none;
+    }
+
+    .choose-flavor.flavor-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-flavor.flavor-mobile h2 {
+        text-align: left;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 340px;
+    }
+
+    .choose-flavor.flavor-mobile .flavor-item-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-flavor.flavor-mobile .flavor-item {
+        flex-direction: row;
+        width: 340px;
+        height: 117px;
+        margin: 20px;
+    }
+
+    .choose-flavor.flavor-mobile .flavor-item .flavor-img-container {
+        flex: 2;
+    }
+
+    .choose-flavor.flavor-mobile .flavor-item .flavor-img-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 80%;
+    }
+
+    .choose-flavor.flavor-mobile .flavor-item .flavor-text {
+        flex: 2;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        align-items: center;
+    }
+}
     /* <--- BAHAMII CUSTOM STYLES */
     </style>
     {%- if section.settings.id_section != blank -%}
@@ -540,7 +663,7 @@
                                                     <p class="banner-sub-title{% if block.settings.border_sub_title %} banner-sub-title--border{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}{% if heading_font_size >= 70 %} line_height_5{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 0;{% endif %}--font_size_sub_title: {{ font_size_sub_title | append: 'px' }};--font_size_sub_title_mb:{{ font_size_sub_title_mb | append: 'px' }};--color_sub_title: {{ color_sub_title }};--color_sub_title_mb: {{ color_sub_title_mb }};--font_weight_sub_title: {{ font_weight_sub_title }};--letter_spacing_sub_title:{% if block.settings.letter_spacing_sub_title != blank %}{{ letter_spacing_sub_title }}{% else %}var(--body-letter-spacing){% endif %};--margin_bottom_sub_title: {{ margin_bottom_sub_title | append: 'px' }};--font-tab-type:{%- if block.settings.sub_heading_font == 'font_1' -%}var(--font-tab-type-1){%- else -%}var(--font-tab-type-2){%- endif -%}"><span>{{ sub_title }}</span></p>
                                                 {%- endif -%}
                                                 {%- if heading != blank -%}
-                                                    <h1 class="h1-display banner-heading{% if enable_style_italic %} ft-i{% endif %}{% if sub_title_position == 'sub_title_below' %} banner-heading--sub_tl_below{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 1;{% endif %}--border-color-title-style: {{ border_color_title }};--border-color-title-mobile-style: {{ block.settings.border_color_title_mobile }};--heading_font_size: {{ heading_font_size | append: "px"}};--heading_font_size_tab: {% if heading_font_size >= 34 %}34px{% else %}{{ heading_font_size | append: "px"}}{% endif %};--heading_line_height_tab:{% if heading_font_size >= 34 %}42px{% else %}{{ heading_font_size | plus: 8 | append: "px"}}{% endif %};--heading_font_size_mb: {{ heading_font_size_mb | append: 'px' }};--heading_color: {{ heading_color }}; --heading_color_mb: {{ heading_color_mb }};--heading_font_weight: {{ heading_font_weight }};--letter_spacing_heading: {% if block.settings.letter_spacing_heading != blank %}{{ letter_spacing_heading }}{% else %}var(--heading-letter-spacing){% endif %};--heading_line_height:{% if heading_font_size >= 70 %}{{ heading_font_size | plus: 14 | append: 'px' }}{% else %}{% if heading_font_size > headingLineHeight %}{{ heading_font_size | plus: 8 | append: 'px' }}{% else %}{{headingLineHeight | append: 'px'}}{% endif %}{% endif %};--heading_line_height_mb:{% if heading_font_size_mb > headingLineHeight %}{{ heading_font_size_mb | plus: 8 | append: 'px' }}{% else %}{{headingLineHeight | append: 'px'}}{% endif %};--margin_bottom_heading:{{margin_bottom_heading | append: 'px'}}">{{ heading }}</h3>
+                                                    <h3 class="banner-heading{% if enable_style_italic %} ft-i{% endif %}{% if sub_title_position == 'sub_title_below' %} banner-heading--sub_tl_below{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 1;{% endif %}--border-color-title-style: {{ border_color_title }};--border-color-title-mobile-style: {{ block.settings.border_color_title_mobile }};--heading_font_size: {{ heading_font_size | append: "px"}};--heading_font_size_tab: {% if heading_font_size >= 34 %}34px{% else %}{{ heading_font_size | append: "px"}}{% endif %};--heading_line_height_tab:{% if heading_font_size >= 34 %}42px{% else %}{{ heading_font_size | plus: 8 | append: "px"}}{% endif %};--heading_font_size_mb: {{ heading_font_size_mb | append: 'px' }};--heading_color: {{ heading_color }}; --heading_color_mb: {{ heading_color_mb }};--heading_font_weight: {{ heading_font_weight }};--letter_spacing_heading: {% if block.settings.letter_spacing_heading != blank %}{{ letter_spacing_heading }}{% else %}var(--heading-letter-spacing){% endif %};--heading_line_height:{% if heading_font_size >= 70 %}{{ heading_font_size | plus: 14 | append: 'px' }}{% else %}{% if heading_font_size > headingLineHeight %}{{ heading_font_size | plus: 8 | append: 'px' }}{% else %}{{headingLineHeight | append: 'px'}}{% endif %}{% endif %};--heading_line_height_mb:{% if heading_font_size_mb > headingLineHeight %}{{ heading_font_size_mb | plus: 8 | append: 'px' }}{% else %}{{headingLineHeight | append: 'px'}}{% endif %};--margin_bottom_heading:{{margin_bottom_heading | append: 'px'}}">{{ heading }}</h3>
                                                 {%- endif -%}
                                                 {%- if sub_title !=blank and sub_title_position == 'sub_title_below' -%}
                                                     <p class="banner-sub-title{% if block.settings.border_sub_title %} banner-sub-title--border{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 0;{% endif %}--font_size_sub_title: {{ font_size_sub_title | append: 'px' }};--font_size_sub_title_mb:{{ font_size_sub_title_mb | append: 'px' }};--color_sub_title: {{ color_sub_title }};--color_sub_title_mb: {{ color_sub_title_mb }};--font_weight_sub_title: {{ font_weight_sub_title }};--letter_spacing_sub_title:{% if block.settings.letter_spacing_sub_title != blank %}{{ letter_spacing_sub_title }}{% else %}var(--body-letter-spacing){% endif %};--margin_bottom_sub_title: {{ margin_bottom_sub_title | append: 'px' }};--margin_bottom_sub_title_tab: {% if margin_bottom_sub_title >= 20 %}20px{% else %}{{ margin_bottom_sub_title | append: 'px' }}{% endif %};--font-tab-type:{%- if block.settings.sub_heading_font == 'font_1' -%}var(--font-tab-type-1){%- else -%}var(--font-tab-type-2){%- endif -%}"><span>{{ sub_title }}</span></p>
@@ -587,7 +710,34 @@
                                                         {% endif %}
                                                     {%- endif -%}
                                                 {%- endif -%}
+                                                {% comment %} Bahamii Custom Flavor Selector {% endcomment %}
+                                                <div class="choose-flavor flavor-desktop">
+                                                    <h2>Choose your flavor:</h2>
+                                                    <div class="flavor-item-wrap">
+                                                        <div class="flavor-item flavor-1">
+                                                            <div class="flavor-img-container">
+                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/choc-almond-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                                                            </div>
+                                                            <p class="flavor-text">Chocolate Almond</p>
+                                                        </div>
+                                                        <div class="flavor-item flavor-2">
+                                                            <div class="flavor-img-container">
+                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/coco-van-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                                                            </div>
+                                                            <p class="flavor-text">Coconut Vanilla</p>
+                                                        </div>
+                                                        <div class="flavor-item flavor-3">
+                                                            <div class="flavor-img-container">
+                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/hon-cinn-box_300x300_crop_center.png?v=1716171499" alt="Flavor Image">
+                                                            </div>
+                                                            <p class="flavor-text">Honey Cinnamon</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                {% comment %} Bahamii Custom Flavor Selector {% endcomment %}
                                             </div>
+
                                         {%- endif -%}
                                         {%- if enable_custom_image -%}
                                             <div class="content-custom-image content-box--absolute">
@@ -985,6 +1135,29 @@
                     </div>
                 </div>
             </div>
+            <div class="choose-flavor flavor-mobile">
+                <h2>Choose your flavor:</h2>
+                <div class="flavor-item-wrap">
+                    <div class="flavor-item flavor-1">
+                        <div class="flavor-img-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/choc-almond-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                        </div>
+                        <p class="flavor-text">Chocolate Almond</p>
+                    </div>
+                    <div class="flavor-item flavor-2">
+                        <div class="flavor-img-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/coco-van-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                        </div>
+                        <p class="flavor-text">Coconut Vanilla</p>
+                    </div>
+                    <div class="flavor-item flavor-3">
+                        <div class="flavor-img-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/hon-cinn-box_300x300_crop_center.png?v=1716171499" alt="Flavor Image">
+                        </div>
+                        <p class="flavor-text">Honey Cinnamon</p>
+                    </div>
+                </div>
+            </div>
         </div>
     {%- if section.settings.id_section != blank -%}
     </div>
@@ -1307,6 +1480,21 @@
                     "id": "mobile_image",
                     "label": "t:sections.image-banner.blocks.image.settings.image.label__2",
                     "info": "t:sections.image-banner.blocks.image.settings.image.info_2"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "flavor_1_img",
+                    "label": "Flavor 1 Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "flavor_2_img",
+                    "label": "Flavor 2 Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "flavor_3_img",
+                    "label": "Flavor 3 Image"
                 },
                 {
                     "type": "checkbox",

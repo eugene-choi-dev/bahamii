@@ -1,0 +1,31 @@
+<div class="custom-button-wrapper">
+    <a href="{{ block.settings.button_link }}" 
+       class="custom-button-bahamii" 
+       style="color: {{ block.settings.button_text_color }}; 
+              background-color: {{ block.settings.button_color }}; 
+              width: {{ block.settings.button_width }};
+              text-transform: {% if block.settings.button_text_uppercase == 'true' %}uppercase{% else %}none{% endif %};">
+        {{ block.settings.button_text }}
+    </a>
+</div>
+
+<style>
+    .custom-button-wrapper {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .custom-button-bahamii {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        height: 58px;
+    }
+</style>

@@ -241,11 +241,6 @@
         background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%) !important;
     }
 
-    .productView-customText {
-        background: none !important;
-    }
-
-
 @media (min-width: 1025px) {
     .featured-product-coco-vanilla-bahamii-custom.featured-product.product-details.product-default {
         background: linear-gradient(180deg, #f2dab2 87%, #fffac2 100%) !important;
@@ -805,6 +800,13 @@
                                                 </div>
                                             </div>
                                         {%- endif -%}
+                                        {%- when 'custom_button' -%}
+                                        <div class="productView-moreItem{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
+                                            style="--spacing-top: {{ spacing_top | append: 'px' }};
+                                            --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
+                                        >
+                                            {% render 'custom-button', block: block %}
+                                        </div>
                                     {%- when 'buy_buttons' -%}
                                         <div class="productView-moreItem"
                                             style="--spacing-top: {{ spacing_top | append: 'px' }};
@@ -1875,6 +1877,58 @@
             ]
         },
         {
+            "type": "custom_button",
+            "name": "Custom Button",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": "Button Text",
+                    "default": "Click Here"
+                },
+                {
+                    "type": "color",
+                    "id": "button_text_color",
+                    "label": "Button Text Color",
+                    "default": "#ffffff"
+                },
+                {
+            "type": "select",
+            "id": "button_text_uppercase",
+            "label": "Uppercase Text",
+            "default": "false",
+            "options": [
+                {
+                    "value": "true",
+                    "label": "Yes"
+                },
+                {
+                    "value": "false",
+                    "label": "No"
+                }
+            ]
+        },
+                {
+                    "type": "color",
+                    "id": "button_color",
+                    "label": "Button Color",
+                    "default": "#000000"
+                },
+                {
+                    "type": "text",
+                    "id": "button_width",
+                    "label": "Button Width (e.g., 100px, 50%)",
+                    "default": "100px"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button Link"
+                }
+            ]
+        },
+
+        {
             "type": "buy_buttons",
             "name": "t:sections.main-product.settings.general.buy_buttons",
             "limit": 1,
@@ -2230,171 +2284,182 @@
         }
     ],
     "presets": [
-    {
-        "name": "Featured - CocoVanilla",
-        "settings": {
-            "id_section": "",
-            "container": "container",
-            "padding_full_width": 0,
-            "show_sticky_info": false,
-            "mg_top_desktop": 60,
-            "mg_top_tablet": 50,
-            "mg_top_mobile": 40,
-            "mg_bottom_desktop": 50,
-            "mg_bottom_tablet": 30,
-            "mg_bottom_mobile": 30,
-            "bg_color_product": "#000000",
-            "title": "Shop Now",
-            "color_title": "#ffffff",
-            "fontsize_title": 60,
-            "fontsize_title_mb": 34,
-            "margin_bottom_title": 43,
-            "margin_bottom_title_mb": 20,
-            "des": "Phasellus lorem an malesuada ligula pulvinar commodo maecenas.",
-            "color_des": "#ffffff",
-            "fontsize_des": 16,
-            "margin_bottom_des": 45,
-            "margin_bottom_des_mb": 30,
-            "title_align": "center",
-            "featured_product": "",
-            "main_image_arrows_desktop": true,
-            "main_image_counter_mobile": false,
-            "main_image_position": "left",
-            "main_image_bg_color": "#121212",
-            "show_thumbnail_mobile": true,
-            "thumnail_layout": "2",
-            "thumbnail_to_show": 5,
-            "thumbnail_active_color": "#e11ecb",
-            "thumbnail_arrow_color_mb": "#ffffff",
-            "thumbnail_image_bg_color": "#121212",
-            "product_image_ratio": "adapt",
-            "portrait_aspect_ratio": 100,
-            "media_fit": "unset",
-            "product_image_popup": "fancybox",
-            "video_layout": "thumbnail",
-            "show_badge": false,
-            "show_qty": true
-        },
-        "blocks": [
-            {
-              "type": "title",
-              "settings": {
-                "fontsize_text": 40,
-                "fontsize_text_mb": 24,
+        {
+            "name": "Featured - CocoVanilla",
+            "settings": {
+                "id_section": "",
+                "container": "container",
+                "padding_full_width": 0,
+                "show_sticky_info": false,
+                "mg_top_desktop": 60,
+                "mg_top_tablet": 50,
+                "mg_top_mobile": 40,
+                "mg_bottom_desktop": 50,
+                "mg_bottom_tablet": 30,
+                "mg_bottom_mobile": 30,
+                "bg_color_product": "#000000",
+                "title": "Shop Now",
                 "color_title": "#ffffff",
-                "spacing_top": 0,
-                "spacing_bottom": 17
-              }
+                "fontsize_title": 60,
+                "fontsize_title_mb": 34,
+                "margin_bottom_title": 43,
+                "margin_bottom_title_mb": 20,
+                "des": "Phasellus lorem an malesuada ligula pulvinar commodo maecenas.",
+                "color_des": "#ffffff",
+                "fontsize_des": 16,
+                "margin_bottom_des": 45,
+                "margin_bottom_des_mb": 30,
+                "title_align": "center",
+                "featured_product": "",
+                "main_image_arrows_desktop": true,
+                "main_image_counter_mobile": false,
+                "main_image_position": "left",
+                "main_image_bg_color": "#121212",
+                "show_thumbnail_mobile": true,
+                "thumnail_layout": "2",
+                "thumbnail_to_show": 5,
+                "thumbnail_active_color": "#e11ecb",
+                "thumbnail_arrow_color_mb": "#ffffff",
+                "thumbnail_image_bg_color": "#121212",
+                "product_image_ratio": "adapt",
+                "portrait_aspect_ratio": 100,
+                "media_fit": "unset",
+                "product_image_popup": "fancybox",
+                "video_layout": "thumbnail",
+                "show_badge": false,
+                "show_qty": true
             },
-            {
-              "type": "meta",
-              "settings": {
-                "spacing_top": 0,
-                "spacing_bottom": 13,
-                "show_review": true,
-                "show_sold_in": true,
-                "sold_in_number": "3,5,6,7,8,10,12,15",
-                "sold_in_hours": "10,15,16,17,18,20,25,35",
-                "color_text_sold_in": "#b60b32"
-              }
-            },
-            {
-              "type": "short_description",
-              "settings": {
-                "word_number": "17",
-                "fontsize_text": 16,
-                "color_text": "#ffffff",
-                "spacing_top": 0,
-                "spacing_bottom": 24
-              }
-            },
-            {
-              "type": "price",
-              "settings": {
-                "fontsize_text": 30,
-                "spacing_top": 0,
-                "spacing_bottom": 24
-              }
-            },
-            {
-              "type": "product_text",
-              "settings": {
-                "text": "",
-                "text_icon": "",
-                "text_description": "<strong>Shipping<\/strong> calculated at checkout.",
-                "fontsize_text": 16,
-                "content_spacing": 0,
-                "custom_block_align": "left",
-                "color_title": "#ffffff",
-                "background_color_block": "rgba(0,0,0,0)",
-                "background_gradient_color_block": "",
-                "spacing_top": 0,
-                "spacing_bottom": 26
-              }
-            },
-            {
-              "type": "variant_picker",
-              "settings": {
-                "picker_type": "button",
-                "show_variant_image_group": false,
-                "color_label": "#ffffff",
-                "enable_border_top": false,
-                "enable_border_bottom": false,
-                "color_border": "#e6e6e6",
-                "spacing_top": 0,
-                "spacing_bottom": 15
-              }
-            },
-            {
-              "type": "quantity_selector",
-              "settings": {
-                "qty_style": "1",
-                "qty_layout": "2",
-                "color_qty_label": "#ffffff",
-                "color_qty_input": "#f2f5ff",
-                "bg_color_qty_input": "#ffffff",
-                "spacing_top": 0,
-                "spacing_bottom": 0
-              }
-            },
-            {
-              "type": "buy_buttons",
-              "settings": {
-                "show_dynamic_checkout": true,
-                "checkbox_color": "#ffffff",
-                "checkbox_border_color": "#494a4d",
-                "spacing_top": 0,
-                "spacing_bottom": 15,
-                "color_qty_label": "#ffffff",
-                "color_qty_input": "#f2f5ff",
-                "bg_color_qty_input": "rgba(0,0,0,0)",
-                "wishlist_color": "#747474",
-                "wishlist_border_color": "#121212",
-                "wishlist_bg_color": "#121212",
-                "wishlist_color_hover": "#ffffff",
-                "wishlist_border_color_hover": "#3faeea",
-                "wishlist_bg_color_hover": "#3faeea",
-                "atc_animation": "horizontal-shaking",
-                "atc_color": "#ffffff",
-                "atc_border_color": "rgba(0,0,0,0)",
-                "atc_bg_color": "rgba(0,0,0,0)",
-                "atc_bg_color_gradient": "linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%)",
-                "atc_color_hover": "#ffffff",
-                "atc_border_color_hover": "rgba(0,0,0,0)",
-                "atc_bg_color_hover": "rgba(0,0,0,0)",
-                "atc_bg_color_gradient_hover": "linear-gradient(#000, #000) padding-box,        linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%) border-box",
-                "bin_color": "#ffffff",
-                "bin_border_color": "rgba(0,0,0,0)",
-                "bin_bg_color": "rgba(0,0,0,0)",
-                "bin_bg_color_gradient": "linear-gradient(#000, #000) padding-box,        linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%) border-box",
-                "bin_color_hover": "#ffffff",
-                "bin_border_color_hover": "rgba(0,0,0,0)",
-                "bin_bg_color_hover": "rgba(0,0,0,0)",
-                "bin_bg_color_hover_gradient": "linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%)"
-              }
-            }
-        ]
-    }],
+            "blocks": [
+                {
+                    "type": "title",
+                    "settings": {
+                        "fontsize_text": 40,
+                        "fontsize_text_mb": 24,
+                        "color_title": "#ffffff",
+                        "spacing_top": 0,
+                        "spacing_bottom": 17
+                    }
+                },
+                {
+                    "type": "meta",
+                    "settings": {
+                        "spacing_top": 0,
+                        "spacing_bottom": 13,
+                        "show_review": true,
+                        "show_sold_in": true,
+                        "sold_in_number": "3,5,6,7,8,10,12,15",
+                        "sold_in_hours": "10,15,16,17,18,20,25,35",
+                        "color_text_sold_in": "#b60b32"
+                    }
+                },
+                {
+                    "type": "short_description",
+                    "settings": {
+                        "word_number": "17",
+                        "fontsize_text": 16,
+                        "color_text": "#ffffff",
+                        "spacing_top": 0,
+                        "spacing_bottom": 24
+                    }
+                },
+                {
+                    "type": "price",
+                    "settings": {
+                        "fontsize_text": 30,
+                        "spacing_top": 0,
+                        "spacing_bottom": 24
+                    }
+                },
+                {
+                    "type": "product_text",
+                    "settings": {
+                        "text": "",
+                        "text_icon": "",
+                        "text_description": "<strong>Shipping<\/strong> calculated at checkout.",
+                        "fontsize_text": 16,
+                        "content_spacing": 0,
+                        "custom_block_align": "left",
+                        "color_title": "#ffffff",
+                        "background_color_block": "rgba(0,0,0,0)",
+                        "background_gradient_color_block": "",
+                        "spacing_top": 0,
+                        "spacing_bottom": 26
+                    }
+                },
+                {
+                    "type": "variant_picker",
+                    "settings": {
+                        "picker_type": "button",
+                        "show_variant_image_group": false,
+                        "color_label": "#ffffff",
+                        "enable_border_top": false,
+                        "enable_border_bottom": false,
+                        "color_border": "#e6e6e6",
+                        "spacing_top": 0,
+                        "spacing_bottom": 15
+                    }
+                },
+                {
+                    "type": "quantity_selector",
+                    "settings": {
+                        "qty_style": "1",
+                        "qty_layout": "2",
+                        "color_qty_label": "#ffffff",
+                        "color_qty_input": "#f2f5ff",
+                        "bg_color_qty_input": "#ffffff",
+                        "spacing_top": 0,
+                        "spacing_bottom": 0
+                    }
+                },
+                {
+                    "type": "buy_buttons",
+                    "settings": {
+                        "show_dynamic_checkout": true,
+                        "checkbox_color": "#ffffff",
+                        "checkbox_border_color": "#494a4d",
+                        "spacing_top": 0,
+                        "spacing_bottom": 15,
+                        "color_qty_label": "#ffffff",
+                        "color_qty_input": "#f2f5ff",
+                        "bg_color_qty_input": "rgba(0,0,0,0)",
+                        "wishlist_color": "#747474",
+                        "wishlist_border_color": "#121212",
+                        "wishlist_bg_color": "#121212",
+                        "wishlist_color_hover": "#ffffff",
+                        "wishlist_border_color_hover": "#3faeea",
+                        "wishlist_bg_color_hover": "#3faeea",
+                        "atc_animation": "horizontal-shaking",
+                        "atc_color": "#ffffff",
+                        "atc_border_color": "rgba(0,0,0,0)",
+                        "atc_bg_color": "rgba(0,0,0,0)",
+                        "atc_bg_color_gradient": "linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%)",
+                        "atc_color_hover": "#ffffff",
+                        "atc_border_color_hover": "rgba(0,0,0,0)",
+                        "atc_bg_color_hover": "rgba(0,0,0,0)",
+                        "atc_bg_color_gradient_hover": "linear-gradient(#000, #000) padding-box,        linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%) border-box",
+                        "bin_color": "#ffffff",
+                        "bin_border_color": "rgba(0,0,0,0)",
+                        "bin_bg_color": "rgba(0,0,0,0)",
+                        "bin_bg_color_gradient": "linear-gradient(#000, #000) padding-box,        linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%) border-box",
+                        "bin_color_hover": "#ffffff",
+                        "bin_border_color_hover": "rgba(0,0,0,0)",
+                        "bin_bg_color_hover": "rgba(0,0,0,0)",
+                        "bin_bg_color_hover_gradient": "linear-gradient(90deg, rgba(48, 188, 237, 1), rgba(127, 72, 176, 1) 50%, rgba(229, 26, 203, 1) 100%)"
+                    }
+                },
+                {
+                    "type": "custom_button",
+                    "settings": {
+                        "button_text": "Click Here",
+                        "button_text_color": "#ffffff",
+                        "button_color": "#000000",
+                        "button_width": "100px",
+                        "button_link": "#"
+                    }
+                }
+            ]
+        }
+    ],
     "disabled_on": {
         "groups": ["header", "footer"]
     }
