@@ -220,7 +220,7 @@
         "table_header": "How Does Bahamii Stack Up?",
         "bg_image": "shopify:\/\/shop_images\/Vector_1.png",
         "left_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
-        "right_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png"
+        "right_image": "shopify:\/\/shop_images\/bar-mask.png"
       }
     },
     "featured_product_choc_almond_3Tgdw4": {
@@ -286,7 +286,7 @@
       ],
       "settings": {
         "id_section": "feat-choc_almond",
-        "container": "fullwidth",
+        "container": "1770",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,
@@ -391,7 +391,7 @@
       ],
       "settings": {
         "id_section": "feat-coco_vanilla",
-        "container": "fullwidth",
+        "container": "1770",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,
@@ -496,7 +496,7 @@
       ],
       "settings": {
         "id_section": "feat-honey_cinn",
-        "container": "fullwidth",
+        "container": "1770",
         "padding_full_width": 25,
         "show_sticky_info": false,
         "mg_top_desktop": 0,

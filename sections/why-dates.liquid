@@ -2,12 +2,14 @@
   <div class="top-wrapper">
     <h1 class="section-heading">{{ section.settings.heading }}</h1>
     <div class="description-text-container">{{ section.settings.description_text }}</div>
-    <div class="badges-container">
-      {% for block in section.blocks %}
-        {% if block.type == 'image' %}
-          <img src="{{ block.settings.badge_image | img_url: 'master' }}" alt="Badge">
-        {% endif %}
-      {% endfor %}
+    <div class="badges-container-wrap">
+      <div class="badges-container">
+        {% for block in section.blocks %}
+          {% if block.type == 'image' %}
+            <img src="{{ block.settings.badge_image | img_url: 'master' }}" alt="Badge">
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
   <div class="table-header-wrap">
@@ -27,9 +29,10 @@
           <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image">
         </div>
       </div>
-      <div class="right-image-heading">Traditional Bar</div>
+      <div class="right-image-heading-mobile">Traditional Bar</div>
       <div class="right">
         <div class="right-image-container">
+          <div class="right-image-heading-desktop">Traditional Bar</div>
           <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Right Image">
         </div>
         <div class="text-item-container">
@@ -44,15 +47,22 @@
   </div>
 </div>
 
-
 <style>
   .why-dates-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
+    .top-wrapper,
+    .table-header-wrap,
+    .compare-table-wrap {
+      max-width: 1440px;
+      padding: 0 20px;
+    }
+
   .top-wrapper {
-    padding: 40px 260px;
+    max-width: 930px;
   }
 
   .section-heading {
@@ -94,7 +104,6 @@
   .compare-table {
     display: flex;
     justify-content: center;
-    height: 41vw;
   }
 
   .left,
@@ -116,13 +125,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 35%;
+    width: 60%;
     height: 100%;
   }
 
   .right .text-item-container {
-    width: 35%;
-    height: 75%;
+    width: 50%;
+    height: 85%;
   }
 
   .text-item {
@@ -160,6 +169,21 @@
 
   .right-image-container img {
     width: 71%;
+  }
+
+  .right-image-heading-desktop {
+    display: block;
+    color: #6C6669;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    text-wrap: nowrap;
+    padding-bottom: 15px;
+  }
+
+  .right-image-heading-mobile {
+    display: none;
   }
 
   @media (max-width: 1024px) {
@@ -267,8 +291,12 @@
       padding-right: 0;
       justify-content: center;
     }
+    .right-image-heading-desktop {
+      display: none;
+    }
 
-    .right-image-heading {
+    .right-image-heading-mobile {
+      display: block;
       margin-bottom: 10px;
       color: #6C6669;
       font-size: 18px;
