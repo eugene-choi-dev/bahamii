@@ -238,15 +238,15 @@
     /* BAHAMII CUSTOM STYLES ---> */
 
     /* global to featured-product sections ---> */
-    .productView-customText {
+    #ProductSection-{{ section.id }} .productView-customText {
         background: none !important;
     }
 
-    .productView-img-container .media {
+    #ProductSection-{{ section.id }} .productView-img-container .media {
         background: none !important;
     }
 
-    .featured-title {
+    #ProductSection-{{ section.id }} .featured-title {
         font-size: 76px;
         font-style: normal;
         font-weight: 700;
@@ -254,21 +254,9 @@
         margin-bottom: 10px;
     }
 
-    .productView-meta {
+    #ProductSection-{{ section.id }} .productView-meta {
         margin-bottom: 20px;
     }
-
-    .product-form__buttons button {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .featured-product .productView-action .button {
-        background-color: #ED1068;
-    }
-
     /* <--- global to featured-product sections */
 
     .featured-product-choc-almond-bahamii-custom.featured-product.product-details.product-default {
@@ -302,6 +290,34 @@
     .featured-product-choc-almond-bahamii-custom.featured-product .productView-images {
         padding-bottom: 50px;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    #ProductSection-{{ section.id }} .container.productView-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #ProductSection-{{ section.id }} .featured-title {
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 111.7%;
+    }
+
+    #ProductSection-{{ section.id }} .productView-desc {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 551px) {
+    #ProductSection-{{ section.id }} .container.productView-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

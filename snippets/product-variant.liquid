@@ -4,7 +4,7 @@
     assign enable_border_bottom = block.settings.enable_border_bottom
     assign color_border = block.settings.color_border
 -%}
-<div class="productView-options{% if enable_border_top %} has-border-top{% endif %}{% if enable_border_bottom %} has-border-bottom{% endif %}" style="--color-border: {{ color_border }}" data-lang="{{ request.locale.iso_code | downcase }}" data-default-lang="{{ localization.country.iso_code | downcase }}">
+<div class="poopsicle productView-options{% if enable_border_top %} has-border-top{% endif %}{% if enable_border_bottom %} has-border-bottom{% endif %}" style="--color-border: {{ color_border }}" data-lang="{{ request.locale.iso_code | downcase }}" data-default-lang="{{ localization.country.iso_code | downcase }}">
     {%- if variantCount > 0  and product.has_only_default_variant != true -%}
         <div class="productView-variants halo-productOptions" id="product-option-{{ product.id }}"  data-type="{{ picker_type }}">
             {%- if picker_type == 'button' -%}
@@ -109,10 +109,43 @@
                                                 </span>
                                             {% endif %}
                                         </label>
-                                    {%- else -%}   
-                                        <label class="product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}" data-variant-id="{{ variant.id }}">
-                                            <span class="text">{{ value }}</span>
+                                    {%- else -%}
+
+                                        <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}" data-variant-id="{{ variant.id }}">
+                                            <span class="text">
+                                                {% case value %}
+                                                    {% when '1 pack' %}
+                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
+                                                        <h2 class="price-text one-pack-price">$11.11 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
+                                                    {% when '1 Pack' %}
+                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
+                                                        <h2 class="price-text one-pack-price">$11.11 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 Pack" />
+                                                    {% when '3 pack' %}
+                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
+                                                        <h2 class="price-text three-pack-price">$33.33 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
+                                                    {% when '3 Pack' %}
+                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
+                                                        <h2 class="price-text three-pack-price">$33.33 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 Pack" />
+                                                    {% when '6 pack' %}
+                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
+                                                        <h2 class="price-text six-pack-price">$66.66 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
+                                                    {% when '6 Pack' %}
+                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
+                                                        <h2 class="price-text six-pack-price">$66.66 <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 Pack" />
+                                                {% endcase %}
+                                            </span>
                                         </label>
+
+                                        {% comment %} <label class="product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}" data-variant-id="{{ variant.id }}">
+                                            <span class="text">{{ value }}</span>
+                                        </label>   {% endcomment %}
+
                                     {%- endif -%}
                                 {%- endunless -%}
                             {%- endfor -%}
@@ -176,3 +209,97 @@
         </noscript>
     {%- endif -%}
 </div>
+
+<style>
+
+    #ProductSection-{{ section.id }} .product-form__input {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #ProductSection-{{ section.id }} .bahamii-product-form-label {
+        width: 30%;
+    }
+
+    #ProductSection-{{ section.id }} .bahamii-product-form-label span.text {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
+        color: #231F20;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+        letter-spacing: 0;
+    }
+
+    #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text {
+        margin: 0;
+        color: #ED1068;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0;
+        text-wrap: nowrap;
+    }
+
+    #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text span {
+        color: #6C6669;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+    
+    #ProductSection-{{ section.id }} .product-form__radio:checked+.product-form__label .text {
+        border-color: #ED1068;
+        border-width: 8px;
+    }
+
+    #ProductSection-{{ section.id }} .product-form__label.soldout:before {
+        /* content: "";
+        top: 50%;
+        left: -81px;
+        height: 2px;
+        opacity: 1;
+        z-index: 1;
+        border: none;
+        position: absolute;
+        visibility: visible;
+        width: calc(175% + 25px);
+        background-color: var(--product-sale-price-color);
+        transform: translateY(-50%) rotate(-58.5deg); */
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        #ProductSection-{{ section.id }} .bahamii-product-form-label span.text {
+            height: 100%;
+            width: 100%;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
+            font-size: 20px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text {
+            font-size: 20px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text span {
+            font-size: 8px;
+        }
+    }
+
+</style>

@@ -1,10 +1,10 @@
 <div class="text-image-section-{{ section.id }} {{ section.settings.image_position }}" style="height: {{ section.settings.container_height }}px;">
   <div class="text-image-background" style="background-color: {{ section.settings.background_color }}; height: {{ section.settings.background_height }}%;">
     <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}" style="max-width: {{ section.settings.max_width }}px; padding-left: {{ section.settings.padding_left }}px; padding-right: {{ section.settings.padding_right }}px;">
-      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px; flex: {{ section.settings.text_width }};">
+      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px; width: {{ section.settings.text_width }}%;">
         {{ section.settings.text }}
       </div>
-      <div class="image-wrapper" style="flex: {{ section.settings.image_width }};">
+      <div class="image-wrapper" style="width: {{ section.settings.image_width }}%;">
         {% if section.settings.image %}
           <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section">
         {% endif %}
@@ -43,13 +43,11 @@
   }
 
   .text-image-section-{{ section.id }} .text-wrapper {
-    flex: {{ section.settings.text_width }};
+    width: {{ section.settings.text_width }}%;
     padding: 0 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flex;
-    align-items: center;
     word-break: break-word;
   }
 
@@ -58,7 +56,7 @@
   }
 
   .text-image-section-{{ section.id }} .image-wrapper {
-    flex: {{ section.settings.image_width }};
+    width: {{ section.settings.image_width }}%;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -141,12 +139,12 @@
       }, {
         "type": "number",
         "id": "image_width",
-        "label": "Image Width (flex)",
+        "label": "Image Width (%)",
         "default": 2
       }, {
         "type": "number",
         "id": "text_width",
-        "label": "Text Width (flex)",
+        "label": "Text Width (%)",
         "default": 3
       }, {
         "type": "number",

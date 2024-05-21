@@ -1,4 +1,4 @@
-<div class="custom-button-wrapper">
+<div class="custom-button-wrapper" id="btn-{{ block.settings.button_text | replace: ' ', '-' | downcase }}">
     <a href="{{ block.settings.button_link }}" 
        class="custom-button-bahamii" 
        style="color: {{ block.settings.button_text_color }}; 
@@ -27,5 +27,11 @@
         font-weight: 700;
         line-height: 34px;
         height: 58px;
+    }
+
+    @media (max-width: 768px) {
+        #ProductSection-{{ section.id }} #btn-more-details {
+                transform: scale(0.7) translateX(-21.5%);
+        }
     }
 </style>

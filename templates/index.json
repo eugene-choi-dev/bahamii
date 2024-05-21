@@ -254,7 +254,7 @@
         "custom_button_yLrbyX": {
           "type": "custom_button",
           "settings": {
-            "button_text": "Learn More",
+            "button_text": "More Details",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
@@ -321,17 +321,6 @@
             "bin_bg_color_hover": "#232323",
             "bin_bg_color_hover_gradient": ""
           }
-        },
-        "custom_button_WUnUEb": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Learn More",
-            "button_text_color": "#ffffff",
-            "button_text_uppercase": "true",
-            "button_color": "#000000",
-            "button_width": "100%",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
@@ -340,8 +329,7 @@
         "custom_button_yLrbyX",
         "short_description_yGqe9y",
         "variant_picker_8ePmda",
-        "buy_buttons_EhcQpa",
-        "custom_button_WUnUEb"
+        "buy_buttons_EhcQpa"
       ],
       "custom_css": [
 
@@ -351,7 +339,7 @@
         "container": "container",
         "padding_full_width": 25,
         "show_sticky_info": false,
-        "mg_top_desktop": 0,
+        "mg_top_desktop": 60,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 0,
@@ -418,7 +406,7 @@
         "custom_button_hgfMAz": {
           "type": "custom_button",
           "settings": {
-            "button_text": "Learn More",
+            "button_text": "More Details",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
@@ -485,17 +473,6 @@
             "bin_bg_color_hover": "#232323",
             "bin_bg_color_hover_gradient": ""
           }
-        },
-        "custom_button_LBLigc": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Learn More",
-            "button_text_color": "#ffffff",
-            "button_text_uppercase": "true",
-            "button_color": "#000000",
-            "button_width": "100%",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
@@ -504,8 +481,7 @@
         "custom_button_hgfMAz",
         "short_description_yGqe9y",
         "variant_picker_MrtAix",
-        "buy_buttons_qrreDr",
-        "custom_button_LBLigc"
+        "buy_buttons_qrreDr"
       ],
       "custom_css": [
 
@@ -582,7 +558,7 @@
         "custom_button_yLFbK9": {
           "type": "custom_button",
           "settings": {
-            "button_text": "Learn More",
+            "button_text": "More Details",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
@@ -649,17 +625,6 @@
             "bin_bg_color_hover": "#232323",
             "bin_bg_color_hover_gradient": ""
           }
-        },
-        "custom_button_VmeExf": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Learn More",
-            "button_text_color": "#ffffff",
-            "button_text_uppercase": "true",
-            "button_color": "#000000",
-            "button_width": "100%",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
@@ -668,8 +633,7 @@
         "custom_button_yLFbK9",
         "short_description_yGqe9y",
         "variant_picker_wYyMXb",
-        "buy_buttons_kiXbC7",
-        "custom_button_VmeExf"
+        "buy_buttons_kiXbC7"
       ],
       "custom_css": [
 
@@ -1111,8 +1075,8 @@
         "font_size": 16,
         "image": "shopify:\/\/shop_images\/Accueils-de-Loisirs_2.png",
         "image_position": "left-bahamii",
-        "image_width": 2,
-        "text_width": 3,
+        "image_width": 50,
+        "text_width": 50,
         "container_height": 600,
         "background_color": "#ffffff",
         "background_height": 100,
@@ -1129,8 +1093,8 @@
         "font_size": 20,
         "image": "shopify:\/\/shop_images\/honey-cinnamon.png",
         "image_position": "left-bahamii",
-        "image_width": 3,
-        "text_width": 3,
+        "image_width": 50,
+        "text_width": 50,
         "container_height": 650,
         "background_color": "#fffac2",
         "background_height": 70,
@@ -1147,8 +1111,8 @@
         "font_size": 20,
         "image": "shopify:\/\/shop_images\/coco-vanilla.png",
         "image_position": "right-bahamii",
-        "image_width": 0.8,
-        "text_width": 1,
+        "image_width": 50,
+        "text_width": 50,
         "container_height": 500,
         "background_color": "#f2dab2",
         "background_height": 100,

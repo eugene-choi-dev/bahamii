@@ -25,36 +25,67 @@
             "color_text_sold_in": "#e95144"
           }
         },
-        "bd066b80-c8e3-4f3e-8280-b27fbf6e9423": {
-          "type": "description",
+        "short_description_WhQmpm": {
+          "type": "short_description",
           "settings": {
-            "open_tab_mobile": true,
-            "title": "Description",
-            "enable_btn_show_more": false,
-            "maximum_des_to_show": 300
+            "word_number": "800",
+            "fontsize_text": 16,
+            "color_text": "#3c3c3c",
+            "spacing_top": 0,
+            "spacing_bottom": 13
           }
         },
-        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tqnzjA": {
+        "variant_picker_yVnczq": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "show_variant_image_group": false,
+            "enable_border_top": false,
+            "enable_border_bottom": false,
+            "color_border": "#e6e6e6",
+            "spacing_top": 0,
+            "spacing_bottom": 5
+          }
+        },
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tLDeB4": {
           "type": "shopify:\/\/apps\/appstle-subscriptions-app\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
           "settings": {
           }
         },
-        "quantity_selector_A7GFQf": {
-          "type": "quantity_selector",
+        "buy_buttons_pACeiF": {
+          "type": "buy_buttons",
           "settings": {
-            "qty_style": "2",
-            "qty_layout": "1",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
             "spacing_top": 0,
-            "spacing_bottom": 10
+            "spacing_bottom": 15,
+            "atc_animation": "horizontal-shaking",
+            "atc_color": "#ffffff",
+            "atc_border_color": "#232323",
+            "atc_bg_color": "#232323",
+            "atc_bg_color_gradient": "",
+            "atc_color_hover": "#232323",
+            "atc_border_color_hover": "#232323",
+            "atc_bg_color_hover": "#ffffff",
+            "atc_bg_color_gradient_hover": "",
+            "bin_color": "#232323",
+            "bin_border_color": "#acacac",
+            "bin_bg_color": "#ffffff",
+            "bin_bg_color_gradient": "",
+            "bin_color_hover": "#ffffff",
+            "bin_border_color_hover": "#232323",
+            "bin_bg_color_hover": "#232323",
+            "bin_bg_color_hover_gradient": ""
           }
         }
       },
       "block_order": [
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "0e4ea696-4820-4c98-aaa6-806d41782a3d",
-        "bd066b80-c8e3-4f3e-8280-b27fbf6e9423",
-        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tqnzjA",
-        "quantity_selector_A7GFQf"
+        "short_description_WhQmpm",
+        "variant_picker_yVnczq",
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_tLDeB4",
+        "buy_buttons_pACeiF"
       ],
       "custom_css": [
         ".product-details {background: #facad3;}",
@@ -64,10 +95,10 @@
         ".halo-text-format p {color: #000; font-size: 16px; line-height: normal;}"
       ],
       "settings": {
-        "container": "1770",
+        "container": "container",
         "padding_full_width": 0,
         "show_sticky_info": true,
-        "mg_top_desktop": 0,
+        "mg_top_desktop": 60,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 0,
@@ -96,20 +127,20 @@
         "sidebar_heading_font_size": 14,
         "sidebar_heading_font_weight": "700",
         "sidebar_heading_text_transform": "uppercase",
-        "product_image_ratio": "portrait",
-        "portrait_aspect_ratio": 148,
+        "product_image_ratio": "square",
+        "portrait_aspect_ratio": 101,
         "zoomed_image": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "product_image_popup": "fancybox",
         "video_layout": "popup",
-        "show_badge": true,
+        "show_badge": false,
         "show_qty": true,
         "show_subtotal": false,
         "subtotal_style": "1",
         "show_sticky_add_to_cart": true,
         "show_sticky_vendor": false,
         "sticky_atc_layout": "1",
-        "show_tab": true,
+        "show_tab": false,
         "tab_layout": "vertical",
         "tab_layout_mobile": "vertical",
         "icon_style_layout": "style_1",
@@ -135,7 +166,7 @@
         "product_style": "2",
         "block_image_ratio": "adapt",
         "bundle_discount": false,
-        "bundle_discount_text": "Get a [discount]% discount buying these products together",
+        "bundle_discount_text": "",
         "bundle_discount_text_color": "#232323",
         "total_btn_color": "#ffffff",
         "total_btn_border": "#000000",
@@ -264,6 +295,24 @@
         "header_text": "Chocolate Almond",
         "ingredients_text": "<p><strong>Ingredients:<\/strong> Organic Dates, Organic Almonds, Organic Cocoa Powder, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt<\/p>",
         "additional_info": "<p><strong>CONTAINS: ALMONDS, COCONUT<br\/><\/strong><br\/>Made in a facility that also processes Peanuts, Tree Nuts, Eggs, Soy, Milk, Wheat, and Sesame.<br\/><br\/>May contain Shell and\/or Pit Fragments.<\/p>"
+      }
+    },
+    "text_image_8Hzz7N": {
+      "type": "text-image",
+      "settings": {
+        "text": "<h1>I want to build my own bundle!<\/h1><p><\/p><p><\/p><h4>Customize the flavors you want in your bundle.<\/h4>",
+        "font_size": 17,
+        "image": "shopify:\/\/shop_images\/hon-cinn-crop.png",
+        "image_position": "left-bahamii",
+        "image_width": 70,
+        "text_width": 60,
+        "container_height": 850,
+        "background_color": "#f5b21f",
+        "background_height": 57,
+        "max_width": 1200,
+        "padding_left": 10,
+        "padding_right": 10,
+        "center_align_text": false
       }
     },
     "instagram_VNAPPR": {
@@ -501,6 +550,7 @@
     "product-recommendations",
     "product-recently-viewed",
     "nutrition_84X9a3",
+    "text_image_8Hzz7N",
     "instagram_VNAPPR",
     "customer_review_block_bzLaXr"
   ]

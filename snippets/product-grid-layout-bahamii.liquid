@@ -1,0 +1,13 @@
+{%- case settings.product_card_layout -%}
+    {%- when '03' -%}
+        {% render 'product-card-03-bahamii',
+            product_card_product: product_card_product,
+            portrait_aspect_ratio: portrait_aspect_ratio,
+            serial: serial,
+            sectionId: sectionId,
+            media_size: media_size,
+            hasCountdown: hasCountdown,
+            loading: loading,
+            custom_image: custom_image
+        %}
+{%- endcase -%}

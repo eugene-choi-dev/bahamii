@@ -85,10 +85,16 @@
         background: #facad3;
     }
 
+    #CollectionSection-{{ section.id }} .collection {
+        display: flex;
+        justify-content: center;
+    }
+
     .collection-banner-bahamii {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 105px;
     }
 
     .collection-banner-bahamii .banner-line-1 {
@@ -110,6 +116,178 @@
         line-height: 123.4%;
         margin-top: 0;
     }
+
+   
+
+
+    #main-collection-product-grid {
+        /* background: tomato; */
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #main-collection-product-grid li {
+        /* background: teal; */
+        border: 3px solid black;
+        width: 30%;
+        padding: 0;
+    }
+
+    #main-collection-product-grid li a {
+        /* background: lightsalmon; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    #main-collection-product-grid li a img {
+        transform: rotate(-15deg) translate(1%, -5%);
+        width: 78%;
+        /* min-width: 300px; */
+    }
+
+    #main-collection-product-grid li a .product-h2-wrap {
+        background: white;
+
+    }
+
+    #main-collection-product-grid li a h2 {
+        /* background: lightgreen; */
+        text-align: center;
+        font-size: 55.297px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55.297px;
+        margin: 27px 0;
+    }
+
+    @media (max-width: 1200px) {
+        #main-collection-product-grid li a h2 {
+            font-size: 50px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        #main-collection-product-grid li a h2 {
+            font-size: 35px;
+        }
+
+        #main-collection-product-grid li {
+            margin-top: 0 !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .collection-banner-bahamii {
+            margin-bottom: 60px;
+        }
+        .collection-banner-bahamii .banner-line-1 {
+            font-size: 44px;
+            margin-top: 75px;
+        }
+
+        .collection-banner-bahamii .banner-line-2 {
+            text-align: center;
+            font-size: 44px;
+        }
+
+        #main-collection-product-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+        #main-collection-product-grid li {
+            width: 85%;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 60px;
+        }
+
+        #main-collection-product-grid li a .product-h2-wrap {
+            width: 100%;
+        }
+
+        #main-collection-product-grid li a h2 {
+            font-size: 25px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* #main-collection-product-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: tomato;
+    }
+
+    #main-collection-product-grid li {
+        border: 3px solid #000000;
+        background: teal;
+        margin: 0px 24px;
+        width: 30%;
+    }
+
+    #main-collection-product-grid li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    #main-collection-product-grid li a img {
+        transform: rotate(-15deg)
+    }
+
+    #main-collection-product-grid li a .h2-wrap {
+        background: white;
+        width: 100%;
+        height: 39%;
+    }
+
+    #main-collection-product-grid li a h2 {
+        background: lightgreen;
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 55.297px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55.297px;
+        margin: 0;
+    }
+
+    #main-collection-product-grid li a.choc-almond-link {
+        background: #FACAD3;
+    }
+
+    #main-collection-product-grid li a.coco-van-link {
+        background: #EE7623;
+    }
+
+    #main-collection-product-grid li a.hon-cinn-link {
+        background: #F5B21F;
+    } */
 
     /* <--- BAHAMII CUSTOM STYLES */
 </style>
@@ -229,75 +407,106 @@
                                     assign banner_position_2 = section.settings.banner_position_2 | round | default: 5
                                     assign banner_position_3 = section.settings.banner_position_3 | round | default: 12
                                 -%}
+
+
+
+
+
+
+
+
+
+                                {%- assign chocolate_almond_image = section.settings.chocolate_almond_image -%}
+                                {%- assign coconut_vanilla_image = section.settings.coconut_vanilla_image -%}
+                                {%- assign honey_cinnamon_image = section.settings.honey_cinnamon_image -%}
+                                
                                 {%- for product in collection.products -%}
+                                    {%- assign product_image = '' -%}
+                                    {%- assign background_color = '' -%}
+                                    {%- if product.title == 'Chocolate Almond' and chocolate_almond_image != blank -%}
+                                        {%- assign product_image = chocolate_almond_image -%}
+                                        {%- assign background_color = '#FACAD3' -%}
+                                    {%- elsif product.title == 'Coconut Vanilla' and coconut_vanilla_image != blank -%}
+                                        {%- assign product_image = coconut_vanilla_image -%}
+                                        {%- assign background_color = '#EE7623' -%}
+                                    {%- elsif product.title == 'Honey Cinnamon' and honey_cinnamon_image != blank -%}
+                                        {%- assign product_image = honey_cinnamon_image -%}
+                                        {%- assign background_color = '#F5B21F' -%}
+                                    {%- else -%}
+                                        {%- assign product_image = product.featured_image -%}
+                                    {%- endif -%}
+                                
                                     {%- if paginate.current_page == 1 and section.settings.show_banner -%}
                                         {%- if forloop.index == banner_position_1 and section.settings.show_banner_1 -%}
-                                          <li class="product banner" data-product-banner="1" data-first-position="{{ banner_position_1 }}">
-                                              <div class="grid-item banner-img">
-                                                <a class="animate-scale"{% if section.settings.link_banner_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_1 }}"{% endif %}>
-                                                  {%- if section.settings.img_banner1 != blank -%}
-                                                      {%- assign height = section.settings.img_banner1.width | divided_by: section.settings.img_banner1.aspect_ratio | round -%}
-                                                       <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner1 | img_url: 'master' }}" src="{{ section.settings.img_banner1 | img_url: 'master' }}" alt="{{ section.settings.img_banner1.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner1.width}}" height="{{height}}">
-                                                  {%- else -%}
-                                                      <div class="not_img" style="--height_not_img: 560px">420 x 560px</div>
-                                                  {%- endif -%}
-                                                </a>
-                                              </div>
-                                          </li>
+                                            <li class="product banner" data-product-banner="1" data-first-position="{{ banner_position_1 }}" style="background: {{ background_color }}">
+                                                <div class="grid-item banner-img">
+                                                    <a class="animate-scale"{% if section.settings.link_banner_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_1 }}"{% endif %}>
+                                                        <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner1 | img_url: 'master' }}" src="{{ section.settings.img_banner1 | img_url: 'master' }}" alt="{{ section.settings.img_banner1.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner1.width}}" height="{{section.settings.img_banner1.height}}">
+                                                        <div class="product-h2-wrap">
+                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                        </div> 
+                                                    </a>
+                                                </div>
+                                            </li>
                                         {%- endif -%}
                                         {%- if forloop.index == banner_position_2 and section.settings.show_banner_2 -%}
-                                          <li class="product banner" data-product-banner="2" data-first-position="{{ banner_position_2 }}">
-                                              <div class="grid-item banner-img">
-                                                <a class="animate-scale"{% if section.settings.link_banner_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_2 }}"{% endif %}>
-                                                  {%- if section.settings.img_banner2 != blank -%}
-                                                      {%- assign height = section.settings.img_banner2.width | divided_by: section.settings.img_banner2.aspect_ratio | round -%}
-                                                       <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner2 | img_url: 'master' }}" src="{{ section.settings.img_banner2 | img_url: 'master' }}" alt="{{ section.settings.img_banner2.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner2.width}}" height="{{height}}">
-                                                  {%- else -%}
-                                                      <div class="not_img" style="--height_not_img: 560px">420 x 560px</div>
-                                                  {%- endif -%}
-                                                </a>
-                                              </div>
-                                          </li>
+                                            <li class="product banner" data-product-banner="2" data-first-position="{{ banner_position_2 }}" style="background: {{ background_color }}">
+                                                <div class="grid-item banner-img">
+                                                    <a class="animate-scale"{% if section.settings.link_banner_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_2 }}"{% endif %}>
+                                                        <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner2 | img_url: 'master' }}" src="{{ section.settings.img_banner2 | img_url: 'master' }}" alt="{{ section.settings.img_banner2.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner2.width}}" height="{{section.settings.img_banner2.height}}">
+                                                        <div class="product-h2-wrap">
+                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                        </div> 
+                                                    </a>
+                                                </div>
+                                            </li>
                                         {%- endif -%}
                                         {%- if forloop.index == banner_position_3 and section.settings.show_banner_3 -%}
-                                          <li class="product banner" data-product-banner="3" data-first-position="{{ banner_position_3 | plus: 2 }}">
-                                              <div class="grid-item banner-img">
-                                                <a class="animate-scale"{% if section.settings.link_banner_3 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_3 }}"{% endif %}>
-                                                  {%- if section.settings.img_banner3 != blank -%}
-                                                      {%- assign height = section.settings.img_banner3.width | divided_by: section.settings.img_banner3.aspect_ratio | round -%}
-                                                       <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner3 | img_url: 'master' }}" src="{{ section.settings.img_banner3 | img_url: 'master' }}" alt="{{ section.settings.img_banner3.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner3.width}}" height="{{height}}">
-                                                  {%- else -%}
-                                                      <div class="not_img" style="--height_not_img: 560px">420 x 560px</div>
-                                                  {%- endif -%}
-                                                </a>
-                                              </div>
-                                          </li>
+                                            <li class="product banner" data-product-banner="3" data-first-position="{{ banner_position_3 | plus: 2 }}" style="background: {{ background_color }}">
+                                                <div class="grid-item banner-img">
+                                                    <a class="animate-scale"{% if section.settings.link_banner_3 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_3 }}"{% endif %}>
+                                                        <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner3 | img_url: 'master' }}" src="{{ section.settings.img_banner3 | img_url: 'master' }}" alt="{{ section.settings.img_banner3.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner3.width}}" height="{{section.settings.img_banner3.height}}">
+                                                        <div class="product-h2-wrap">
+                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                        </div> 
+                                                    </a>
+                                                </div>
+                                            </li>
                                         {%- endif -%}
-                                        <li class="product{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if settings.banner_animation == 'effect_fade_up' %} style="--animation-order: {{ forloop.index }};"{% endif %}>
-                                            {% render 'product-grid-layout',
-                                                product_card_product: product,
-                                                media_size: image_ratio,
-                                                portrait_aspect_ratio: portrait_aspect_ratio,
-                                                serial: forloop.index,
-                                                sectionId: section.id,
-                                                show_list: true,
-                                                loading: true
-                                            %}
+                                        <li class="product{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if settings.banner_animation == 'effect_fade_up' %} style="--animation-order: {{ forloop.index }}; background: {{ background_color }};"{% endif %}>
+                                            <a href="{{ product.url }}">
+                                                <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ product_image | img_url: 'master' }}" src="{{ product_image | img_url: 'master' }}" alt="{{ product.title }}" loading="lazy">
+                                                <div class="product-h2-wrap">
+                                                    <h2 class="product-h2">{{ product.title }}</h2>
+                                                </div> 
+                                            </a>
                                         </li>
-                                    {% else %}
-                                        <li class="product{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if settings.banner_animation == 'effect_fade_up' %} style="--animation-order: {{ forloop.index }};"{% endif %}>
-                                            {% render 'product-grid-layout',
-                                                product_card_product: product,
-                                                media_size: image_ratio,
-                                                portrait_aspect_ratio: portrait_aspect_ratio,
-                                                serial: forloop.index,
-                                                sectionId: section.id,
-                                                show_list: true,
-                                                loading: true
-                                            %}
+                                    {%- else -%}
+                                        <li class="product{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if settings.banner_animation == 'effect_fade_up' %} style="--animation-order: {{ forloop.index }}; background: {{ background_color }};"{% endif %}>
+                                            <a href="{{ product.url }}">
+                                                <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ product_image | img_url: 'master' }}" src="{{ product_image | img_url: 'master' }}" alt="{{ product.title }}" loading="lazy">
+                                                <div class="product-h2-wrap">
+                                                    <h2 class="product-h2">{{ product.title }}</h2>
+                                                </div> 
+                                            </a>
                                         </li>
                                     {%- endif -%}
                                 {%- endfor -%}
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </ul>
                             {%- if paginate.pages > 1 -%}
                                 {% render 'pagination-listing',
