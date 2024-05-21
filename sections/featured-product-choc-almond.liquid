@@ -265,6 +265,9 @@
         line-height: normal;
     }
 
+    .featured-product .productView-action .button {
+        background-color: #ED1068;
+    }
 
     /* <--- global to featured-product sections */
 
@@ -337,7 +340,7 @@
 <div id="{{ section.settings.id_section }}">
 {%- endif -%}
     <div class="featured-product-choc-almond-bahamii-custom featured-product product-details product-default" data-section-id="{{ section.id }}" data-section-type="product" id="ProductSection-{{ section.id }}" data-custom-featured-product-block data-image-opo>
-        <div class="{% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %} productView-container">
+        <div class="{% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %} productView-container" id="feat-choc_almond">
             {% if section.settings.title != blank or section.settings.des != blank %}
                 <div class="halo-block-header text-{{ section.settings.title_align }}">
                     {% if section.settings.title != blank %}
