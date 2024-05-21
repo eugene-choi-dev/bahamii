@@ -104,36 +104,42 @@
                                             {% endif %}
                                         </label>
                                     {%- else -%}
-                                        <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}-{{ section.id }}" data-variant-id="{{ variant.id }}">
-                                            <span class="text">
-                                                {% case value %}
-                                                    {% when '1 pack' %}
-                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
-                                                        <h2 class="price-text one-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
-                                                    {% when '1 Pack' %}
-                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
-                                                        <h2 class="price-text one-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 Pack" />
-                                                    {% when '3 pack' %}
-                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
-                                                        <h2 class="price-text three-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
-                                                    {% when '3 Pack' %}
-                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
-                                                        <h2 class="price-text three-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 Pack" />
-                                                    {% when '6 pack' %}
-                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
-                                                        <h2 class="price-text six-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
-                                                    {% when '6 Pack' %}
-                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
-                                                        <h2 class="price-text six-pack-price">{{ variant.price | money }}</h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 Pack" />
-                                                {% endcase %}
-                                            </span>
-                                        </label>
+
+                                    {%- assign price_1_pack = block.settings.price_1_pack | default: "11.11" -%}
+                                    {%- assign price_3_pack = block.settings.price_3_pack | default: "33.33" -%}
+                                    {%- assign price_6_pack = block.settings.price_6_pack | default: "66.66" -%}
+                                    
+                                    <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}-{{ section.id }}" data-variant-id="{{ variant.id }}">
+                                        <span class="text">
+                                            {% case value %}
+                                                {% when '1 pack' %}
+                                                    <h3 class="qty-text one-pack-text">1 Box</h3>
+                                                    <h2 class="price-text one-pack-price">{{ price_1_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
+                                                {% when '1 Pack' %}
+                                                    <h3 class="qty-text one-pack-text">1 Box</h3>
+                                                    <h2 class="price-text one-pack-price">{{ price_1_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 Pack" />
+                                                {% when '3 pack' %}
+                                                    <h3 class="qty-text three-pack-text">3 Boxes</h3>
+                                                    <h2 class="price-text three-pack-price">{{ price_3_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
+                                                {% when '3 Pack' %}
+                                                    <h3 class="qty-text three-pack-text">3 Boxes</h3>
+                                                    <h2 class="price-text three-pack-price">{{ price_3_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 Pack" />
+                                                {% when '6 pack' %}
+                                                    <h3 class="qty-text six-pack-text">6 Boxes</h3>
+                                                    <h2 class="price-text six-pack-price">{{ price_6_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
+                                                {% when '6 Pack' %}
+                                                    <h3 class="qty-text six-pack-text">6 Boxes</h3>
+                                                    <h2 class="price-text six-pack-price">{{ price_6_pack }} <span>/box</span></h2>
+                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 Pack" />
+                                            {% endcase %}
+                                        </span>
+                                    </label>
+                                    
                                     {%- endif -%}
                                 {%- endunless -%}
                             {%- endfor -%}
