@@ -539,16 +539,29 @@ class UpdateQuantity extends HTMLElement {
     
     onButtonClick(event) {
         event.preventDefault();
+        console.log('qty button click!');
         const $target = event.target
+        console.log('target:')
+        console.log($target)
         let el_input = $target.parentElement.querySelector('.quantity');
+        console.log('el_input:')
+        console.log(el_input)
         const value = Number(el_input.value);
+        console.log('the value:')
+        console.log(value)
         const inStockNumber = Number(el_input.dataset.inventoryQuantity);
+        console.log('inStockNumber:')
+        console.log(inStockNumber)
         const buttonAdd = $target.closest('.product-form')?.querySelector('[data-btn-addtocart]');
+        console.log('buttonAdd:')
+        console.log(buttonAdd)
         let newVal, checkAvailabel = false;
 
         const policyArray = document.body.matches('.quickshop-popup-show') ? window[`quick_shop_policy_array_${this.input.dataset.product}`] : window[`cart_selling_array_${this.dataset.product}`],
             currentId = document.body.matches('.quickshop-popup-show') ? this.closest('.productView-options').querySelector('[name="id"]').value : this.input.dataset.cartQuantityId,
             thisVariantStatus = policyArray[currentId];
+
+            console.log(`thisVariantStatus: ${thisVariantStatus}`);
 
         buttonAdd?.dataset.available == 'false' || buttonAdd?.dataset.available == undefined ? checkAvailabel = true : checkAvailabel = false;
 

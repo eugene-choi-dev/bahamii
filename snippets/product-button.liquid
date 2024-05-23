@@ -32,6 +32,7 @@
         <input type="hidden" name="id" value="{{ current_variant.id }}">
         {{ form | payment_terms }}
     {%- endform -%}
+
     {%- assign product_form_id = 'product-form-' | append: product.id -%}
     <product-form class="productView-form product-form">
         {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
@@ -68,40 +69,34 @@
                                              assign allowOutStockSale = false
                                            endif
                                         -%}
-                                        <button type="submit" name="add" data-btn-addToCart data-inventory-quantity="{{ current_variant.inventory_quantity }}" data-available="{{ allowOutStockSale }}" class="product-form__submit button button--primary an-{{ atc_animation }}{% if first_inventory == 0 %} button-text-change{% else %}{% if show_subtotal_text %} button-text-change{% endif %}{% endif %}{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart">
+                                        <button type="submit" name="add" data-btn-addToCart data-inventory-quantity="{{ current_variant.inventory_quantity }}" data-available="{{ allowOutStockSale }}" class="poop product-form__submit button button--primary an-{{ atc_animation }}{% if first_inventory == 0 %} button-text-change{% else %}{% if show_subtotal_text %} button-text-change{% endif %}{% endif %}{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart-{{ product.id }}" data-section-id="{{ section.id }}">
                                             {%- if first_inventory > 0 -%}
                                                 {%- if show_subtotal_text and subtotal_style == '2' -%}
                                                     {%- assign subtotal = subtotal | strip_html -%}
-
                                                     {{ 'products.product.sub_total' | t : value : subtotal }}
                                                 {%- else -%}
                                                     {{ 'products.product.add_to_cart' | t}}
-                                                {%- endif -%}
+                                                {%- endif %}
                                             {%- else -%}
                                                 {{ 'products.product.pre_order' | t }}
-                                            {%- endif -%}
+                                            {%- endif %}
                                         </button>
                                     {%- else -%}
-                                        <button type="submit" name="add" data-btn-addToCart class="product-form__submit button button--secondary an-{{ atc_animation }}{% if show_subtotal_text %} button-text-change{% endif %}{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart">
+                                        <button type="submit" name="add" data-btn-addToCart class="product-form__submit button button--secondary an-{{ atc_animation }}{% if show_subtotal_text %} button-text-change{% endif %}{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart-{{ product.id }}" data-section-id="{{ section.id }}">
                                             {%- if show_subtotal_text and subtotal_style == '2' -%}
                                                 {%- assign subtotal = subtotal | strip_html -%}
                                                 {{ 'products.product.sub_total' | t : value : subtotal }}
                                             {%- else -%}
                                                 {{ 'products.product.add_to_cart' | t}}
-                                            {%- endif -%}
+                                            {%- endif %}
                                         </button>
                                     {%- endif -%}
                                 {%- else -%}
-                                    <button type="submit" name="add" data-btn-addToCart class="product-form__submit button{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart" disabled>{{ 'products.product.sold_out' | t }}</button>
+                                    <button type="submit" name="add" data-btn-addToCart class="product-form__submit button{% if settings.animations_hover_elements == '3d-lift' or settings.animations_hover_elements == 'vertical-lift' %} button-not-animation{% endif %}" id="product-add-to-cart-{{ product.id }}" disabled>{{ 'products.product.sold_out' | t }}</button>
                                 {%- endif -%}
                             </div>
                             <span class='appstle_stand_alone_selector' data-product-data='{{ product | json | escape }}' style="display: none;"></span>
                         </div>
-                        {% comment %} {%- if settings.show_wishlist -%}
-                            <div class="productView-wishlist clearfix{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
-                                <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}"><span class="visually-hidden">{{ 'wishlist.general.add' | t }}</span>{% render 'icon-heart' %}{% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add-2' %}{% endif %}</a>
-                            </div>
-                        {%- endif -%} {% endcomment %}
                         {%- if check_show_share == '2' -%}
                             {% render 'halo-share', product: product, share_layout: check_show_share %}
                         {%- endif -%}
@@ -139,8 +134,8 @@
     {%- endif -%}
 </div>
 
-<style>
 
+<style>
     #ProductSection-{{ section.id }} .product-form__submit {
         background: #ED1068;
         border: none;
@@ -158,13 +153,3 @@
     }
 }
 </style>
-
-<script>
-//   document.addEventListener("DOMContentLoaded", function() {
-//     if (typeof Appstle === "undefined") {
-//       console.error("Appstle script not loaded");
-//       return;
-//     }
-//     Appstle.subscribe();
-//   });
-</script>

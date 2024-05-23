@@ -6832,3 +6832,186 @@
         }
     }
 })(jQuery);
+
+// custom script to handle incorrect variant selection on homepage product sections ---> //
+// document.addEventListener('DOMContentLoaded', function() {
+//     const $body = document.body;
+
+//     const addToCartButtons = document.querySelectorAll('[data-btn-addToCart]');
+//     addToCartButtons.forEach(button => {
+//         button.addEventListener('click', (event) => {
+//             event.preventDefault();
+//             const productId = button.id.replace('product-add-to-cart-', '');
+//             const sectionId = button.dataset.sectionId;
+
+//             const productElement = document.querySelector(`#product-option-${productId}-${sectionId}`);
+//             if (!productElement) {
+//                 console.error(`Product element with ID #product-option-${productId}-${sectionId} not found.`);
+//                 return;
+//             }
+
+//             const selectedVariant = productElement.querySelector('.product-form__radio:checked') || 
+//                                     productElement.querySelector('.product-form__input--dropdown select option:checked');
+//             if (selectedVariant) {
+//                 const variantId = selectedVariant.dataset.variantId;
+//                 addItemToCart(variantId);
+//             } else {
+//                 console.error('No variant selected');
+//             }
+//         });
+//     });
+
+//     window.addItemToCart = function(variantId) {
+//         const formData = new FormData();
+//         formData.append('id', variantId);
+//         formData.append('quantity', 1);
+
+//         fetch(window.Shopify.routes.root + 'cart/add.js', {
+//             method: 'POST',
+//             body: formData,
+//         })
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('Network response was not ok');
+//             }
+//             return response.json();
+//         })
+//         .then(data => {
+//             updateSidebarCart();
+//         })
+//         .catch((error) => {
+//             console.error('Error:', error);
+//         });
+//     }
+
+//     window.updateSidebarCart = function() {
+//         const $cartDropdown = document.querySelector('#halo-cart-sidebar .halo-sidebar-wrapper .previewCart-wrapper');
+//         if ($cartDropdown) {
+//             const $cartLoading = document.createElement('div');
+//             $cartLoading.className = 'loading-overlay loading-overlay--custom';
+//             $cartLoading.innerHTML = `
+//                 <div class="loading-overlay__spinner">
+//                     <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+//                         <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+//                     </svg>
+//                 </div>
+//             `;
+//             const loadingClass = 'is-loading';
+
+//             $cartDropdown.classList.add(loadingClass);
+//             $cartDropdown.prepend($cartLoading);
+
+//             fetch(window.routes.root + 'cart?view=ajax_side_cart', {
+//                 method: 'GET',
+//                 cache: 'no-cache',
+//             })
+//             .then(response => response.text())
+//             .then(data => {
+//                 const parser = new DOMParser();
+//                 const doc = parser.parseFromString(data, 'text/html');
+//                 const response = doc.body;
+
+//                 $cartDropdown.classList.remove(loadingClass);
+//                 $cartDropdown.innerHTML = response.innerHTML;
+
+//                 document.dispatchEvent(new CustomEvent('cart-update'));
+//                 $body.classList.add('cart-sidebar-show');
+//             })
+//             .catch(error => {
+//                 console.error('Error:', error);
+//             });
+//         }
+//     }
+// });
+// <-- custom script to handle incorrect variant selection on homepage product sections //
+
+document.addEventListener('DOMContentLoaded', function() {
+    const $body = document.body;
+
+    const addToCartButtons = document.querySelectorAll('[data-btn-addToCart]');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const productId = button.id.replace('product-add-to-cart-', '');
+            const sectionId = button.dataset.sectionId;
+
+            const productElement = document.querySelector(`#product-option-${productId}-${sectionId}`);
+            if (!productElement) {
+                console.error(`Product element with ID #product-option-${productId}-${sectionId} not found.`);
+                return;
+            }
+
+            const selectedVariant = productElement.querySelector('.product-form__radio:checked') || 
+                                    productElement.querySelector('.product-form__input--dropdown select option:checked');
+            if (selectedVariant) {
+                const variantId = selectedVariant.dataset.variantId;
+                addItemToCart(variantId);
+            } else {
+                console.error('No variant selected');
+            }
+        });
+    });
+
+    window.addItemToCart = function(variantId) {
+        const formData = new FormData();
+        formData.append('id', variantId);
+        formData.append('quantity', 1);
+
+        fetch(window.Shopify.routes.root + 'cart/add.js', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            updateSidebarCart();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
+
+    window.updateSidebarCart = function() {
+        const $cartDropdown = document.querySelector('#halo-cart-sidebar .halo-sidebar-wrapper .previewCart-wrapper');
+        if ($cartDropdown) {
+            const $cartLoading = document.createElement('div');
+            $cartLoading.className = 'loading-overlay loading-overlay--custom';
+            $cartLoading.innerHTML = `
+                <div class="loading-overlay__spinner">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                </div>
+            `;
+            const loadingClass = 'is-loading';
+
+            $cartDropdown.classList.add(loadingClass);
+            $cartDropdown.prepend($cartLoading);
+
+            fetch(window.Shopify.routes.root + 'cart?view=ajax_side_cart', {
+                method: 'GET',
+                cache: 'no-cache',
+            })
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const response = doc.body;
+
+                $cartDropdown.classList.remove(loadingClass);
+                $cartDropdown.innerHTML = response.innerHTML;
+
+                document.dispatchEvent(new CustomEvent('cart-update'));
+                $body.classList.add('cart-sidebar-show');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    }
+});
+
