@@ -31,93 +31,203 @@
   </div>
 
   <div class="gallery-section">
-    {% for i in (1..4) %}
-      {% assign gallery_image = 'gallery_image_' | append: i %}
-      {% assign gallery_desc = 'gallery_desc_' | append: i %}
-      {% if section.settings[gallery_image] %}
+    <h1 class="gallery-section-header">Featured Blogs</h1>
+    <div class="gallery-section-wrap">
+      {% for i in (1..4) %}
+        {% assign gallery_image = 'gallery_image_' | append: i %}
+        {% assign gallery_desc = 'gallery_desc_' | append: i %}
+        {% assign gallery_url = 'gallery_url_' | append: i %}
+        {% if section.settings[gallery_image] %}
         <div class="gallery-image {% if forloop.first %}large{% endif %}">
-          <img src="{{ section.settings[gallery_image] | img_url: '600x600' }}" alt="Gallery Image {{ i }}">
+          <a href="{{ section.settings[gallery_url] }}">
+            <img src="{{ section.settings[gallery_image] | img_url: '600x600' }}" alt="Gallery Image {{ i }}">
+          </a>
           <p>{{ section.settings[gallery_desc] }}</p>
         </div>
-      {% endif %}
-    {% endfor %}
+        
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 <style>
-  .vendors-shopify-section {
-    padding: 15px 0;
-  }
+.vendors-shopify-section {
+  padding: 15px 0;
+}
 
-  .hero-section h1,
-  .hero-section p,
-  .thumbnail p {
-    text-align: center;
-  }
+.hero-section h1,
+.hero-section p,
+.thumbnail p {
+  text-align: center;
+}
 
+.hero-section {
+  margin-left: 185px;
+  margin-right: 185px;
+}
+
+.hero-section h1 {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-section p {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.thumbnail-img {
+  display: block !important;
+  width: 250px;
+  height: 250px;
+}
+
+.thumbnail p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.gallery-image p {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.hero-thumbnails,
+.vendor-logos,
+.gallery-section {
+  display: flex;
+}
+
+.vendors-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 50px;
+}
+
+.vendor-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.vendor-logo {
+  margin: 35px 25px;
+}
+
+.gallery-section-header {
+  color: #000;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.4%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.gallery-section {
+  max-width: 1224px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.gallery-section-wrap {
+  display: flex;
+}
+
+.thumbnail,
+.gallery-image {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-image.large {
+  flex-basis: 100%;
+}
+
+.gallery-image {
+  margin-top: 0;
+  flex-basis: 47%;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-image.large img {
+  height: 400px;
+}
+
+@media (max-width: 1024px) {
   .hero-section {
-    margin-left: 185px;
-    margin-right: 185px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .hero-section h1 {
-    color: #000;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 32px;
   }
 
   .hero-section p {
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
+    font-size: 18px;
   }
 
-  .thumbnail-img {
-    display: block !important;
-    width: 250px;
-    height: 250px;
+  .hero-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    margin: 15px;
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
   }
 
   .thumbnail p {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-size: 18px;
+    margin-top: 10px;
   }
 
-  .gallery-image p {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
+  .thumbnail-img {
+    width: 100%;
   }
 
-  .hero-thumbnails,
-  .vendor-logos,
-  .gallery-section {
-    display: flex;
+  .thumbnail p {
+    font-size: 18px;
   }
 
   .vendors-section {
-    display: flex;;
-    justify-content: center;
-    align-items: center;
     height: auto;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
 
   .vendor-logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
     flex-wrap: wrap;
+    margin: 40px 80px;
+    justify-content: center;
   }
 
   .vendor-logo {
@@ -125,97 +235,41 @@
   }
 
   .gallery-section {
-    margin-left: 185px;
-    margin-right: 185px;
+    flex-direction: column;
+    max-width: 550px;
   }
 
-  .thumbnail,
-  .gallery-image {
-    margin: 10px;
-    display: flex;
+  .gallery-section-wrap {
     flex-direction: column;
   }
 
-  .gallery-image.large {
+  .gallery-image {
     flex-basis: 100%;
   }
 
-  .gallery-image {
-    margin-top: 0;
-    flex-basis: 47%;
+  .gallery-image img {
+    height: 400px;
   }
 
-  @media (max-width: 1024px) {
-    .hero-section {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    .hero-section h1 {
-      font-size: 32px;
-    }
-
-    .hero-section p {
-      font-size: 18px;
-    }
-
-    .hero-thumbnails {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .thumbnail {
-      margin: 15px;
-      align-items: center;
-      width: 100%;
-      max-width: 330px;
-    }
-
-    .thumbnail p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    .thumbnail-img {
-      width: 100%;
-    }
-
-    .thumbnail p {
-      font-size: 18px;
-    }
-
-    .vendors-section {
-      height: auto;
-      margin-top: 25px;
-      margin-bottom: 40px;
-    }
-
-    .vendor-logos {
-      flex-wrap: wrap;
-      margin: 40px 80px;
-      justify-content: center;
-    }
-
-    .vendor-logo {
-      margin: 35px 25px;
-    }
-
-    .gallery-section {
-      margin-left: 15px;
-      margin-right: 15px;
-      flex-direction: column;
-    }
-
-    .gallery-image {
-      flex-basis: 100%;
-    }
-
-    .gallery-image p {
-      font-size: 24px;
-    }
+  .gallery-image.large img {
+    height:400px;
   }
+
+  .gallery-image p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-section {
+
+  }
+
+  .gallery-image img, .gallery-image.large img  {
+    height: 280px;
+  }
+}
+
 </style>
 
 {% schema %}
@@ -315,6 +369,10 @@
         "label": "Gallery Description 1",
         "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       }, {
+        "type": "url",
+        "id": "gallery_url_1",
+        "label": "Gallery URL 1"
+      }, {
         "type": "image_picker",
         "id": "gallery_image_2",
         "label": "Gallery Image 2"
@@ -323,6 +381,10 @@
         "id": "gallery_desc_2",
         "label": "Gallery Description 2",
         "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "type": "url",
+        "id": "gallery_url_2",
+        "label": "Gallery URL 2"
       }, {
         "type": "image_picker",
         "id": "gallery_image_3",
@@ -333,6 +395,10 @@
         "label": "Gallery Description 3",
         "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       }, {
+        "type": "url",
+        "id": "gallery_url_3",
+        "label": "Gallery URL 3"
+      }, {
         "type": "image_picker",
         "id": "gallery_image_4",
         "label": "Gallery Image 4"
@@ -341,6 +407,10 @@
         "id": "gallery_desc_4",
         "label": "Gallery Description 4",
         "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "type": "url",
+        "id": "gallery_url_4",
+        "label": "Gallery URL 4"
       }
     ],
     "blocks": [],

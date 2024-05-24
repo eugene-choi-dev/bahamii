@@ -254,12 +254,12 @@
         "custom_button_yLrbyX": {
           "type": "custom_button",
           "settings": {
-            "button_text": "More Details",
+            "button_text": "Learn More",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
             "button_width": "230px",
-            "button_link": "shopify:\/\/products\/chocolate-almond"
+            "button_link": "shopify:\/\/products\/new-chocolate-almond"
           }
         },
         "short_description_yGqe9y": {
@@ -345,7 +345,7 @@
         "mg_top_desktop": 60,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 0,
+        "mg_bottom_desktop": 60,
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0,
         "bg_color_product": "#ffffff",
@@ -409,12 +409,12 @@
         "custom_button_hgfMAz": {
           "type": "custom_button",
           "settings": {
-            "button_text": "More Details",
+            "button_text": "Learn More",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
             "button_width": "230px",
-            "button_link": ""
+            "button_link": "shopify:\/\/products\/new-coconut-vanilla"
           }
         },
         "short_description_yGqe9y": {
@@ -500,10 +500,10 @@
         "price_1_pack": "",
         "price_3_pack": "",
         "price_6_pack": "",
-        "mg_top_desktop": 0,
+        "mg_top_desktop": 60,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 0,
+        "mg_bottom_desktop": 60,
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0,
         "bg_color_product": "#ffffff",
@@ -519,7 +519,7 @@
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
         "title_align": "center",
-        "featured_product": "coconut-vanilla",
+        "featured_product": "new-coconut-vanilla",
         "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
@@ -567,12 +567,12 @@
         "custom_button_yLFbK9": {
           "type": "custom_button",
           "settings": {
-            "button_text": "More Details",
+            "button_text": "Learn More",
             "button_text_color": "#ffffff",
             "button_text_uppercase": "false",
             "button_color": "#ed1068",
             "button_width": "230px",
-            "button_link": ""
+            "button_link": "shopify:\/\/products\/new-honey-cinnamon"
           }
         },
         "short_description_yGqe9y": {
@@ -658,7 +658,7 @@
         "price_1_pack": "",
         "price_3_pack": "",
         "price_6_pack": "",
-        "mg_top_desktop": 0,
+        "mg_top_desktop": 60,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 0,
@@ -677,7 +677,7 @@
         "margin_bottom_des": 45,
         "margin_bottom_des_mb": 30,
         "title_align": "center",
-        "featured_product": "honey-cinnamon",
+        "featured_product": "new-honey-cinnamon",
         "main_image_arrows_desktop": false,
         "main_image_counter_mobile": false,
         "main_image_position": "left",
@@ -695,6 +695,60 @@
         "video_layout": "thumbnail",
         "show_badge": false,
         "show_qty": false
+      }
+    },
+    "text_image_CFCnYr": {
+      "type": "text-image",
+      "custom_css": [
+        "h1 {margin-top: 20px; margin-bottom: 20px;}",
+        "h1 {margin-top: 20px; margin-bottom: 20px;}",
+        ".custom-button {margin-top: 20px; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "text": "<h1><strong>I want to build <br\/>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br\/>you want in your bundle.<\/h2>",
+        "font_size": 16,
+        "image": "shopify:\/\/shop_images\/Group_171.png",
+        "image_position": "left-bahamii",
+        "image_width": 1000,
+        "text_width": 70,
+        "container_height": 50,
+        "background_color": "#f5b21f",
+        "background_height": 70,
+        "center_align_text": false,
+        "button_text": "Start Building!",
+        "button_url": "",
+        "button_font_size": 20,
+        "button_font_color": "#ffffff",
+        "button_font_weight": "400",
+        "button_height": 51,
+        "button_width": 229,
+        "button_background_color": "#ed1068",
+        "text_translate_x": 0,
+        "text_translate_y": 0,
+        "image_translate_x": 0,
+        "image_translate_y": 0,
+        "text_margin_top": 0,
+        "text_margin_bottom": 0,
+        "h1_font_size_1200": 64,
+        "h2_font_size_1200": 36,
+        "h3_font_size_1200": 28,
+        "p_font_size_1200": 16,
+        "h1_font_size_1025": 34,
+        "h2_font_size_1025": 30,
+        "h3_font_size_1025": 26,
+        "p_font_size_1025": 14,
+        "h1_font_size_1024": 32,
+        "h2_font_size_1024": 28,
+        "h3_font_size_1024": 24,
+        "p_font_size_1024": 12,
+        "h1_font_size_767": 30,
+        "h2_font_size_767": 26,
+        "h3_font_size_767": 22,
+        "p_font_size_767": 10,
+        "h1_font_size_551": 28,
+        "h2_font_size_551": 24,
+        "h3_font_size_551": 20,
+        "p_font_size_551": 8
       }
     },
     "instagram_bahamii_qQahrE": {
@@ -843,7 +897,7 @@
             "rating": "star5",
             "name": "- John Smith",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis."
           }
         },
         "review_q4BVwQ": {
@@ -856,12 +910,36 @@
             "date": "",
             "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
           }
+        },
+        "review_ARq3rL": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
+          }
+        },
+        "review_mhmDRj": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper!"
+          }
         }
       },
       "block_order": [
         "review_bwKGUk",
         "review_RG4Lyk",
-        "review_q4BVwQ"
+        "review_q4BVwQ",
+        "review_ARq3rL",
+        "review_mhmDRj"
       ],
       "custom_css": [
 
@@ -941,11 +1019,15 @@
         "vendor_logo_4": "shopify:\/\/shop_images\/Andronicos.png",
         "gallery_image_1": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
         "gallery_desc_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "gallery_url_1": "",
         "gallery_image_2": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
         "gallery_desc_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "gallery_url_2": "",
         "gallery_image_3": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
         "gallery_desc_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "gallery_desc_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "gallery_url_3": "",
+        "gallery_desc_4": "",
+        "gallery_url_4": ""
       }
     },
     "image_banner_simple_6XjYaB": {
@@ -1095,10 +1177,41 @@
         "container_height": 600,
         "background_color": "#ffffff",
         "background_height": 100,
-        "max_width": 1200,
-        "padding_left": 70,
-        "padding_right": 50,
-        "center_align_text": false
+        "center_align_text": false,
+        "button_text": "",
+        "button_url": "",
+        "button_font_size": 16,
+        "button_font_color": "#ffffff",
+        "button_font_weight": "400",
+        "button_height": 50,
+        "button_width": 150,
+        "button_background_color": "#000000",
+        "text_translate_x": 0,
+        "text_translate_y": 0,
+        "image_translate_x": 0,
+        "image_translate_y": 0,
+        "text_margin_top": 0,
+        "text_margin_bottom": 0,
+        "h1_font_size_1200": 36,
+        "h2_font_size_1200": 32,
+        "h3_font_size_1200": 28,
+        "p_font_size_1200": 16,
+        "h1_font_size_1025": 34,
+        "h2_font_size_1025": 30,
+        "h3_font_size_1025": 26,
+        "p_font_size_1025": 14,
+        "h1_font_size_1024": 32,
+        "h2_font_size_1024": 28,
+        "h3_font_size_1024": 24,
+        "p_font_size_1024": 12,
+        "h1_font_size_767": 30,
+        "h2_font_size_767": 26,
+        "h3_font_size_767": 22,
+        "p_font_size_767": 10,
+        "h1_font_size_551": 28,
+        "h2_font_size_551": 24,
+        "h3_font_size_551": 20,
+        "p_font_size_551": 8
       }
     },
     "text_image_CQfzwQ": {
@@ -1113,10 +1226,41 @@
         "container_height": 650,
         "background_color": "#fffac2",
         "background_height": 70,
-        "max_width": 1440,
-        "padding_left": 40,
-        "padding_right": 180,
-        "center_align_text": true
+        "center_align_text": true,
+        "button_text": "",
+        "button_url": "",
+        "button_font_size": 16,
+        "button_font_color": "#ffffff",
+        "button_font_weight": "400",
+        "button_height": 50,
+        "button_width": 150,
+        "button_background_color": "#000000",
+        "text_translate_x": 0,
+        "text_translate_y": 0,
+        "image_translate_x": 0,
+        "image_translate_y": 0,
+        "text_margin_top": 0,
+        "text_margin_bottom": 0,
+        "h1_font_size_1200": 36,
+        "h2_font_size_1200": 32,
+        "h3_font_size_1200": 28,
+        "p_font_size_1200": 16,
+        "h1_font_size_1025": 34,
+        "h2_font_size_1025": 30,
+        "h3_font_size_1025": 26,
+        "p_font_size_1025": 14,
+        "h1_font_size_1024": 32,
+        "h2_font_size_1024": 28,
+        "h3_font_size_1024": 24,
+        "p_font_size_1024": 12,
+        "h1_font_size_767": 30,
+        "h2_font_size_767": 26,
+        "h3_font_size_767": 22,
+        "p_font_size_767": 10,
+        "h1_font_size_551": 28,
+        "h2_font_size_551": 24,
+        "h3_font_size_551": 20,
+        "p_font_size_551": 8
       }
     },
     "text_image_4cz8RN": {
@@ -1131,10 +1275,41 @@
         "container_height": 500,
         "background_color": "#f2dab2",
         "background_height": 100,
-        "max_width": 1200,
-        "padding_left": 70,
-        "padding_right": 20,
-        "center_align_text": false
+        "center_align_text": false,
+        "button_text": "",
+        "button_url": "",
+        "button_font_size": 16,
+        "button_font_color": "#ffffff",
+        "button_font_weight": "400",
+        "button_height": 50,
+        "button_width": 150,
+        "button_background_color": "#000000",
+        "text_translate_x": 0,
+        "text_translate_y": 0,
+        "image_translate_x": 0,
+        "image_translate_y": 0,
+        "text_margin_top": 0,
+        "text_margin_bottom": 0,
+        "h1_font_size_1200": 36,
+        "h2_font_size_1200": 32,
+        "h3_font_size_1200": 28,
+        "p_font_size_1200": 16,
+        "h1_font_size_1025": 34,
+        "h2_font_size_1025": 30,
+        "h3_font_size_1025": 26,
+        "p_font_size_1025": 14,
+        "h1_font_size_1024": 32,
+        "h2_font_size_1024": 28,
+        "h3_font_size_1024": 24,
+        "p_font_size_1024": 12,
+        "h1_font_size_767": 30,
+        "h2_font_size_767": 26,
+        "h3_font_size_767": 22,
+        "p_font_size_767": 10,
+        "h1_font_size_551": 28,
+        "h2_font_size_551": 24,
+        "h3_font_size_551": 20,
+        "p_font_size_551": 8
       }
     },
     "contact_us_bahamii_JwGQtD": {
@@ -1161,6 +1336,7 @@
     "featured_product_choc_almond_3Tgdw4",
     "featured_product_coco_vanilla_ULcwTX",
     "featured_product_honey_cinn_CQUmb7",
+    "text_image_CFCnYr",
     "instagram_bahamii_qQahrE",
     "customer_review_block_CVhC63",
     "vendors_4LgqpJ",

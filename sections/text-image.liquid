@@ -1,12 +1,17 @@
-<div class="text-image-section-{{ section.id }} {{ section.settings.image_position }}" style="height: {{ section.settings.container_height }}px;">
+<div class="text-image-section-{{ section.id }} {{ section.settings.image_position }}" style="height: {{ section.settings.container_height }}vw;">
   <div class="text-image-background" style="background-color: {{ section.settings.background_color }}; height: {{ section.settings.background_height }}%;">
-    <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}" style="max-width: {{ section.settings.max_width }}px; padding-left: {{ section.settings.padding_left }}px; padding-right: {{ section.settings.padding_right }}px;">
-      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px; width: {{ section.settings.text_width }}%;">
+    <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}">
+      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px;transform: translate({{ section.settings.text_translate_x }}px, {{ section.settings.text_translate_y }}px); width: {{ section.settings.text_width }}%">
         {{ section.settings.text }}
+        {% if section.settings.button_text %}
+          <a href="{{ section.settings.button_url }}" class="custom-button" style="font-size: {{ section.settings.button_font_size }}px; color: {{ section.settings.button_font_color }}; font-weight: {{ section.settings.button_font_weight }}; background-color: {{ section.settings.button_background_color }}; height: {{ section.settings.button_height }}px; width: {{ section.settings.button_width }}px; text-align: center;">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
       </div>
-      <div class="image-wrapper" style="width: {{ section.settings.image_width }}%;">
+      <div class="image-wrapper">
         {% if section.settings.image %}
-          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section" style="transform: translate({{ section.settings.image_translate_x }}px, {{ section.settings.image_translate_y }}px); width: {{ section.settings.image_width }}px;">
         {% endif %}
       </div>
     </div>
@@ -14,179 +19,528 @@
 </div>
 
 <style>
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text-image-section-{{ section.id }} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-image-section-{{ section.id }} .text-image-background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-image-section-{{ section.id }} .text-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-image-section-{{ section.id }} .center-align-text {
+  align-items: center;
+  height: 100%;
+}
+
+.text-image-section-{{ section.id }}.left-bahamii .text-image-wrap {
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+}
+
+.text-image-section-{{ section.id }} .text-wrapper {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-break: break-word;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 2%;
+}
+
+.text-image-section-{{ section.id }} .text-wrapper p {
+  margin: 0;
+}
+
+.text-image-section-{{ section.id }} .image-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.text-image-section-{{ section.id }} .image-wrapper img {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  object-fit: contain;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 1200px) {
+  .text-image-section-{{ section.id }} h1 {
+    font-size: {{ section.settings.h1_font_size_1200 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h2 {
+    font-size: {{ section.settings.h2_font_size_1200 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h3 {
+    font-size: {{ section.settings.h3_font_size_1200 }}px;
+  }
+
+  .text-image-section-{{ section.id }} p {
+    font-size: {{ section.settings.p_font_size_1200 }}px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .text-image-section-{{ section.id }} h1 {
+    font-size: {{ section.settings.h1_font_size_1025 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h2 {
+    font-size: {{ section.settings.h2_font_size_1025 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h3 {
+    font-size: {{ section.settings.h3_font_size_1025 }}px;
+  }
+
+  .text-image-section-{{ section.id }} p {
+    font-size: {{ section.settings.p_font_size_1025 }}px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-image-section-{{ section.id }} h1 {
+    font-size: {{ section.settings.h1_font_size_1024 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h2 {
+    font-size: {{ section.settings.h2_font_size_1024 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h3 {
+    font-size: {{ section.settings.h3_font_size_1024 }}px;
+  }
+
+  .text-image-section-{{ section.id }} p {
+    font-size: {{ section.settings.p_font_size_1024 }}px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-image-section-{{ section.id }} h1 {
+    font-size: {{ section.settings.h1_font_size_767 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h2 {
+    font-size: {{ section.settings.h2_font_size_767 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h3 {
+    font-size: {{ section.settings.h3_font_size_767 }}px;
+  }
+
+  .text-image-section-{{ section.id }} p {
+    font-size: {{ section.settings.p_font_size_767 }}px;
+  }
+}
+
+@media (max-width: 551px) {
+  .text-image-section-{{ section.id }} h1 {
+    font-size: {{ section.settings.h1_font_size_551 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h2 {
+    font-size: {{ section.settings.h2_font_size_551 }}px;
+  }
+
+  .text-image-section-{{ section.id }} h3 {
+    font-size: {{ section.settings.h3_font_size_551 }}px;
+  }
+
+  .text-image-section-{{ section.id }} p {
+    font-size: {{ section.settings.p_font_size_551 }}px;
+  }
+}
+
+@media (max-width: 1024px) {
   .text-image-section-{{ section.id }} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto !important;
+    margin: 20px 0;
   }
 
   .text-image-section-{{ section.id }} .text-image-background {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0;
   }
 
-  .text-image-section-{{ section.id }} .text-image-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .text-image-section-{{ section.id }} .center-align-text {
-    align-items: center;
-    height: 100%;
-  }
-
-  .text-image-section-{{ section.id }}.left-bahamii .text-image-wrap {
-    flex-direction: row-reverse;
-  }
-
-  .text-image-section-{{ section.id }} .text-wrapper {
-    width: {{ section.settings.text_width }}%;
-    padding: 0 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    word-break: break-word;
-  }
-
-  .text-image-section-{{ section.id }} .text-wrapper p {
-    margin: 0;
+  .text-image-section-{{ section.id }}.left-bahamii .text-image-wrap,
+  .text-image-section-{{ section.id }}.right-bahamii .text-image-wrap {
+    flex-direction: column-reverse;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .text-image-section-{{ section.id }} .image-wrapper {
-    width: {{ section.settings.image_width }}%;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
+    padding: 0;
+    width: 100%;
   }
 
   .text-image-section-{{ section.id }} .image-wrapper img {
     width: 100%;
     height: auto;
-    max-width: unset;
   }
 
-  @media (max-width: 1024px) {
-    .text-image-section-{{ section.id }} {
-      height: auto !important;
-      margin: 20px 0;
-    }
-
-    .text-image-section-{{ section.id }} .text-image-background {
-      padding: 20px 0;
-    }
-
-    .text-image-section-{{ section.id }}.left-bahamii .text-image-wrap,
-    .text-image-section-{{ section.id }}.right-bahamii .text-image-wrap {
-      flex-direction: column-reverse;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-
-    .text-image-section-{{ section.id }} .image-wrapper {
-      padding: 0;
-    }
-
-    .text-image-section-{{ section.id }} .image-wrapper img {
-      width: 100%;
-      height: auto;
-    }
-
-    .text-image-section-{{ section.id }} .text-wrapper {
-      padding-top: 20px;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
+  .text-image-section-{{ section.id }} .text-wrapper {
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
   }
+}
+
 </style>
 
 {% schema %}
-  {
-    "name": "Text and Image",
-    "settings": [
-      {
-        "type": "richtext",
-        "id": "text",
-        "label": "Text"
-      },
-      {
-        "type": "number",
-        "id": "font_size",
-        "label": "Font Size (px)",
-        "default": 16
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "select",
-        "id": "image_position",
-        "label": "Image Position",
-        "default": "left-bahamii",
-        "options": [
-          {
-            "value": "left-bahamii",
-            "label": "Left"
-          }, {
-            "value": "right-bahamii",
-            "label": "Right"
-          }
-        ]
-      }, {
-        "type": "number",
-        "id": "image_width",
-        "label": "Image Width (%)",
-        "default": 2
-      }, {
-        "type": "number",
-        "id": "text_width",
-        "label": "Text Width (%)",
-        "default": 3
-      }, {
-        "type": "number",
-        "id": "container_height",
-        "label": "Container Height (px)",
-        "default": 700
-      }, {
-        "type": "color",
-        "id": "background_color",
-        "label": "Background Color",
-        "default": "#f5f5dc"
-      }, {
-        "type": "number",
-        "id": "background_height",
-        "label": "Background Height (%)",
-        "default": 70
-      }, {
-        "type": "number",
-        "id": "max_width",
-        "label": "Max Width (px)",
-        "default": 1200
-      }, {
-        "type": "number",
-        "id": "padding_left",
-        "label": "Left Padding (px)",
-        "default": 30
-      }, {
-        "type": "number",
-        "id": "padding_right",
-        "label": "Right Padding (px)",
-        "default": 30
-      }, {
-        "type": "checkbox",
-        "id": "center_align_text",
-        "label": "Center Align Text"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Text and Image",
-        "category": "Custom"
-      }
-    ]
-  }
+{
+  "name": "Text and Image",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "number",
+      "id": "font_size",
+      "label": "Font Size (px)",
+      "default": 16
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "default": "left-bahamii",
+      "options": [
+        {
+          "value": "left-bahamii",
+          "label": "Left"
+        },
+        {
+          "value": "right-bahamii",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "number",
+      "id": "image_width",
+      "label": "Image Width (px)",
+      "default": 450
+    },
+    {
+      "type": "number",
+      "id": "text_width",
+      "label": "Text Width (%)",
+      "default": 100
+    },
+    {
+      "type": "number",
+      "id": "container_height",
+      "label": "Container Height (vw)",
+      "default": 700
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f5f5dc"
+    },
+    {
+      "type": "number",
+      "id": "background_height",
+      "label": "Background Height (%)",
+      "default": 70
+    },
+    {
+      "type": "checkbox",
+      "id": "center_align_text",
+      "label": "Center Align Text"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "number",
+      "id": "button_font_size",
+      "label": "Button Font Size (px)",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "button_font_color",
+      "label": "Button Font Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "button_font_weight",
+      "label": "Button Font Weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "type": "number",
+      "id": "button_height",
+      "label": "Button Height (px)",
+      "default": 50
+    },
+    {
+      "type": "number",
+      "id": "button_width",
+      "label": "Button Width (px)",
+      "default": 150
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "number",
+      "id": "text_translate_x",
+      "label": "Text Translate X (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "text_translate_y",
+      "label": "Text Translate Y (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "image_translate_x",
+      "label": "Image Translate X (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "image_translate_y",
+      "label": "Image Translate Y (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "text_margin_top",
+      "label": "Text Margin Top (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "text_margin_bottom",
+      "label": "Text Margin Bottom (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "button_margin_top",
+      "label": "Button Margin Top (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "button_margin_bottom",
+      "label": "Button Margin Bottom (px)",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Font Sizes for >=1200px"
+    },
+    {
+      "type": "number",
+      "id": "h1_font_size_1200",
+      "label": "H1 Font Size",
+      "default": 36
+    },
+    {
+      "type": "number",
+      "id": "h2_font_size_1200",
+      "label": "H2 Font Size",
+      "default": 32
+    },
+    {
+      "type": "number",
+      "id": "h3_font_size_1200",
+      "label": "H3 Font Size",
+      "default": 28
+    },
+    {
+      "type": "number",
+      "id": "p_font_size_1200",
+      "label": "P Font Size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Font Sizes for 1025px-1199px"
+    },
+    {
+      "type": "number",
+      "id": "h1_font_size_1025",
+      "label": "H1 Font Size",
+      "default": 34
+    },
+    {
+      "type": "number",
+      "id": "h2_font_size_1025",
+      "label": "H2 Font Size",
+      "default": 30
+    },
+    {
+      "type": "number",
+      "id": "h3_font_size_1025",
+      "label": "H3 Font Size",
+      "default": 26
+    },
+    {
+      "type": "number",
+      "id": "p_font_size_1025",
+      "label": "P Font Size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Font Sizes for 768px-1024px"
+    },
+    {
+      "type": "number",
+      "id": "h1_font_size_1024",
+      "label": "H1 Font Size",
+      "default": 32
+    },
+    {
+      "type": "number",
+      "id": "h2_font_size_1024",
+      "label": "H2 Font Size",
+      "default": 28
+    },
+    {
+      "type": "number",
+      "id": "h3_font_size_1024",
+      "label": "H3 Font Size",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "p_font_size_1024",
+      "label": "P Font Size",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Font Sizes for 551px-767px"
+    },
+    {
+      "type": "number",
+      "id": "h1_font_size_767",
+      "label": "H1 Font Size",
+      "default": 30
+    },
+    {
+      "type": "number",
+      "id": "h2_font_size_767",
+      "label": "H2 Font Size",
+      "default": 26
+    },
+    {
+      "type": "number",
+      "id": "h3_font_size_767",
+      "label": "H3 Font Size",
+      "default": 22
+    },
+    {
+      "type": "number",
+      "id": "p_font_size_767",
+      "label": "P Font Size",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Font Sizes for <551px"
+    },
+    {
+      "type": "number",
+      "id": "h1_font_size_551",
+      "label": "H1 Font Size",
+      "default": 28
+    },
+    {
+      "type": "number",
+      "id": "h2_font_size_551",
+      "label": "H2 Font Size",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "h3_font_size_551",
+      "label": "H3 Font Size",
+      "default": 20
+    },
+    {
+      "type": "number",
+      "id": "p_font_size_551",
+      "label": "P Font Size",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text and Image",
+      "category": "Custom"
+    }
+  ]
+}
+
+
 {% endschema %}

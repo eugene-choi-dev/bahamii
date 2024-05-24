@@ -238,6 +238,14 @@
     /* BAHAMII CUSTOM STYLES ---> */
 
     /* global to featured-product sections ---> */
+    #ProductSection-{{ section.id }} .container.productView-container {
+        max-width: 1250px;
+    }
+
+    .productView-images, .productView-details {
+        max-width: 580px;
+    }
+
     #ProductSection-{{ section.id }} .productView-customText {
         background: none !important;
     }
@@ -265,7 +273,6 @@
 
 @media (min-width: 1025px) {
     .featured-product-choc-almond-bahamii-custom.featured-product.product-details.product-default {
-        height: 1500px !important;
     }
 
     .featured-product-choc-almond-bahamii-custom .moreItem-productText {

@@ -111,31 +111,34 @@
                                     
                                     <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}-{{ section.id }}" data-variant-id="{{ variant.id }}">
                                         <span class="text">
-                                            {% case value %}
+                                            {%- assign value_downcased = value | downcase -%}
+                                            {% case value_downcased %}
                                                 {% when '1 pack' %}
-                                                    <h3 class="qty-text one-pack-text">1 Box</h3>
-                                                    <h2 class="price-text one-pack-price">{{ price_1_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
-                                                {% when '1 Pack' %}
-                                                    <h3 class="qty-text one-pack-text">1 Box</h3>
-                                                    <h2 class="price-text one-pack-price">{{ price_1_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 Pack" />
+                                                    <div class="content-wrap one-pack">
+                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
+                                                        <h2 class="price-text one-pack-price">${{ price_1_pack }} <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
+                                                    </div>
                                                 {% when '3 pack' %}
-                                                    <h3 class="qty-text three-pack-text">3 Boxes</h3>
-                                                    <h2 class="price-text three-pack-price">{{ price_3_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
-                                                {% when '3 Pack' %}
-                                                    <h3 class="qty-text three-pack-text">3 Boxes</h3>
-                                                    <h2 class="price-text three-pack-price">{{ price_3_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 Pack" />
+                                                    <div class="content-wrap three-pack">
+                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
+                                                        <h2 class="price-text three-pack-price">${{ price_3_pack }} <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
+                                                        <div class="bundle-price-wrap">
+                                                            <span class="original-price">$44.97</span>
+                                                            <span class="bundle-price">$99.99</span>
+                                                        </div>
+                                                    </div>
                                                 {% when '6 pack' %}
-                                                    <h3 class="qty-text six-pack-text">6 Boxes</h3>
-                                                    <h2 class="price-text six-pack-price">{{ price_6_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
-                                                {% when '6 Pack' %}
-                                                    <h3 class="qty-text six-pack-text">6 Boxes</h3>
-                                                    <h2 class="price-text six-pack-price">{{ price_6_pack }} <span>/box</span></h2>
-                                                    <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 Pack" />
+                                                    <div class="content-wrap six-pack">
+                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
+                                                        <h2 class="price-text six-pack-price">${{ price_6_pack }} <span>/box</span></h2>
+                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
+                                                        <div class="bundle-price-wrap">
+                                                            <span class="original-price">$54.97</span>
+                                                            <span class="bundle-price">$99.99</span>
+                                                        </div>
+                                                    </div>
                                             {% endcase %}
                                         </span>
                                     </label>
@@ -206,19 +209,24 @@
 
 <style>
 
+    #ProductSection-{{ section.id }} legend.form__label {
+        display: none;
+    }
+
     #ProductSection-{{ section.id }} .product-form__input {
         display: flex;
         justify-content: space-between;
     }
 
     #ProductSection-{{ section.id }} .bahamii-product-form-label {
-        width: 30%;
+        width: 165px;
+        height: 300px;
+        margin-right: 20px;
     }
 
-    #ProductSection-{{ section.id }} .bahamii-product-form-label span.text {
+    #ProductSection-{{ section.id }} .bahamii-product-form-label .text {
         height: 100%;
         width: 100%;
-        overflow: hidden;
         padding: 0;
         border: 2px solid black;
     }
@@ -254,11 +262,13 @@
         line-height: 32px;
         letter-spacing: 0;
         text-transform: none;
+        margin-left: -5%;
     }
     
     #ProductSection-{{ section.id }} .product-form__radio:checked+.product-form__label .text {
         border-color: #ED1068;
-        border-width: 8px;
+        box-shadow: 0 0 0 8px #ED1068;
+        background: #FFFAC2;
     }
 
     #ProductSection-{{ section.id }} .product-form__label.soldout:before {
@@ -277,22 +287,155 @@
         display: none;
     }
 
+    #ProductSection-{{ section.id }} .bundle-price-wrap {
+        position: relative;
+    }
+
+    #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
+        content: 'FREE SHIPPING';
+        position: absolute;
+        top: -25px;
+        left: -10px;
+        background: linear-gradient(120deg, #F5B21F 50%, transparent 50%), transparent;
+        background-size: 175% 100%;
+        background-position: right -96px top;
+        color: #FFFFFF;
+        padding: 1px 30px 1px 5px;
+        z-index: 16;
+        text-align: center;
+        font-size: 13.455px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21.527px;
+    }
+
+    #ProductSection-{{ section.id }} .original-price {
+        color: #979797;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        text-decoration: line-through;
+    }
+
+    #ProductSection-{{ section.id }} .bundle-price {
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    @media (max-width: 1200px) {
+        #ProductSection-{{ section.id }} .product-form__input {
+            justify-content: flex-start;
+        }
+        #ProductSection-{{ section.id }} .bahamii-product-form-label {
+            width: 148.5px;
+            height: 270px;
+            margin-right: 15px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
+            font-size: 28.8px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text {
+            font-size: 32.4px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text span {
+            font-size: 10.8px;
+        }
+
+        #ProductSection-{{ section.id }} .original-price {
+            font-size: 18px;
+        }
+
+        #ProductSection-{{ section.id }} .bundle-price {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #ProductSection-{{ section.id }} .bahamii-product-form-label {
+            width: 165px;
+            height: 300px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
+            font-size: 32px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text {
+            font-size: 36px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text span {
+            font-size: 12px;
+        }
+
+        #ProductSection-{{ section.id }} .original-price {
+            font-size: 20px;
+        }
+
+        #ProductSection-{{ section.id }} .bundle-price {
+            font-size: 20px;
+        }
+    }
+
     @media (max-width: 768px) {
+        #ProductSection-{{ section.id }} .product-form__radio:checked+.product-form__label .text {
+            box-shadow: 0 0 0 3px #ED1068;
+        }
+
         #ProductSection-{{ section.id }} .bahamii-product-form-label span.text {
             height: 100%;
             width: 100%;
         }
+    }
+
+    @media (max-width: 551px) {
+        #ProductSection-{{ section.id }} .product-form__input {
+            justify-content: center;
+        }
+
+        #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
+            top: -39px;
+            left: -5px;
+            background-size: 225% 100%;
+            background-position: right -80px top;
+            padding: 0px 30px 0px 2px;
+            font-size: 8.5px;
+            line-height: 15px;
+        }
+
+        #ProductSection-{{ section.id }} .bahamii-product-form-label {
+            width: 106px;
+            height: 181px;
+            margin-right: 7px;
+        }
 
         #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
-            font-size: 20px;
+            font-size: 20.262px;
         }
 
         #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text {
-            font-size: 20px;
+            font-size: 22.794px;
         }
 
         #ProductSection-{{ section.id }} .bahamii-product-form-label .price-text span {
-            font-size: 8px;
+            font-size: 7.598px;
+        }
+
+        #ProductSection-{{ section.id }} .original-price {
+            font-size: 12.663px;
+        }
+
+        #ProductSection-{{ section.id }} .bundle-price {
+            font-size: 12.663px;
         }
     }
 </style>

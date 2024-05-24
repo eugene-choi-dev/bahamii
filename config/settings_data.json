@@ -99,6 +99,7 @@
     "type_page_title_letter_spacing": ".05em",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "show_effect_close": true,
+    "show_global_checkbox": false,
     "global_checkbox_text": "I agree with",
     "global_checkbox_link_text": "Terms & Conditions",
     "global_checkbox_content": "What is Lorem Ipsum?\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
@@ -845,6 +846,37 @@
           "footer_top_title_color": "#ffffff",
           "footer_top_color_link": "#ffffff",
           "footer_top_color_link_hover": "#ffffff"
+        }
+      },
+      "password-page-1": {
+        "type": "password-page-1",
+        "settings": {
+          "background_color": "#ffffff",
+          "brand_type": "image",
+          "brand_text": "",
+          "brand_logo_font_size": 30,
+          "logo_color": "#232323",
+          "brand_logo": "shopify:\/\/shop_images\/Bahamii_Logo.png",
+          "brand_logo_width": 200,
+          "banner": "shopify:\/\/shop_images\/Hand-All-Three_20240517_DSC04045.png",
+          "banner_color": "#ffffff",
+          "show_newsletter": true,
+          "title": "Ready to level up your<br><span class=\"snack-txt\">Snacking Game?<\/span>",
+          "title_font_size": 24,
+          "title_font_size_mb": 24,
+          "title_color": "#ffffff",
+          "subtitle": "Subscribe here to be the first to know when we're back.",
+          "subtitle_font_size": 12,
+          "subtitle_color": "#ffffff",
+          "input_color": "#323232",
+          "terms_text_color": "#848484",
+          "terms_link_color": "#3c3c3c",
+          "btn": "3",
+          "show_social_media": false,
+          "social_media_color": "#ffffff",
+          "show_copyright": false,
+          "copyright_content": "",
+          "copyright_color": "#7e7e7e"
         }
       }
     },
