@@ -42,6 +42,7 @@ class VariantEditCartSelects extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (4)');
         this.updateOptions();
         this.updateMasterId();
         this.updateVariantStatuses();

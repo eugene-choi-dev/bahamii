@@ -24,6 +24,7 @@ class VariantSelects extends HTMLElement {
     }
     
     onVariantChange(event) {
+        console.log('onVariantChange!!!!! (variants.js)');
         this.updateOptions();
         this.updateMasterId();
         this.updatePickupAvailability();
@@ -124,10 +125,10 @@ class VariantSelects extends HTMLElement {
         const announcementBarHeight = document.querySelectorAll('.announcement-bar')[0]?.getBoundingClientRect().height 
         const positionTop = block.getBoundingClientRect().top - headerHeight - announcementBarHeight 
 
-        window.scrollTo({
-            top: positionTop,
-            behavior: 'smooth'
-        })
+        // window.scrollTo({
+        //     top: positionTop,
+        //     behavior: 'smooth'
+        // })
     }
 
     updateURL() {
@@ -560,10 +561,14 @@ class VariantSelects extends HTMLElement {
 
     checkQuantityWhenVariantChange() {
         var quantityInput = this.closest('.productView-details').querySelector('input.quantity__input')
+        console.log(quantityInput, 'quantityInput')
         var maxValue = parseInt(quantityInput?.dataset.inventoryQuantity);
+        console.log(maxValue, 'maxValue')
         var inputValue = parseInt(quantityInput?.value);
+        console.log(inputValue, 'inputValue')
 
         let value = inputValue 
+        console.log(value, 'value')
 
         if (inputValue > maxValue && maxValue > 0) {
             value = maxValue
@@ -577,7 +582,7 @@ class VariantSelects extends HTMLElement {
           quantityInput.value = value
         }
       
-        document.getElementById('product-add-to-cart').dataset.available = this.currentVariant.available && maxValue <= 0
+        document.getElementById(`product-add-to-cart-${this.dataset.product}`).dataset.available = this.currentVariant.available && maxValue <= 0
     }
 
     updateVariantStatuses() {
@@ -679,6 +684,8 @@ class VariantRadios extends VariantSelects {
     updateOptions() {
         const fieldsets = Array.from(this.querySelectorAll('fieldset'));
         this.options = fieldsets.map((fieldset) => {
+            Array.from(fieldset.querySelectorAll('input')).forEach(input => {
+              })
             return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
         });
     }

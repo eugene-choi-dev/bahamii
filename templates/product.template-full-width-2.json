@@ -292,6 +292,7 @@
       "type": "nutrition",
       "settings": {
         "nutrition_label": "shopify:\/\/shop_images\/Nutrition_Honey-Cinnamon_Black_1.png",
+        "side_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
         "header_text": "Chocolate Almond",
         "ingredients_text": "<p><strong>Ingredients:<\/strong> Organic Dates, Organic Almonds, Organic Cocoa Powder, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt<\/p>",
         "additional_info": "<p><strong>CONTAINS: ALMONDS, COCONUT<br\/><\/strong><br\/>Made in a facility that also processes Peanuts, Tree Nuts, Eggs, Soy, Milk, Wheat, and Sesame.<br\/><br\/>May contain Shell and\/or Pit Fragments.<\/p>"
@@ -299,30 +300,68 @@
     },
     "text_image_8Hzz7N": {
       "type": "text-image",
+      "custom_css": [
+        "h1 {margin-top: 20px; margin-bottom: 20px;}",
+        "h1 {margin-top: 20px; margin-bottom: 20px;}",
+        ".custom-button {margin-top: 20px; margin-bottom: 20px;}"
+      ],
       "settings": {
-        "text": "<h1>I want to build my own bundle!<\/h1><p><\/p><p><\/p><h4>Customize the flavors you want in your bundle.<\/h4>",
-        "font_size": 17,
-        "image": "shopify:\/\/shop_images\/hon-cinn-crop.png",
+        "text": "<h1><strong>I want to build <br\/>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br\/>you want in your bundle.<\/h2>",
+        "font_size": 16,
+        "image": "shopify:\/\/shop_images\/Group_171.png",
         "image_position": "left-bahamii",
-        "image_width": 70,
-        "text_width": 60,
-        "container_height": 850,
+        "image_width": 1000,
+        "text_width": 70,
+        "container_height": 50,
         "background_color": "#f5b21f",
-        "background_height": 57,
-        "max_width": 1200,
-        "padding_left": 10,
-        "padding_right": 10,
-        "center_align_text": false
+        "background_height": 70,
+        "center_align_text": false,
+        "button_text": "Start Building!",
+        "button_url": "https:\/\/bahamii.com\/apps\/subscriptions\/bb\/rwy2nezh",
+        "button_font_size": 20,
+        "button_font_color": "#ffffff",
+        "button_font_weight": "400",
+        "button_height": 51,
+        "button_width": 229,
+        "button_background_color": "#ed1068",
+        "text_translate_x": 0,
+        "text_translate_y": 0,
+        "image_translate_x": 0,
+        "image_translate_y": 0,
+        "text_margin_top": 0,
+        "text_margin_bottom": 0,
+        "button_margin_top": 0,
+        "button_margin_bottom": 0,
+        "h1_font_size_1200": 64,
+        "h2_font_size_1200": 36,
+        "h3_font_size_1200": 28,
+        "p_font_size_1200": 16,
+        "h1_font_size_1025": 34,
+        "h2_font_size_1025": 30,
+        "h3_font_size_1025": 26,
+        "p_font_size_1025": 14,
+        "h1_font_size_1024": 32,
+        "h2_font_size_1024": 28,
+        "h3_font_size_1024": 24,
+        "p_font_size_1024": 12,
+        "h1_font_size_767": 30,
+        "h2_font_size_767": 26,
+        "h3_font_size_767": 22,
+        "p_font_size_767": 10,
+        "h1_font_size_551": 28,
+        "h2_font_size_551": 24,
+        "h3_font_size_551": 20,
+        "p_font_size_551": 8
       }
     },
-    "instagram_VNAPPR": {
-      "type": "instagram",
+    "instagram_bahamii_4FtRmD": {
+      "type": "instagram-bahamii",
       "blocks": {
         "instagram_P6f6mE": {
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5df6558dcb1f4d60ab85e85b1d156ff7.mp4",
             "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
@@ -330,7 +369,7 @@
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a454a4b312b54a05891685e111b7163d.mp4",
             "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
@@ -338,7 +377,7 @@
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/260cc0b5e06c4b7db3b2537fc1e87245.mp4",
             "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
           }
         },
@@ -346,8 +385,16 @@
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7b617801e1e044839019531722460287.mp4",
             "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
+          }
+        },
+        "instagram_xUpFpD": {
+          "type": "instagram",
+          "settings": {
+            "enable": true,
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/16b0cf9c65b349629ae90f367cf66c9c.mp4",
+            "link": ""
           }
         }
       },
@@ -355,29 +402,23 @@
         "instagram_P6f6mE",
         "instagram_zHyyfH",
         "instagram_feMtcW",
-        "instagram_FYXpBf"
+        "instagram_FYXpBf",
+        "instagram_xUpFpD"
       ],
       "custom_css": [
-        ".container-full:first-of-type {height: 150px; overflow: visible;}",
-        ".container-full {padding-left: 197px; padding-right: 196px;}",
-        ".halo-block-header,.title,.text {height: 100%;}",
-        ".title .text {display: flex; justify-content: center; align-items: center; line-height: 42px;}",
-        ".halo-row .text {display: flex; justify-content: space-between;}",
-        ".title .text {width: 100%;}",
-        ".halo-row {justify-content: space-between;}",
-        ".halo-item {padding-right: 0; padding-left: 0; width: 24%;}"
+
       ],
       "settings": {
         "container": "fullwidth",
         "padding_full_width": 100,
         "disable_padding_content": false,
         "type_instagram": "default",
-        "block_layout": "grid",
+        "block_layout": "scroll",
         "scroll_from": "rtl",
         "scroll_time": "30",
         "mg_top_desktop": 0,
         "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
+        "mg_top_mobile": 45,
         "mg_bottom_desktop": 20,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
@@ -392,7 +433,7 @@
         "color_title": "#000000",
         "mg_bottom_title": 0,
         "fontsize_title": 48,
-        "fontsize_title_mb": 16,
+        "fontsize_title_mb": 30,
         "instagram_des": "",
         "color_des": "#3c3c3c",
         "fontsize_des": 16,
@@ -406,7 +447,6 @@
         "mg_bottom_view": 30,
         "enable_border_view_all": false,
         "link_view_all": "",
-        "color_view_all": "#3c3c3c",
         "display_instagram_button": false,
         "instagram_button_text": "Viewfdf",
         "type_button_more": "load",
@@ -428,9 +468,9 @@
         "instagram_item_limit": 5,
         "grid_gap": 15,
         "enable_hide_portion": false,
-        "slide_ins": "default_ins",
+        "slide_ins": "centermode",
         "display_arrow": true,
-        "enable_hover_arrow": false,
+        "enable_hover_arrow": true,
         "display_dots": false,
         "icon_for_image": "",
         "icon_style": "style_1",
@@ -449,7 +489,7 @@
             "rating": "star5",
             "name": "- John Smith",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
           }
         },
         "review_RG4Lyk": {
@@ -460,7 +500,7 @@
             "rating": "star5",
             "name": "- John Smith",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis."
           }
         },
         "review_q4BVwQ": {
@@ -473,21 +513,39 @@
             "date": "",
             "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
           }
+        },
+        "review_ARq3rL": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
+          }
+        },
+        "review_mhmDRj": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- John Smith",
+            "date": "",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper!"
+          }
         }
       },
       "block_order": [
         "review_bwKGUk",
         "review_RG4Lyk",
-        "review_q4BVwQ"
+        "review_q4BVwQ",
+        "review_ARq3rL",
+        "review_mhmDRj"
       ],
       "custom_css": [
-        ".container-full,.customer-review-slide > div,.customer-review__item:last-of-type {overflow: visible; margin-right: 0;}",
-        ".customer-review-block {padding: 0 190px;}",
-        ".customer-review-slide > div > div {display: flex; justify-content: space-between;}",
-        ".customer-review__item {background: #fff; border: 3px solid #ed1068; margin-right: 17px;}",
-        ".customer-review__content {padding-top: 11px; text-align: left; line-height: 32px; font-weight: 300;}",
-        ".star-reviews {display: none;}",
-        ".name {text-align: left;}"
+
       ],
       "settings": {
         "container": "fullwidth",
@@ -495,10 +553,10 @@
         "section_style": "style_1",
         "mg_top_desktop": 0,
         "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
+        "mg_top_mobile": 0,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50,
+        "mg_bottom_mobile": 35,
         "review_bg": "#facad3",
         "review_bg_gradient": "",
         "review_title": "",
@@ -551,7 +609,7 @@
     "product-recently-viewed",
     "nutrition_84X9a3",
     "text_image_8Hzz7N",
-    "instagram_VNAPPR",
+    "instagram_bahamii_4FtRmD",
     "customer_review_block_bzLaXr"
   ]
 }

@@ -21,6 +21,7 @@ class VariantQuickViewSelects extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (variant-quick-view.js)');
         this.updateOptions();
         this.updateMasterId();
         this.updateVariants(this.variants);

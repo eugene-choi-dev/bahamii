@@ -16,6 +16,7 @@ class VariantQuickShopSelects extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (3)');
         this.updateOptions();
         this.updateMasterId();
 

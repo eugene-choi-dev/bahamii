@@ -35,6 +35,7 @@ class ProductBundle extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (8)');
         this.changeSwatch(event);
         this.updateVariants(event);
     }

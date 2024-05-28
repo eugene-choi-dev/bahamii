@@ -1,7 +1,7 @@
 <div class="text-image-section-{{ section.id }} {{ section.settings.image_position }}" style="height: {{ section.settings.container_height }}vw;">
   <div class="text-image-background" style="background-color: {{ section.settings.background_color }}; height: {{ section.settings.background_height }}%;">
     <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}">
-      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px;transform: translate({{ section.settings.text_translate_x }}px, {{ section.settings.text_translate_y }}px); width: {{ section.settings.text_width }}%">
+      <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px;transform: translate({{ section.settings.text_translate_x }}%, {{ section.settings.text_translate_y }}%); width: {{ section.settings.text_width }}%">
         {{ section.settings.text }}
         {% if section.settings.button_text %}
           <a href="{{ section.settings.button_url }}" class="custom-button" style="font-size: {{ section.settings.button_font_size }}px; color: {{ section.settings.button_font_color }}; font-weight: {{ section.settings.button_font_weight }}; background-color: {{ section.settings.button_background_color }}; height: {{ section.settings.button_height }}px; width: {{ section.settings.button_width }}px; text-align: center;">
@@ -11,7 +11,7 @@
       </div>
       <div class="image-wrapper">
         {% if section.settings.image %}
-          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section" style="transform: translate({{ section.settings.image_translate_x }}px, {{ section.settings.image_translate_y }}px); width: {{ section.settings.image_width }}px;">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Text and Image Section" style="transform: translate({{ section.settings.image_translate_x }}%, {{ section.settings.image_translate_y }}%); width: {{ section.settings.image_width }}px;">
         {% endif %}
       </div>
     </div>
@@ -19,7 +19,7 @@
 </div>
 
 <style>
-.custom-button {
+.text-image-section-{{ section.id }} .custom-button {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -68,6 +68,24 @@
   justify-content: center;
   align-items: flex-start;
   padding-right: 2%;
+  min-width: 50%; /* adjust to prevent text overflow */
+}
+
+.text-image-section-{{ section.id }} .text-wrapper > * {
+  margin-top: 3% !important;
+  margin-bottom: 3% !important;
+}
+
+.text-image-section-{{ section.id }} .text-wrapper h1 {
+  line-height: 70px;
+}
+
+.text-image-section-{{ section.id }} .text-wrapper h2 {
+  line-height: 50px;
+}
+
+.text-image-section-{{ section.id }} .text-wrapper h3 {
+  line-height: 30px;
 }
 
 .text-image-section-{{ section.id }} .text-wrapper p {
@@ -110,6 +128,18 @@
 }
 
 @media (max-width: 1199px) {
+  .text-image-section-{{ section.id }} .text-wrapper h1 {
+    line-height: normal;
+  }
+
+  .text-image-section-{{ section.id }} .text-wrapper h2 {
+    line-height: normal;
+  }
+
+  .text-image-section-{{ section.id }} .text-wrapper h3 {
+    line-height: normal;
+  }
+
   .text-image-section-{{ section.id }} h1 {
     font-size: {{ section.settings.h1_font_size_1025 }}px;
   }
@@ -184,7 +214,6 @@
 @media (max-width: 1024px) {
   .text-image-section-{{ section.id }} {
     height: auto !important;
-    margin: 20px 0;
   }
 
   .text-image-section-{{ section.id }} .text-image-background {
@@ -348,25 +377,25 @@
     {
       "type": "number",
       "id": "text_translate_x",
-      "label": "Text Translate X (px)",
+      "label": "Text Translate X (%)",
       "default": 0
     },
     {
       "type": "number",
       "id": "text_translate_y",
-      "label": "Text Translate Y (px)",
+      "label": "Text Translate Y (%)",
       "default": 0
     },
     {
       "type": "number",
       "id": "image_translate_x",
-      "label": "Image Translate X (px)",
+      "label": "Image Translate X (%)",
       "default": 0
     },
     {
       "type": "number",
       "id": "image_translate_y",
-      "label": "Image Translate Y (px)",
+      "label": "Image Translate Y (%)",
       "default": 0
     },
     {

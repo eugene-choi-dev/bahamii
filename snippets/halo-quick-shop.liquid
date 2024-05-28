@@ -489,7 +489,8 @@
         </div>
         <h1 class="productView-title">
           <a href="{{ product.url }}">
-            {{ product.title | escape }}
+            {% comment %} {{ product.title | escape }} {% endcomment %}
+            {{ product.title | replace: " (Pack of 6)", "" | escape }}
           </a>
         </h1>
         {%- if show_quick_view_short_description -%}

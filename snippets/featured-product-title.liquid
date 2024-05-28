@@ -7,7 +7,8 @@
 	<a href="{{product.url}}" class="featured-title">
 		<span>
 			{%- if product.title != blank -%}
-	            {{ product.title | escape }}
+	            {% comment %} {{ product.title | escape }} {% endcomment %}
+				{{ product.title | replace: " (Pack of 6)", "" | escape }}
 	        {%- else -%}
 	            {{ 'onboarding.product_title' | t }}
 	        {%- endif -%}
