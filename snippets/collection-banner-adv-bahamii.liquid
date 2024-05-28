@@ -116,26 +116,20 @@
         line-height: 123.4%;
         margin-top: 0;
     }
-
-   
-
-
+    
     #main-collection-product-grid {
-        /* background: tomato; */
         max-width: 1440px;
         display: flex;
         justify-content: space-evenly;
     }
 
     #main-collection-product-grid li {
-        /* background: teal; */
         border: 3px solid black;
         width: 30%;
         padding: 0;
     }
 
     #main-collection-product-grid li a {
-        /* background: lightsalmon; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -146,7 +140,6 @@
     #main-collection-product-grid li a img {
         transform: rotate(-15deg) translate(1%, -5%);
         width: 78%;
-        /* min-width: 300px; */
     }
 
     #main-collection-product-grid li a .product-h2-wrap {
@@ -155,7 +148,6 @@
     }
 
     #main-collection-product-grid li a h2 {
-        /* background: lightgreen; */
         text-align: center;
         font-size: 55.297px;
         font-style: normal;
@@ -213,81 +205,6 @@
             font-size: 25px;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* #main-collection-product-grid {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background: tomato;
-    }
-
-    #main-collection-product-grid li {
-        border: 3px solid #000000;
-        background: teal;
-        margin: 0px 24px;
-        width: 30%;
-    }
-
-    #main-collection-product-grid li a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        justify-content: flex-end;
-    }
-
-    #main-collection-product-grid li a img {
-        transform: rotate(-15deg)
-    }
-
-    #main-collection-product-grid li a .h2-wrap {
-        background: white;
-        width: 100%;
-        height: 39%;
-    }
-
-    #main-collection-product-grid li a h2 {
-        background: lightgreen;
-        color: #000;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 55.297px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 55.297px;
-        margin: 0;
-    }
-
-    #main-collection-product-grid li a.choc-almond-link {
-        background: #FACAD3;
-    }
-
-    #main-collection-product-grid li a.coco-van-link {
-        background: #EE7623;
-    }
-
-    #main-collection-product-grid li a.hon-cinn-link {
-        background: #F5B21F;
-    } */
 
     /* <--- BAHAMII CUSTOM STYLES */
 </style>
@@ -408,14 +325,6 @@
                                     assign banner_position_3 = section.settings.banner_position_3 | round | default: 12
                                 -%}
 
-
-
-
-
-
-
-
-
                                 {%- assign chocolate_almond_image = section.settings.chocolate_almond_image -%}
                                 {%- assign coconut_vanilla_image = section.settings.coconut_vanilla_image -%}
                                 {%- assign honey_cinnamon_image = section.settings.honey_cinnamon_image -%}
@@ -423,13 +332,13 @@
                                 {%- for product in collection.products -%}
                                     {%- assign product_image = '' -%}
                                     {%- assign background_color = '' -%}
-                                    {%- if product.title == 'Chocolate Almond' and chocolate_almond_image != blank -%}
+                                    {%- if product.title contains 'Chocolate Almond' and chocolate_almond_image != blank -%}
                                         {%- assign product_image = chocolate_almond_image -%}
                                         {%- assign background_color = '#FACAD3' -%}
-                                    {%- elsif product.title == 'Coconut Vanilla' and coconut_vanilla_image != blank -%}
+                                    {%- elsif product.title contains 'Coconut Vanilla' and coconut_vanilla_image != blank -%}
                                         {%- assign product_image = coconut_vanilla_image -%}
                                         {%- assign background_color = '#EE7623' -%}
-                                    {%- elsif product.title == 'Honey Cinnamon' and honey_cinnamon_image != blank -%}
+                                    {%- elsif product.title contains 'Honey Cinnamon' and honey_cinnamon_image != blank -%}
                                         {%- assign product_image = honey_cinnamon_image -%}
                                         {%- assign background_color = '#F5B21F' -%}
                                     {%- else -%}
@@ -443,7 +352,7 @@
                                                     <a class="animate-scale"{% if section.settings.link_banner_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_1 }}"{% endif %}>
                                                         <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner1 | img_url: 'master' }}" src="{{ section.settings.img_banner1 | img_url: 'master' }}" alt="{{ section.settings.img_banner1.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner1.width}}" height="{{section.settings.img_banner1.height}}">
                                                         <div class="product-h2-wrap">
-                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                            <h2 class="product-h2">{{ product.title | replace: " (Pack of 6)", "" }}</h2>
                                                         </div> 
                                                     </a>
                                                 </div>
@@ -455,7 +364,7 @@
                                                     <a class="animate-scale"{% if section.settings.link_banner_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_2 }}"{% endif %}>
                                                         <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner2 | img_url: 'master' }}" src="{{ section.settings.img_banner2 | img_url: 'master' }}" alt="{{ section.settings.img_banner2.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner2.width}}" height="{{section.settings.img_banner2.height}}">
                                                         <div class="product-h2-wrap">
-                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                            <h2 class="product-h2">{{ product.title | replace: " (Pack of 6)", "" }}</h2>
                                                         </div> 
                                                     </a>
                                                 </div>
@@ -467,7 +376,7 @@
                                                     <a class="animate-scale"{% if section.settings.link_banner_3 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_banner_3 }}"{% endif %}>
                                                         <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ section.settings.img_banner3 | img_url: 'master' }}" src="{{ section.settings.img_banner3 | img_url: 'master' }}" alt="{{ section.settings.img_banner3.alt | default: shop.name | escape }}" loading="lazy" width="{{section.settings.img_banner3.width}}" height="{{section.settings.img_banner3.height}}">
                                                         <div class="product-h2-wrap">
-                                                            <h2 class="product-h2">{{ product.title }}</h2>
+                                                            <h2 class="product-h2">{{ product.title | replace: " (Pack of 6)", "" }}</h2>
                                                         </div> 
                                                     </a>
                                                 </div>
@@ -477,7 +386,7 @@
                                             <a href="{{ product.url }}">
                                                 <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ product_image | img_url: 'master' }}" src="{{ product_image | img_url: 'master' }}" alt="{{ product.title }}" loading="lazy">
                                                 <div class="product-h2-wrap">
-                                                    <h2 class="product-h2">{{ product.title }}</h2>
+                                                    <h2 class="product-h2">{{ product.title | replace: " (Pack of 6)", "" }}</h2>
                                                 </div> 
                                             </a>
                                         </li>
@@ -486,27 +395,13 @@
                                             <a href="{{ product.url }}">
                                                 <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ product_image | img_url: 'master' }}" src="{{ product_image | img_url: 'master' }}" alt="{{ product.title }}" loading="lazy">
                                                 <div class="product-h2-wrap">
-                                                    <h2 class="product-h2">{{ product.title }}</h2>
+                                                    <h2 class="product-h2">{{ product.title | replace: " (Pack of 6)", "" }}</h2>
                                                 </div> 
                                             </a>
                                         </li>
                                     {%- endif -%}
                                 {%- endfor -%}
                                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </ul>
                             {%- if paginate.pages > 1 -%}
                                 {% render 'pagination-listing',

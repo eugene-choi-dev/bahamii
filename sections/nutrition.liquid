@@ -1,8 +1,19 @@
 <div class="nutrition-shopify-section">
   <div class="nutrition-label-section">
-    {% if section.settings.nutrition_label != blank %}
-      <img src="{{ section.settings.nutrition_label | img_url: 'master' }}" alt="Nutrition Label">
-    {% endif %}
+    <div class="nutrition-label-content-wrapper">
+      {% if section.settings.side_image != blank %}
+        <img
+          src="{{ section.settings.side_image | img_url: '275x' }}"
+          class="side-image"
+          alt="Bar Image">
+      {% endif %}
+      {% if section.settings.nutrition_label != blank %}
+        <img
+          src="{{ section.settings.nutrition_label | img_url: '333x' }}"
+          class="nutrition-label-image"
+          alt="Nutrition Label">
+      {% endif %}
+    </div>
   </div>
 
   <div class="ingredients-section">
@@ -31,63 +42,153 @@
   .nutrition-shopify-section {
     display: flex;
     background: #FACAD3;
+    padding: 50px 0;
   }
 
-  .nutrition-label-section {
-    width: 40%;
+  .nutrition-shopify-section .nutrition-label-section {
+    width: 53.25%;
     display: flex;
     justify-content: flex-end;
   }
 
-  .nutrition-label-section img {
-  }
-
-  .ingredients-section {
-    width: 60%;
+  .nutrition-shopify-section .nutrition-label-content-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 160px;
+    align-items: center;
   }
 
-  .ingredients-text-wrap {
+  .nutrition-shopify-section .nutrition-label-section .side-image {
+    margin: 0 20px;
+    width: 39%;
+    max-width: 275px;
+  }
+
+  .nutrition-shopify-section .nutrition-label-section .nutrition-label-image {
+    margin: 0 20px;
+    width: 46%;
+    max-width: 333px;
+  }
+
+  .nutrition-shopify-section .ingredients-section {
+    width: 45%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
-  .ingredients-text-wrap h2 {
+  .nutrition-shopify-section .ingredients-text-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    max-width: 475px;
+  }
+
+  .nutrition-shopify-section .additional-info-wrap {
+    max-width: 475px;
+  }
+
+  .nutrition-shopify-section .ingredients-text-wrap h2 {
     color: #000;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 12px;
     margin-bottom: 12px;
   }
 
-  .ingredients-text {
+  .nutrition-shopify-section .ingredients-text {}
+
+  .nutrition-shopify-section .ingredients-text p {
     color: #000;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 32px;
     text-transform: uppercase;
-  }
-
-  .ingredients-text p {
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
 
-  .additional-info-wrap {
-  }
+  .nutrition-shopify-section .additional-info-wrap {}
 
-  .additional-info {
+  .nutrition-shopify-section .additional-info p {
     color: #000;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 32px;
   }
-</style>
 
+  @media (max-width: 1024px) {
+    .nutrition-shopify-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nutrition-shopify-section .nutrition-label-section .side-image {
+      margin-left: 0;
+    }
+
+    .nutrition-shopify-section .nutrition-label-section .nutrition-label-image {
+      margin-right: 0;
+    }
+
+    .nutrition-shopify-section .nutrition-label-section {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .nutrition-shopify-section .nutrition-label-content-wrapper {
+      width: 58%;
+    }
+
+
+    .nutrition-shopify-section .ingredients-text-wrap {
+      width: 58%;
+      max-width: unset;
+    }
+
+    .nutrition-shopify-section .additional-info-wrap {
+      width: 58%;
+      max-width: unset;
+    }
+
+    .nutrition-shopify-section .ingredients-text-wrap h2 {
+      line-height: 50px;
+      margin-top: 20px;
+    }
+
+    .nutrition-shopify-section .ingredients-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .nutrition-shopify-section .nutrition-label-content-wrapper {
+      width: 95%;
+    }
+
+    .nutrition-shopify-section .ingredients-text-wrap {
+      width: 95%;
+      max-width: unset;
+    }
+
+    .nutrition-shopify-section .additional-info-wrap {
+      width: 95%;
+      max-width: unset;
+    }
+
+    .ingredients-text *,
+    .additional-info * {
+      font-size: 16px !important;
+    }
+  }
+</style>
 
 {% schema %}
   {
@@ -97,12 +198,19 @@
         "type": "image_picker",
         "id": "nutrition_label",
         "label": "Nutrition Label Image"
-      }, {
+      },
+      {
+        "type": "image_picker",
+        "id": "side_image",
+        "label": "Additional Image"
+      },
+      {
         "type": "text",
         "id": "header_text",
         "label": "Header Text",
         "default": "Nutrition Information"
-      }, {
+      },
+      {
         "type": "richtext",
         "id": "ingredients_text",
         "label": "Ingredients Text",

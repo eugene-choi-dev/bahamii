@@ -7015,3 +7015,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+
+
+// // Function to log events fired and event listeners when an element is clicked
+// function logClickEvents() {
+//     const relevantEvents = ["mousedown", "mouseup", "click"];
+
+//     function logEvent(event) {
+//         if (event.type === 'click') {
+//             console.log(`Clicked element:`, event.target);
+//             logEventListeners(event.target);
+//         }
+//         console.log(`Event: ${event.type}`);
+//     }
+
+//     // Helper function to log event listeners
+//     function logEventListeners(element) {
+//         const listeners = [];
+//         while (element) {
+//             const allEvents = ["click", "mouseover", "mouseout", "mousedown", "mouseup", "dblclick", "contextmenu", "wheel", "resize", "scroll", "keydown", "keypress", "keyup", "input", "change", "submit", "focus", "blur"];
+//             allEvents.forEach(event => {
+//                 if (element[`on${event}`]) {
+//                     listeners.push({ event, handler: element[`on${event}`].toString(), element });
+//                 }
+//             });
+//             element = element.parentElement;
+//         }
+
+//         if (listeners.length > 0) {
+//             console.log('Event listeners attached:');
+//             listeners.forEach(listener => {
+//                 console.log(`Element:`, listener.element);
+//                 console.log(`Event: ${listener.event}, Handler: ${listener.handler}`);
+//             });
+//         } else {
+//             console.log('No inline event listeners attached to this element or its ancestors.');
+//         }
+//     }
+
+//     // Attach event listeners for the relevant events
+//     relevantEvents.forEach(eventType => {
+//         document.body.addEventListener(eventType, logEvent, true); // Using capture phase
+//     });
+// }
+
+// // Initialize the function
+// logClickEvents();

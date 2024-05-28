@@ -105,44 +105,48 @@
                                         </label>
                                     {%- else -%}
 
-                                    {%- assign price_1_pack = block.settings.price_1_pack | default: "11.11" -%}
-                                    {%- assign price_3_pack = block.settings.price_3_pack | default: "33.33" -%}
-                                    {%- assign price_6_pack = block.settings.price_6_pack | default: "66.66" -%}
-                                    
+                                    {%- assign box_count = variant.title | split: " " | first | default: 1 | times: 1 -%}
+
                                     <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}-{{ section.id }}" data-variant-id="{{ variant.id }}">
                                         <span class="text">
                                             {%- assign value_downcased = value | downcase -%}
                                             {% case value_downcased %}
                                                 {% when '1 pack' %}
                                                     <div class="content-wrap one-pack">
-                                                        <h3 class="qty-text one-pack-text">1 Box</h3>
-                                                        <h2 class="price-text one-pack-price">${{ price_1_pack }} <span>/box</span></h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/1_Box.jpg?v=1716248530" alt="1 pack" />
+                                                        <h3 class="qty-text one-pack-text">{{ variant.title }}</h3>
+                                                        <h2 class="price-text one-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
+                                                        <div class="img-wrap">
+                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
+                                                        </div>
                                                     </div>
                                                 {% when '3 pack' %}
                                                     <div class="content-wrap three-pack">
-                                                        <h3 class="qty-text three-pack-text">3 Boxes</h3>
-                                                        <h2 class="price-text three-pack-price">${{ price_3_pack }} <span>/box</span></h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/3_boxes.jpg?v=1716248530" alt="3 pack" />
+                                                        <h3 class="qty-text three-pack-text">{{ variant.title }}</h3>
+                                                        <h2 class="price-text three-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
+                                                        <div class="img-wrap">
+                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
+                                                        </div>
                                                         <div class="bundle-price-wrap">
                                                             <span class="original-price">$44.97</span>
-                                                            <span class="bundle-price">$99.99</span>
+                                                            <span class="bundle-price">{{ variant.price | money }}</span>
                                                         </div>
                                                     </div>
                                                 {% when '6 pack' %}
                                                     <div class="content-wrap six-pack">
-                                                        <h3 class="qty-text six-pack-text">6 Boxes</h3>
-                                                        <h2 class="price-text six-pack-price">${{ price_6_pack }} <span>/box</span></h2>
-                                                        <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/6_boxes.jpg?v=1716248530" alt="6 pack" />
+                                                        <h3 class="qty-text six-pack-text">{{ variant.title }}</h3>
+                                                        <h2 class="price-text six-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
+                                                        <div class="img-wrap">
+                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
+                                                        </div>
                                                         <div class="bundle-price-wrap">
                                                             <span class="original-price">$54.97</span>
-                                                            <span class="bundle-price">$99.99</span>
+                                                            <span class="bundle-price">{{ variant.price | money }}</span>
                                                         </div>
                                                     </div>
                                             {% endcase %}
                                         </span>
                                     </label>
-                                    
+
                                     {%- endif -%}
                                 {%- endunless -%}
                             {%- endfor -%}
@@ -262,7 +266,7 @@
         line-height: 32px;
         letter-spacing: 0;
         text-transform: none;
-        margin-left: -5%;
+        margin-left: 0;
     }
     
     #ProductSection-{{ section.id }} .product-form__radio:checked+.product-form__label .text {
@@ -289,6 +293,19 @@
 
     #ProductSection-{{ section.id }} .bundle-price-wrap {
         position: relative;
+        margin-top: 8px;
+    }
+
+    #ProductSection-{{ section.id }} .content-wrap {
+
+    }
+
+    #ProductSection-{{ section.id }} .content-wrap .img-wrap {
+        height: 151px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 
     #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
@@ -357,6 +374,10 @@
         #ProductSection-{{ section.id }} .bundle-price {
             font-size: 18px;
         }
+
+        #ProductSection-{{ section.id }} .bundle-price-wrap {
+            margin-top: 0;
+        }
     }
 
     @media (max-width: 991px) {
@@ -384,6 +405,10 @@
         #ProductSection-{{ section.id }} .bundle-price {
             font-size: 20px;
         }
+        #ProductSection-{{ section.id }} .bundle-price-wrap {
+            position: relative;
+            margin-top: 8px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -403,7 +428,7 @@
         }
 
         #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
-            top: -39px;
+            top: -7px;
             left: -5px;
             background-size: 225% 100%;
             background-position: right -80px top;
@@ -416,6 +441,14 @@
             width: 106px;
             height: 181px;
             margin-right: 7px;
+        }
+
+        #ProductSection-{{ section.id }} .content-wrap .img-wrap {
+            height: 75px;
+        }
+        
+        #ProductSection-{{ section.id }} .content-wrap img {
+
         }
 
         #ProductSection-{{ section.id }} .bahamii-product-form-label .qty-text {
@@ -436,6 +469,10 @@
 
         #ProductSection-{{ section.id }} .bundle-price {
             font-size: 12.663px;
+        }
+
+        #ProductSection-{{ section.id }} .bundle-price-wrap {
+            margin-top: 0;
         }
     }
 </style>

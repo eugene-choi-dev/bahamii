@@ -133,6 +133,7 @@ class VariantStickyAddToCart extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (6)');
         this.updateOptions();   
         this.updateMasterId();
         this.updatePickupAvailability();
@@ -858,6 +859,7 @@ class VariantStickyRadios extends VariantStickyAddToCart {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (5)');
         this.updateOptions();   
         this.updateMasterId();
         this.updatePickupAvailability();

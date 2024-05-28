@@ -4918,7 +4918,8 @@ body.is-custom-information .background-overlay {
     }
 
     .wrapper-body {
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
+        padding-bottom: 0;
     }
 
     /* END: Container; */

@@ -46,8 +46,8 @@
             "spacing_input": 10,
             "newsletter_form_width": 420,
             "input_text": "enter your email address",
-            "input_color": "#ffffff",
-            "input_color_bg": "#ed1068",
+            "input_color": "#ed1068",
+            "input_color_bg": "#fff",
             "input_color_border": "#ffffff",
             "button_text": "Submit",
             "button_width": 400,
@@ -95,13 +95,7 @@
         "d935a709-71e0-48ff-8d74-5a367ae6d12d"
       ],
       "custom_css": [
-        ".list-menu__item--link {font-weight: 300;}",
-        ".footer-block__heading {text-transform: none;}",
-        ".footer-block__subheading {font-weight: 300;}",
-        ".field input {font-weight: 300; text-align: center;}",
-        ".newsletter-form__field-wrapper {flex-direction: column;}",
-        ".field {height: 77px;}",
-        ".newsletter-form__button {margin-top: 10px; width: 100%; height: 77px; font-size: 32px;}"
+
       ],
       "settings": {
         "container": "1170",

@@ -2,6 +2,7 @@ class VariantSelects extends HTMLElement {
     constructor() {
         super();
         this.item = $(this).closest('.productView');
+        console.log('asshole:', this)
         this.isFullWidth = this.item.is('.layout-4');
 
         this.onVariantInit();
@@ -24,6 +25,7 @@ class VariantSelects extends HTMLElement {
     }
     
     onVariantChange(event) {
+        console.log('onVariantChange!!!!! (variants.js)');
         this.updateOptions();
         this.updateMasterId();
         this.updatePickupAvailability();
@@ -560,10 +562,14 @@ class VariantSelects extends HTMLElement {
 
     checkQuantityWhenVariantChange() {
         var quantityInput = this.closest('.productView-details').querySelector('input.quantity__input')
+        console.log(quantityInput, 'quantityInput')
         var maxValue = parseInt(quantityInput?.dataset.inventoryQuantity);
+        console.log(maxValue, 'maxValue')
         var inputValue = parseInt(quantityInput?.value);
+        console.log(inputValue, 'inputValue')
 
         let value = inputValue 
+        console.log(value, 'value')
 
         if (inputValue > maxValue && maxValue > 0) {
             value = maxValue

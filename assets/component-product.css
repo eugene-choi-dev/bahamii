@@ -3387,7 +3387,8 @@ quantity-input.disabled {
     }
 
     .product-full-width-2 .halo-productView-right{
-        width: 37.28813559322034%;
+        /* width: 37.28813559322034%; */
+        width: 50%;
     }
 
     .positionMainImage--right .halo-productView-left {

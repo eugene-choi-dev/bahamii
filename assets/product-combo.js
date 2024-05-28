@@ -50,6 +50,7 @@ class ProductCombo extends HTMLElement {
     }
 
     onVariantChange(event) {
+        // console.log('onVariantChange (7)');
         this.changeSwatch(event);
         this.updateVariants(event);
         this.checkSelectVariants();
