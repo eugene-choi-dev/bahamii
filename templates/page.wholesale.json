@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "contact_us_bahamii_GBqFWt": {
+      "type": "contact-us-bahamii",
+      "settings": {
+        "contact_image": "shopify:\/\/shop_images\/All-6-Row_4-3.jpg",
+        "heading": "Wholesale & Bulk Orders",
+        "subheading": "Can't get enough Bahamii? Want to date some friends? Contact us today about our wholesale options."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact_us_bahamii_GBqFWt"
+  ]
+}

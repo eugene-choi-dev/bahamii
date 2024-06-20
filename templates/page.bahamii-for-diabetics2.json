@@ -1,0 +1,464 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "rich_text_a9PHfB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YwiRBF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bahamii For Diabetics",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "content_inGppq": {
+          "type": "content",
+          "settings": {
+            "content_top": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/Pictures.png\">",
+            "content_bottom": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/Pictures.png\">",
+            "alignment_content": "center",
+            "content_size": 16,
+            "margin_top_content": 20,
+            "content_color": "#000000",
+            "content_width": "800px",
+            "button_text_more": "",
+            "button_text_less": "Read Less",
+            "button_text_font_size": 14,
+            "button_text_font_weight": "500",
+            "margin_top_button_text": 30,
+            "button_text_color": "#ffffff",
+            "button_text_border_color": "#000000",
+            "button_text_bg_color": "#000000",
+            "button_text_bg_color_gradient": "",
+            "button_text_color_hover": "#000000",
+            "button_text_border_color_hover": "#000000",
+            "button_text_bg_color_hover": "#ffffff",
+            "button_text_bg_color_hover_gradient": "",
+            "button_text_more_width": 270,
+            "pd_top_button_text": 12,
+            "pd_bottom_button_text": 12
+          }
+        },
+        "text_Jb6qma": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover Bahamii date bars, a diabetic-friendly treat with a low glycemic index, perfect for satisfying sweet cravings healthily.<\/p>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YwiRBF",
+        "content_inGppq",
+        "text_Jb6qma"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 90,
+        "mg_top_tablet": 90,
+        "mg_top_mobile": 90,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_fwRAPe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cPYpqd": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Living with diabetes or managing a low-glycemic diet presents unique challenges, particularly when it comes to finding natural sweeteners that won't adversely affect blood sugar levels. The hunt for a sweet treat that satisfies cravings without causing a spike in glucose levels can be challenging. However, there's good news for those trying to balance things!\n\nLet’s explore the potential benefits of Bahamii date bars as a delicious and nutritious alternative for individuals with diabetes or those seeking low-glycemic options.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_cPYpqd"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_6P4nB6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_i7Ftfq": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>For many, the struggle to find a natural sweetener that not only suits dietary restrictions but also offers health benefits is an ongoing journey. Maintaining your blood sugar is incredibly important and choosing the right sweeteners is crucial in achieving this delicate balance. Bahamii date energy bars, with their natural sweetness and promising nutritional profile, offer hope for those following diabetic-friendly and low-glycemic diets.\n\nCome along on this sweet and nutritious journey with Bahamii date energy bars, where indulging your sweet tooth becomes a joyous experience that keeps you feeling great, without compromising your well-being, and helping you make smart choices for your health.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_i7Ftfq"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_N4taRV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4XjWYk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Glycemic Index",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_Wi6GGD": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>It is crucial to understand the concept of the glycemic index or GI. The GI measures how quickly a specific food raises your blood sugar levels. This index is particularly significant for individuals managing diabetes or those aiming for a low-glycemic diet. Opting for foods with a low GI is essential, as it contributes to maintaining stable blood sugar levels, a key element of overall health for those with diabetes.<br>Sticking to a low-GI diet regularly not only helps in managing blood sugar but also supports broader health goals, promoting sustained energy levels and overall well-being. Making informed choices about the GI of foods can help individuals to take control of their diets and proactively manage their health.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4XjWYk",
+        "text_Wi6GGD"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_eiQmj3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yaRK4W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bahamii Date Bars: A Nutrient-Rich Sweetener",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_9eWtk4": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Bahamii diabetic snack bars are a great pick and a promising choice due to their natural sweetness and impressive nutritional profile. Beyond their delightful taste, Bahamii healthy vegan snack are rich in essential vitamins, minerals and dietary fiber, offering more than just a sugary fix.<br>This sets Bahamii snack bar for diabetics apart from refined sugars and other sweeteners that lack these vital health benefits. Comparing Bahamii diabetic snack bars with other sweeteners in terms of their glycemic impact reveals a potentially favorable alternative for those seeking a harmonious balance between sweetness and health-conscious choices.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yaRK4W",
+        "text_9eWtk4"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_W9cfcp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kqab6r": {
+          "type": "heading",
+          "settings": {
+            "heading": "Health Benefits of Bahamii Date Bars for Diabetics",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_aMgMWx": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><ul>\n<li>\n<b>Bahamii Date Bars are a great choice for diabetics.<\/b><br>These energy date bars have a low glycemic index, low carbs, natural protein, and NO ADDED sugar. Diabetics can enjoy them to steadily raise and maintain blood sugar without a crash. Perfect for a quick date snack, each pack contains two 20g date energy bars, making them convenient for on-the-go munching. For diabetics, it's easy to calculate insulin, and athletes can accurately track their intake. These bar-size date nut bars are also ideal for sharing.<\/li>\n<li>\n<b>In addition to their low-glycemic nature, Bahamii diabetic snack bars offer various health benefits for individuals with diabetes.<\/b><br>These benefits include improved blood sugar regulation, enhanced insulin sensitivity, and additional advantages such as supporting heart health and promoting digestive well-being.<\/li>\n<li>\n<b>If you're in search of a healthy vegan snack, Bahamii date bites are the solution.<\/b><br>They're also a top choice for diabetic packaged snacks, school snacks for kids and satisfying vegan healthy snacks for everyone.<\/li>\n<\/ul><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kqab6r",
+        "text_aMgMWx"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_EmQLcC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fcCw7n": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is The Shelf Life Of Bahamii Date Bars?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_PK7rbH": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Bahamii date energy bars have a shelf life of 9 months unrefrigerated without the use of preservatives. This extended shelf life is a result of the naturally long shelf life of our premium ingredients, ensuring that you can enjoy the goodness of Bahamii Bars. Whether you're grabbing a quick bite on the go, sharing with friends or stocking up for future cravings, Bahamii Bars are designed to stay delicious and wholesome for an extended period. With our commitment to quality ingredients, you can savor the natural sweetness of Bahamii diabetic packaged snacks at your convenience.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fcCw7n",
+        "text_PK7rbH"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_4PbRRA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aBtTJN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Incorporating Bahamii Dates Into Your Diet",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_tMfYcG": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><ol type=\"1\">\n<li>\n<b>Breakfast Boost<\/b><br>Add chopped Bahamii dates to your morning cereal or oatmeal for a delighful sweetness without the need for added sugars.<\/li>\n<li>\n<b>Smoothie Sweetener<\/b><br>Include Bahamii dates in your smoothies for a natural sweetener that also provides additional nutrients.<\/li>\n<li>\n<b>Baking<\/b><br>Use chopped or pureed Bahamii dates in baking as a healthier alternative to refined sugars. They work well in cookies, muffins, and energy bars.<\/li>\n<li>\n<b>Salad Surprise<\/b><br>Springle chopped Bahamii dates over your favorite salads to add a touch of sweetness and a unique flavor dimension.<\/li>\n<li>\n<b>Stuffed Snacks<\/b><br>Create delicious stuffed healthy date snacks by combining Bahamii dates with nuts or nut butter for a satisfying and nutritious treat.<\/li>\n<\/ol><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aBtTJN",
+        "text_tMfYcG"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_9KwmLQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FnDykJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Disclaimer",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_MqtpHa": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">The information provided on this page is intended for educational purposes only and should not be construed as medical advice. Always consult with a qualified healthcare professional for personalized advice and treatment related to your specific health needs.<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FnDykJ",
+        "text_MqtpHa"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_a9PHfB",
+    "rich_text_fwRAPe",
+    "rich_text_6P4nB6",
+    "rich_text_N4taRV",
+    "rich_text_eiQmj3",
+    "rich_text_W9cfcp",
+    "rich_text_EmQLcC",
+    "rich_text_4PbRRA",
+    "rich_text_9KwmLQ"
+  ]
+}

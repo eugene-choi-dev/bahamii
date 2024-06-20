@@ -1,0 +1,200 @@
+{
+  "sections": {
+    "rich_text_baGRJ7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p7XD93": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Dates?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_YQNEhY": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>These timeless fruits are not only a staple in history but also the key ingredient in a variety of delicious and nutritious date energy bites from Bahamii.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        },
+        "content_6yJDWz": {
+          "type": "content",
+          "settings": {
+            "content_top": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/AdobeStock_58972196_2__jpeg.jpg?v=1717199330\">",
+            "content_bottom": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/AdobeStock_58972196_2__jpeg.jpg?v=1717199330\">",
+            "alignment_content": "center",
+            "content_size": 16,
+            "margin_top_content": 20,
+            "content_color": "#000",
+            "content_width": "800px",
+            "button_text_more": "",
+            "button_text_less": "",
+            "button_text_font_size": 14,
+            "button_text_font_weight": "500",
+            "margin_top_button_text": 30,
+            "button_text_color": "#fff",
+            "button_text_border_color": "#000",
+            "button_text_bg_color": "#000",
+            "button_text_bg_color_gradient": "",
+            "button_text_color_hover": "#000",
+            "button_text_border_color_hover": "#000",
+            "button_text_bg_color_hover": "#fff",
+            "button_text_bg_color_hover_gradient": "",
+            "button_text_more_width": 270,
+            "pd_top_button_text": 12,
+            "pd_bottom_button_text": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_p7XD93",
+        "text_YQNEhY",
+        "content_6yJDWz"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_GzhyBk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tfCpdV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Date Health",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_qEUcUM": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">Dates are a powerhouse of nutrition, offering a variety of benefits that can positively impact your health. These delicious fruits are not only sweet and satisfying but also pack a punch when it comes to their nutritional content. If you're craving a delightful treat, consider trying date energy bites.\n<ul>\n  <li>\n<b>Antioxidants<\/b><br>Dates are rich in antioxidants, which are known to reduce the risk of many diseases. Antioxidants help combat free radicals in the body, protecting cells from damage and lowering the risk of chronic illnesses such as heart disease and cancer.<br>\n<\/li>\n  <li>\n<b>Healthy Fats & Protein<\/b><br>Dates contain healthy fats and a moderate amount of protein, both of which slow digestion and promote weight loss. They help you feel full and satisfied, reducing the chance of overeating.<br>\n<\/li>\n  <li>\n<b>Natural Sugars & Calories<\/b><br>Dates provide a natural source of sugars and calories, making them an excellent choice for boosting and maintaining energy levels without the need for caffeine or processed sugars. They offer a quick energy boost without causing rapid blood sugar spikes and crashes.<br>\n<\/li>\n  <li>\n<b>Calcium<\/b><br>Dates are a good source of calcium, a mineral essential for maintaining strong bones and teeth. Regular consumption of dates can contribute to overall bone health and the prevention of osteoporosis.<br>\n<\/li>\n  <li>\n<b>Iron<\/b><br>Dates contain iron, which is vital for increasing red blood cell production. Adequate iron intake helps prevent anemia and promotes overall health.<br>\n<\/li>\n  <li>\n<b>Potassium<\/b><br>Dates are a rich source of potassium, which helps regulate blood pressure and reduce the risk of stroke. Adequate potassium intake is essential for maintaining a healthy cardiovascular system.<br>\n<\/li>\n  <li>\n<b>Fiber<\/b><br>Dates are high in dietary fiber, which supports regular bowel movements and helps prevent constipation. Fiber also aids in maintaining a healthy weight and can reduce the risk of digestive disorders.<br>\n<\/li>\n  <li>\n<b>Low Glycemic Index<\/b><br>Dates have a low glycemic index, which means they cause a slow and steady rise in blood sugar levels. This property can be beneficial for individuals with diabetes or those looking to maintain stable energy levels throughout the day.<br>\n<\/li>\n  <li>\n<b>Vitamins & Minerals<\/b><br>Dates are packed with vitamins A, B, C, E, and K, along with various essential minerals. These nutrients support brain function and memory, making dates a brain-boosting snack option.<br>\n<\/li>\n<\/ul>\n<br>\nIncorporating dates into your diet can be a simple and tasty way to gain these health benefits. Whether enjoyed on their own as a snack, blended into smoothies, or used as a natural sweetener in recipes, dates can be used in different ways as a nutritious addition to your daily meals, contributing to overall well-being. For a quick and healthy vegan snack, look no further than dates bites from Bahamii.<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tfCpdV",
+        "text_qEUcUM"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_ajJLVw": {
+      "type": "rich-text",
+      "blocks": {
+        "content_JEUJR9": {
+          "type": "content",
+          "settings": {
+            "content_top": "",
+            "content_bottom": "",
+            "alignment_content": "center",
+            "content_size": 16,
+            "margin_top_content": 20,
+            "content_color": "#000",
+            "content_width": "800px",
+            "button_text_more": "",
+            "button_text_less": "",
+            "button_text_font_size": 14,
+            "button_text_font_weight": "500",
+            "margin_top_button_text": 30,
+            "button_text_color": "#fff",
+            "button_text_border_color": "#000",
+            "button_text_bg_color": "#000",
+            "button_text_bg_color_gradient": "",
+            "button_text_color_hover": "#000",
+            "button_text_border_color_hover": "#000",
+            "button_text_bg_color_hover": "#fff",
+            "button_text_bg_color_hover_gradient": "",
+            "button_text_more_width": 270,
+            "pd_top_button_text": 12,
+            "pd_bottom_button_text": 12
+          }
+        },
+        "text_UJeiXE": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/20240515_A7siii_DSC04045-pink1080.jpg?v=1717189739\" style=\"float: left; margin: 5px;\" width=\"350px\"><p><strong>Dates are consumed all around the world<br><\/strong>Dates, considered one of the best organic snacks and have been a staple food in the Mediterranean diet for thousands of years.<br>Even fossil evidence indicates that dates were cultivated at least 50  million years ago, making them a timeless addition to healthy date  snacks.<\/p>\n<p><br><strong>Dates are a rich source of vitamins and nature’s original sugar.<br><\/strong>Even with their amazing health benefits and taste, raw dates are inconvenient. When eating dates, people have dealt with their large pits and stickiness. Thankfully, Bahamii eliminates both, offering delicious date energy bites. Bahamii's products are also the best organic snacks and make for excellent healthy packaged snacks for kids and a healthy vegan snack option.<\/p>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "content_JEUJR9",
+        "text_UJeiXE"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "rich_text_baGRJ7",
+    "rich_text_GzhyBk",
+    "rich_text_ajJLVw"
+  ]
+}

@@ -1,32 +1,36 @@
+{% assign product_title_lowercase = product.title | downcase %}
+{% assign product_title_hyphenated = product_title_lowercase | replace: ' ', '-' %}
+{% assign side_image_url = "https://cdn.shopify.com/s/files/1/0514/4625/1706/files/" | append: product_title_hyphenated | append: "-label-vertical.png" %}
+{% assign nutrition_label_url = "https://cdn.shopify.com/s/files/1/0514/4625/1706/files/" | append: product_title_hyphenated | append: "-nutrition.svg" %}
+
 <div class="nutrition-shopify-section">
   <div class="nutrition-label-section">
     <div class="nutrition-label-content-wrapper">
-      {% if section.settings.side_image != blank %}
         <img
-          src="{{ section.settings.side_image | img_url: '275x' }}"
+          src="{{ side_image_url }}"
           class="side-image"
           alt="Bar Image">
-      {% endif %}
-      {% if section.settings.nutrition_label != blank %}
         <img
-          src="{{ section.settings.nutrition_label | img_url: '333x' }}"
+          src="{{ nutrition_label_url }}"
           class="nutrition-label-image"
           alt="Nutrition Label">
-      {% endif %}
     </div>
   </div>
 
   <div class="ingredients-section">
     <div class="ingredients-text-wrap">
-      {% if section.settings.header_text != blank %}
-        <h2>{{ section.settings.header_text }}</h2>
-      {% endif %}
-
-      {% if section.settings.ingredients_text != blank %}
+        <h2>{{ product.title }}</h2>
         <div class="ingredients-text">
-          {{ section.settings.ingredients_text }}
+          {% if product.title == "Chocolate Almond" %}
+            {{ section.settings.chocalmond_ingredients_text }}
+          {% endif %}
+          {% if product.title == "Coconut Vanilla" %}
+            {{ section.settings.cocovan_ingredients_text }}
+          {% endif %}
+          {% if product.title == "Honey Cinnamon" %}
+            {{ section.settings.honcinn_ingredients_text }}
+          {% endif %}
         </div>
-      {% endif %}
     </div>
     <div class="additional-info-wrap">
       {% if section.settings.additional_info != blank %}
@@ -195,27 +199,21 @@
     "name": "Nutrition",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "nutrition_label",
-        "label": "Nutrition Label Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "side_image",
-        "label": "Additional Image"
-      },
-      {
-        "type": "text",
-        "id": "header_text",
-        "label": "Header Text",
-        "default": "Nutrition Information"
+        "type": "richtext",
+        "id": "chocalmond_ingredients_text",
+        "label": "Chocolate Almond Ingredients"
       },
       {
         "type": "richtext",
-        "id": "ingredients_text",
-        "label": "Ingredients Text",
-        "default": "<p>List your ingredients here...</p>"
-      }, {
+        "id": "cocovan_ingredients_text",
+        "label": "Coconut Vanilla Ingredients"
+      },
+      {
+        "type": "richtext",
+        "id": "honcinn_ingredients_text",
+        "label": "Honey Cinnamon Ingredients"
+      },
+        {
         "type": "richtext",
         "id": "additional_info",
         "label": "Additional Info",

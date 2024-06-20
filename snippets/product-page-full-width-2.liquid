@@ -491,48 +491,57 @@
                                     data-counter-mobi="{{ main_image_counter_mobile }}"
                                     data-media-count="{{ product.media.size }}"
                                 >
+
+
+
+
+                                  
                                     {%- for media in product.media -%}
                                         {%- case media.media_type -%}
-                                            {%- when 'image' -%}
-                                                <div class="productView-image productView-image-{{ media_size }} filter-{{ media.alt | escape | downcase | replace: ' ', '-' }} fit-{{ media_fit }}" data-index="{{ forloop.index }}">
-                                                    <div class="productView-img-container product-single__media" data-media-id="{{ media.id }}"
-                                                        {% unless media_fit == 'unset' %}
-                                                            {% if product.featured_media %}
-                                                                {% if media_size == 'adapt' %}
-                                                                    style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
-                                                                {% elsif media_size == 'square' %}
-                                                                    style="padding-bottom: 100%;"
-                                                                {% elsif media_size == 'portrait' %}
-                                                                    {% if portrait_aspect_ratio != blank %}
-                                                                        style="padding-bottom: {{ portrait_aspect_ratio }};"
-                                                                    {% endif %}
-                                                                {% endif %}
-                                                            {% endif %}
-                                                        {% endunless %}
-                                                    >
-                                                        <div 
-                                                            class="media" 
-                                                            {% if zoomed_image and main_image_show_custom_cursor != true %} data-zoom-image="{{ media.preview_image | img_url: 'master' }}"{% endif %} 
-                                                            {% if product_image_popup == 'fancybox' %} data-fancybox="images" href="{{ media.preview_image | img_url: 'master' }}" {% endif %}
-                                                        >
-                                                            <img id="product-featured-image-{{ media.id }}"
-                                                                {% if settings.enable_lazyload and forloop.index > 3 %}data-{% endif %}srcset="{{ media.preview_image | img_url: 'master' }}"
-                                                                {% unless settings.enable_lazyload and forloop.index > 3 %}src="{{ media | img_url: 'master' }}"{% endunless %}
-                                                                alt="{{ media.preview_image.alt | escape }}"
-                                                                sizes="(min-width: 2000px) 1500px, (min-width: 1200px) 1200px, (min-width: 768px) calc((100vw - 30px) / 2), calc(100vw - 20px)"
-                                                                width="{{ media.width }}"
-                                                                height="{{ media.height }}"
-                                                                loading="lazy"
-                                                                data-sizes="auto"
-                                                                data-main-image
-                                                                data-index="{{ forloop.index }}"
-                                                                data-cursor-image
-                                                                {% if settings.enable_lazyload and forloop.index > 3 %}class="lazyload"{% endif %}
-                                                            />
-                                                            {%- if settings.enable_lazyload and forloop.index > 3 -%}<span class="data-lazy-loading"></span>{%- endif -%}
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                          
+{%- when 'image' -%}
+    {% unless media.alt contains 'variant-gi' %}
+        <div class="productView-image productView-image-{{ media_size }} filter-{{ media.alt | escape | downcase | replace: ' ', '-' }} fit-{{ media_fit }}" data-index="{{ forloop.index }}">
+            <div class="productView-img-container product-single__media" data-media-id="{{ media.id }}"
+                {% unless media_fit == 'unset' %}
+                    {% if product.featured_media %}
+                        {% if media_size == 'adapt' %}
+                            style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
+                        {% elsif media_size == 'square' %}
+                            style="padding-bottom: 100%;"
+                        {% elsif media_size == 'portrait' %}
+                            {% if portrait_aspect_ratio != blank %}
+                                style="padding-bottom: {{ portrait_aspect_ratio }};"
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endunless %}
+            >
+                <div 
+                    class="media" 
+                    {% if zoomed_image and main_image_show_custom_cursor != true %} data-zoom-image="{{ media.preview_image | img_url: 'master' }}"{% endif %} 
+                    {% if product_image_popup == 'fancybox' %} data-fancybox="images" href="{{ media.preview_image | img_url: 'master' }}" {% endif %}
+                >
+                    <img id="product-featured-image-{{ media.id }}"
+                        {% if settings.enable_lazyload and forloop.index > 3 %}data-{% endif %}srcset="{{ media.preview_image | img_url: 'master' }}"
+                        {% unless settings.enable_lazyload and forloop.index > 3 %}src="{{ media | img_url: 'master' }}"{% endunless %}
+                        alt="{{ media.preview_image.alt | escape }}"
+                        sizes="(min-width: 2000px) 1500px, (min-width: 1200px) 1200px, (min-width: 768px) calc((100vw - 30px) / 2), calc(100vw - 20px)"
+                        width="{{ media.width }}"
+                        height="{{ media.height }}"
+                        loading="lazy"
+                        data-sizes="auto"
+                        data-main-image
+                        data-index="{{ forloop.index }}"
+                        data-cursor-image
+                        {% if settings.enable_lazyload and forloop.index > 3 %}class="lazyload"{% endif %}
+                    />
+                    {%- if settings.enable_lazyload and forloop.index > 3 -%}<span class="data-lazy-loading"></span>{%- endif -%}
+                </div>
+            </div>
+        </div>
+    {% endunless %}
+                                          
                                             {%- when 'external_video' -%}
                                                 {%- if video_layout == 'thumbnail' -%}
                                                     <div class="productView-image productView-image-{{ media_size }}">
@@ -675,6 +684,11 @@
                                         {%- endcase -%}
                                     {%- endfor -%}
                                 </div>
+
+
+
+
+                              
                                 {%- if video_layout == 'popup' -%}
                                     <div class="productView-videoPopup">
                                         {%- for media in product.media -%}
@@ -1285,6 +1299,6 @@
     <script src="{{ 'fancybox.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 {%- if zoomed_image and main_image_show_custom_cursor != true -%}
-    <script src="{{ 'zoomed-image.js' | asset_url }}" defer="defer"></script>
+    {% comment %} <script src="{{ 'zoomed-image.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 {%- endif -%}
 {% render 'schema', product: product %}

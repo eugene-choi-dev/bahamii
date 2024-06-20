@@ -1,0 +1,260 @@
+{
+  "sections": {
+    "rich_text_d3x9rK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YxeVm9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Behind Bahamii",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_nCFR88": {
+          "type": "text",
+          "settings": {
+            "text": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/BAHAMII_KINDNESS-1_heic.jpg?v=1717630784\"><br>\n<div align=\"left\"><p>Inspired by their diabetic great-grandmother's love for sweets & dates, three brothers, Noah, Aaron, & Jonah, founded Bahamii to offer convenient date snacks by using only clean and healthy ingredients.\n<br>\n<b>We use dates as our #1 ingredient!<\/b>\n<br>\nDates are naturally sweet, contain many health benefits and provide a natural boost of energy without a crash.\n<br>\nBahamii seamlessly blends the founders' American-Iranian culture and ingredients.\n<br>\nBahamii’s name derives from the Farsi word 'Baham' meaning 'together, like on a date, just like our main ingredient! Bahamii’s logo is tied together and ends with two \"i\"s, symbolizing two people on a date. Each pack has two Date & Nut Energy Bites for easy sharing! Perhaps, on a date ;)\n<br>\nBahamii is perfect for all, including diabetics, athletes, and children.\n<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "900px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YxeVm9",
+        "text_nCFR88"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_eUr8Fe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8zRHdp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do you know what's been around for thousands of years?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "content_pyEARb": {
+          "type": "content",
+          "settings": {
+            "content_top": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/AdobeStock_58972196_2__jpeg.jpg?v=1717199330\">",
+            "content_bottom": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/AdobeStock_58972196_2__jpeg.jpg?v=1717199330\">",
+            "alignment_content": "center",
+            "content_size": 16,
+            "margin_top_content": 20,
+            "content_color": "#000000",
+            "content_width": "800px",
+            "button_text_more": "",
+            "button_text_less": "Read Less",
+            "button_text_font_size": 14,
+            "button_text_font_weight": "500",
+            "margin_top_button_text": 30,
+            "button_text_color": "#ffffff",
+            "button_text_border_color": "#000000",
+            "button_text_bg_color": "#000000",
+            "button_text_bg_color_gradient": "",
+            "button_text_color_hover": "#000000",
+            "button_text_border_color_hover": "#000000",
+            "button_text_bg_color_hover": "#ffffff",
+            "button_text_bg_color_hover_gradient": "",
+            "button_text_more_width": 270,
+            "pd_top_button_text": 12,
+            "pd_bottom_button_text": 12
+          }
+        },
+        "text_x9nN7V": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>These timeless fruits are not only a staple in history but also the key ingredient in a variety of delicious and nutritious date energy bites from Bahamii.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8zRHdp",
+        "content_pyEARb",
+        "text_x9nN7V"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_rr9kLG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_XVNwFi": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/20240515_A7siii_DSC04045-pink1080.jpg?v=1717189739\" style=\"float: left; margin: 5px;\" width=\"350px\"><p><strong>Dates are consumed all around the world<br><\/strong>Dates, considered one of the best organic snacks and have been a staple food in the Mediterranean diet for thousands of years.<br>Even fossil evidence indicates that dates were cultivated at least 50  million years ago, making them a timeless addition to healthy date  snacks.<\/p>\n<p><br><strong>Dates are a rich source of vitamins and nature’s original sugar.<br><\/strong>Even with their amazing health benefits and taste, raw dates are inconvenient. When eating dates, people have dealt with their large pits and stickiness. Thankfully, Bahamii eliminates both, offering delicious date energy bites. Bahamii's products are also the best organic snacks and make for excellent healthy packaged snacks for kids and a healthy vegan snack option.<\/p>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_XVNwFi"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_xkpNag": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4Y6qit": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are you hungry for date energy bars?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_rXVpUF": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">Do you want a tasty and filling healthy date snacks that satisfies your sweet tooth without feeling guilty?\n<br>\nNot a fan of caffeine and need a boost of natural energy?Looking for the best school snacks or for soccer games?\n<br>\n<b>Bahamii has you covered! Come on a date with us and see why.<\/b>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1.4,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4Y6qit",
+        "text_rXVpUF"
+      ],
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 45,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_EdxxYR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qqChaj": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p><strong>Bahamii use organic dates as the #1 ingredient to provide an amazing and fresh taste.<br><\/strong>We focused on developing the perfect healthy date snacks with great texture 😋 and consistency 😍<br>Date energy bites provide a sweet flavor and moist consistency without the need for added sugar, artificial colors, powdered flavors or preservatives that make conventional snacks dry and chalky.<br><strong>We only uses clean, simple and natural ingredients.<br><\/strong>Seriously, we only have 7️⃣ ingredients that you actually know how to pronounce!<br><br>Our commitment to providing the best date energy bites extends to creating healthy date snacks that are perfect for kids, athletes, diabetic and more!<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_qqChaj"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "rich_text_d3x9rK",
+    "rich_text_eUr8Fe",
+    "rich_text_rr9kLG",
+    "rich_text_xkpNag",
+    "rich_text_EdxxYR"
+  ]
+}

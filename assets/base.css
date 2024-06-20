@@ -7331,4 +7331,13 @@ p,
     display: none !important;
 }
 
+/* temp remove subscription widget pricing */
+.appstle_subscription_amount.transcy-money {
+    display: none !important;
+}
+
+.appstle_subscription_compare_amount.transcy-money {
+    display: none !important;
+}
+
 /* <--- ===== BAHAMII CUSTOM STYLES ===== */

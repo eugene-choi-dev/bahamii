@@ -48,7 +48,7 @@
           }
         },
         "appstle_subscriptions_app_appstle_subscription_product_page_widget_tLDeB4": {
-          "type": "shopify:\/\/apps\/appstle-subscriptions-app\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "type": "shopify:\/\/apps\/appstle-subscription\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
           "settings": {
           }
         },
@@ -288,14 +288,51 @@
         "border_color_card": "#f0f1f4"
       }
     },
+    "rich_text_taY9GC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jBYxFU": {
+          "type": "text",
+          "settings": {
+            "text": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/honey-cinnamon-screenshot.png?v=1717202540\">",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_jBYxFU"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#facbd4",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
     "nutrition_84X9a3": {
       "type": "nutrition",
       "settings": {
-        "nutrition_label": "shopify:\/\/shop_images\/Nutrition_Honey-Cinnamon_Black_1.png",
-        "side_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
-        "header_text": "Chocolate Almond",
-        "ingredients_text": "<p><strong>Ingredients:<\/strong> Organic Dates, Organic Almonds, Organic Cocoa Powder, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt<\/p>",
-        "additional_info": "<p><strong>CONTAINS: ALMONDS, COCONUT<br\/><\/strong><br\/>Made in a facility that also processes Peanuts, Tree Nuts, Eggs, Soy, Milk, Wheat, and Sesame.<br\/><br\/>May contain Shell and\/or Pit Fragments.<\/p>"
+        "chocalmond_ingredients_text": "<p><strong>Ingredients:<\/strong> Dates, Almonds, Organic Cocoa, Organic Coconut Oil, Vanilla Extract, Sea Salt.<\/p>",
+        "cocovan_ingredients_text": "<p><strong>Ingredients:<\/strong> Dates, Almonds, Organic Coconut, Organic Coconut Oil, Vanilla Extract, Sea Salt.<\/p>",
+        "honcinn_ingredients_text": "<p><strong>Ingredients:<\/strong> Dates, Almonds, Organic Wildflower Honey, Organic Coconut Oil, Vanilla Extract, Sea Salt, Cinnamon.<\/p>",
+        "additional_info": "<p><strong>CONTAINS: ALMONDS, COCONUT (Tree Nuts)<br\/><\/strong><br\/>Made in a facility that also processes Peanuts, Tree Nuts, Eggs, Soy, Milk, Wheat, and Sesame.<br\/><br\/>May contain Shell and\/or Pit Fragments.<\/p>"
       }
     },
     "text_image_8Hzz7N": {
@@ -306,7 +343,7 @@
         ".custom-button {margin-top: 20px; margin-bottom: 20px;}"
       ],
       "settings": {
-        "text": "<h1><strong>I want to build <br\/>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br\/>you want in your bundle.<\/h2>",
+        "text": "<h1><strong>I want to build <br>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br>you want in your bundle.<\/h2>",
         "font_size": 16,
         "image": "shopify:\/\/shop_images\/Group_171.png",
         "image_position": "left-bahamii",
@@ -487,9 +524,9 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Nicole<br><p>Mom<\/p>",
             "date": "",
-            "body": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "My kids love Bahamii! It's a great snack for them after school when they're heading to their sports activities. I also keep a pack in my purse for myself."
           }
         },
         "review_RG4Lyk": {
@@ -498,9 +535,9 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Matt Koart<br><p>Former NFL Defense End<\/p>",
             "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis."
+            "body": "My wife stole my Bahamii and scarfed it down before I could taste it. But... she LOVED it and wants me to order some!"
           }
         },
         "review_q4BVwQ": {
@@ -509,40 +546,16 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Anonymous",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
-          }
-        },
-        "review_ARq3rL": {
-          "type": "review",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "rating": "star5",
-            "name": "- John Smith",
-            "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
-          }
-        },
-        "review_mhmDRj": {
-          "type": "review",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "rating": "star5",
-            "name": "- John Smith",
-            "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper!"
+            "body": "Bahamii does exactly what it says, my blood sugar levels stayed even and I satisfied my sweet tooth and it was delicious."
           }
         }
       },
       "block_order": [
         "review_bwKGUk",
         "review_RG4Lyk",
-        "review_q4BVwQ",
-        "review_ARq3rL",
-        "review_mhmDRj"
+        "review_q4BVwQ"
       ],
       "custom_css": [
 
@@ -607,6 +620,7 @@
     "main",
     "product-recommendations",
     "product-recently-viewed",
+    "rich_text_taY9GC",
     "nutrition_84X9a3",
     "text_image_8Hzz7N",
     "instagram_bahamii_4FtRmD",

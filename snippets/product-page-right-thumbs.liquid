@@ -1323,7 +1323,7 @@
     <script src="{{ 'fancybox.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 {%- if zoomed_image and main_image_show_custom_cursor != true -%}
-    <script src="{{ 'zoomed-image.js' | asset_url }}" defer="defer"></script>
+    {% comment %} <script src="{{ 'zoomed-image.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 {%- endif -%}
 
 {% render 'schema',

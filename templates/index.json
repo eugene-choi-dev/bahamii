@@ -6,13 +6,13 @@
         "large_img_3q3B9e": {
           "type": "largeImg",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bahamii-placeholder.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_26.png",
-            "flavor_1_img": "shopify:\/\/shop_images\/choc-almond-box.png",
-            "flavor_2_img": "shopify:\/\/shop_images\/coco-van-box.png",
-            "flavor_3_img": "shopify:\/\/shop_images\/hon-cinn-box.png",
+            "image": "shopify:\/\/shop_images\/Bahamii_AplusContent_desktop_v1_20240530.2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Bahamii_AplusContent_desktop_v1-vertical_20240531.1.jpg",
+            "flavor_1_img": "shopify:\/\/shop_images\/Chocolate-Almond-Date-_-Almond-Bar---Label---Front-FrontPage-FrontPage2.jpg",
+            "flavor_2_img": "shopify:\/\/shop_images\/Coconut-Vanilla-Date-_-Almond-Bar---Label---Front-FrontPage3.png",
+            "flavor_3_img": "shopify:\/\/shop_images\/Honey-Cinnamon-Date-_-Almond-Bar---Label---Front-FrontPage3.jpg",
             "enable_max_width_image": false,
-            "custom_width_image": 1210,
+            "custom_width_image": 1460,
             "enable_scroll_down": false,
             "enable_custom_image": false,
             "image_behavior": "none",
@@ -24,26 +24,26 @@
             "sub_heading_font": "font_1",
             "font_weight_sub_title": "800",
             "sub_title_position": "sub_title_above",
-            "color_sub_title": "#232323",
+            "color_sub_title": "#ffffff",
             "color_sub_title_mb": "#ffffff",
-            "heading": "Level Up Your Snacking Game",
+            "heading": "Date & Almond Bar",
             "letter_spacing_heading": "3.2",
             "enable_style_italic": false,
             "font_size_heading": 64,
             "font_size_heading_mb": 24,
-            "margin_bottom_heading": 20,
+            "margin_bottom_heading": 37,
             "font_weight_heading": "600",
-            "color_heading": "#000000",
-            "color_heading_mb": "#232323",
+            "color_heading": "#ffffff",
+            "color_heading_mb": "#ffffff",
             "border_title": "none",
-            "border_color_title": "#232323",
+            "border_color_title": "#ffffff",
             "border_color_title_mobile": "#ffffff",
             "text": "",
             "font_size_des": 12,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
-            "color_des": "#232323",
+            "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
             "countdown": "",
             "hide_countdown_fc": "countdown",
@@ -51,7 +51,7 @@
             "countdown_position": "countdown_below_desc",
             "font_size_countdown_number": 30,
             "font_size_countdown_text": 14,
-            "color_countdown": "#232323",
+            "color_countdown": "#ffffff",
             "color_countdown_mb": "#ffffff",
             "countdown_margin_bottom": 35,
             "content_width": 725,
@@ -61,7 +61,7 @@
             "custom_horizontal": "",
             "custom_vertical": "",
             "btn_text": "",
-            "link": "shopify:\/\/collections",
+            "link": "shopify:\/\/collections\/bahamiibites",
             "btn_icon": "",
             "button_1_width": 295,
             "enable_button_custom_border": false,
@@ -184,24 +184,6 @@
           "settings": {
             "text": "12% Higher Fat"
           }
-        },
-        "image_DkLFtw": {
-          "type": "image",
-          "settings": {
-            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_2.svg"
-          }
-        },
-        "image_BTqwf8": {
-          "type": "image",
-          "settings": {
-            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_3.svg"
-          }
-        },
-        "image_anmNg9": {
-          "type": "image",
-          "settings": {
-            "badge_image": "shopify:\/\/shop_images\/non-gmo-project-verified-logo-vector_1.svg"
-          }
         }
       },
       "block_order": [
@@ -212,14 +194,12 @@
         "right_text_nRfXFr",
         "right_text_mb6VRL",
         "right_text_y3HWJ6",
-        "right_text_UFpbLe",
-        "image_DkLFtw",
-        "image_BTqwf8",
-        "image_anmNg9"
+        "right_text_UFpbLe"
       ],
+      "disabled": true,
       "settings": {
-        "heading": "Why Dates?",
-        "description_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "heading": "Snack With Confidence",
+        "description_text": "Bahamii Energy Bars use only <b>7 Simple Ingredients<\/b>.<br>Dates are a great source of <b>vitamins & natural sugars<\/b>.<br>",
         "table_header": "How Does Bahamii Stack Up?",
         "bg_image": "shopify:\/\/shop_images\/Vector_1.png",
         "left_image": "shopify:\/\/shop_images\/75842a0e5b79bb5dcb6ac2bde6b911df_b5a3403e-32d0-4a2d-b763-ba8071bc8e49.png",
@@ -245,7 +225,7 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": true,
+            "show_sold_in": false,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
@@ -338,6 +318,7 @@
 
       ],
       "settings": {
+        "product_featured_img_bahamii": "shopify:\/\/shop_images\/ImageCarousel_b1f3cea9-d11f-4437-8c50-e1768c59294d.png",
         "id_section": "feat-choc_almond",
         "container": "container",
         "padding_full_width": 25,
@@ -375,7 +356,7 @@
         "product_image_ratio": "adapt",
         "portrait_aspect_ratio": 100,
         "media_fit": "unset",
-        "product_image_popup": "fancybox",
+        "product_image_popup": "none",
         "video_layout": "thumbnail",
         "show_badge": false,
         "show_qty": false
@@ -400,7 +381,7 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": true,
+            "show_sold_in": false,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
@@ -493,6 +474,7 @@
 
       ],
       "settings": {
+        "product_featured_img_bahamii": "shopify:\/\/shop_images\/Bahamii_CoconutVanilla_v2-wBar.png",
         "id_section": "feat-coco_vanilla",
         "container": "container",
         "padding_full_width": 25,
@@ -533,7 +515,7 @@
         "product_image_ratio": "adapt",
         "portrait_aspect_ratio": 100,
         "media_fit": "unset",
-        "product_image_popup": "fancybox",
+        "product_image_popup": "none",
         "video_layout": "thumbnail",
         "show_badge": false,
         "show_qty": false
@@ -558,7 +540,7 @@
             "spacing_top": 0,
             "spacing_bottom": 0,
             "show_review": true,
-            "show_sold_in": true,
+            "show_sold_in": false,
             "sold_in_number": "3,5,6,7,8,10,12,15",
             "sold_in_hours": "10,15,16,17,18,20,25,35",
             "color_text_sold_in": "#000000"
@@ -651,6 +633,7 @@
 
       ],
       "settings": {
+        "product_featured_img_bahamii": "shopify:\/\/shop_images\/Bahamii_HoneyCinnamon-wBar.png",
         "id_section": "feat-honey_cinn",
         "container": "container",
         "padding_full_width": 25,
@@ -691,7 +674,7 @@
         "product_image_ratio": "adapt",
         "portrait_aspect_ratio": 100,
         "media_fit": "unset",
-        "product_image_popup": "fancybox",
+        "product_image_popup": "none",
         "video_layout": "thumbnail",
         "show_badge": false,
         "show_qty": false
@@ -705,7 +688,7 @@
         ".custom-button {margin-top: 20px; margin-bottom: 20px;}"
       ],
       "settings": {
-        "text": "<h1><strong>I want to build <br\/>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br\/>you want in your bundle.<\/h2>",
+        "text": "<h1><strong>I want to build <br>my own bundle!<\/strong><\/h1><h2>Customize the flavors<br>you want in your bundle.<\/h2>",
         "font_size": 16,
         "image": "shopify:\/\/shop_images\/Group_171.png",
         "image_position": "left-bahamii",
@@ -793,7 +776,7 @@
           "settings": {
             "enable": true,
             "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/16b0cf9c65b349629ae90f367cf66c9c.mp4",
-            "link": ""
+            "link": "https:\/\/www.instagram.com\/p\/C6UkHMXyRj-\/"
           }
         }
       },
@@ -826,7 +809,7 @@
         "instagram_bg": "#facad3",
         "instagram_bg_gradient": "",
         "style_block_header": "style1",
-        "instagram_title": "Customer Reviews & Recipes",
+        "instagram_title": "Bahamii Buzz",
         "enable_border_title": false,
         "border_color_title": "#232323",
         "color_title": "#000000",
@@ -880,15 +863,26 @@
     "customer_review_block_CVhC63": {
       "type": "customer-review-block",
       "blocks": {
+        "review_kqhdUG": {
+          "type": "review",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "- Nicole<br><p>Mom<\/p>",
+            "date": "",
+            "body": "My kids love Bahamii! It's a great snack for them after school when they're heading to their sports activities. I also keep a pack in my purse for myself."
+          }
+        },
         "review_bwKGUk": {
           "type": "review",
           "settings": {
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Matt Koart<br><p>Former NFL Defense End<\/p>",
             "date": "",
-            "body": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "My wife stole my Bahamii and scarfed it down before I could taste it.<br>But... she LOVED it and wants me to order some!"
           }
         },
         "review_RG4Lyk": {
@@ -897,51 +891,16 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Anonymous",
             "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis."
-          }
-        },
-        "review_q4BVwQ": {
-          "type": "review",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "rating": "star5",
-            "name": "- John Smith",
-            "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
-          }
-        },
-        "review_ARq3rL": {
-          "type": "review",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "rating": "star5",
-            "name": "- John Smith",
-            "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
-          }
-        },
-        "review_mhmDRj": {
-          "type": "review",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "rating": "star5",
-            "name": "- John Smith",
-            "date": "",
-            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper!"
+            "body": "I have been wearing a glucose monitor for the last few days to get an idea of how certain foods affect my blood glucose levels. I have a sweet tooth of course and ate a lot of fruit.  Who knew that would shoot my blood sugar levels sky high??!!  Well guess what, Bahamii does exactly what it says, my blood sugar levels stayed even and I satisfied my sweet tooth and was delicious."
           }
         }
       },
       "block_order": [
+        "review_kqhdUG",
         "review_bwKGUk",
-        "review_RG4Lyk",
-        "review_q4BVwQ",
-        "review_ARq3rL",
-        "review_mhmDRj"
+        "review_RG4Lyk"
       ],
       "custom_css": [
 
@@ -1001,187 +960,162 @@
         "scroll_thumb_hover_color": "#444444"
       }
     },
-    "vendors_4LgqpJ": {
+    "brand_slider_A7pR6q": {
+      "type": "brand-slider",
+      "blocks": {
+        "image_gYCRtA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amazon.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_cARLGf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bristol.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_WzzLH4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erewhon.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_jQRhFY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Andronicos.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gYCRtA",
+        "image_cARLGf",
+        "image_WzzLH4",
+        "image_jQRhFY"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "brands_block_style": "style_1",
+        "brand_layout": "infinite",
+        "scroll_from": "rtl",
+        "brand_scroll_time": "15",
+        "display_brand_border": false,
+        "brand_bg": "#fffac2",
+        "brand_bg_gradient": "",
+        "title_align": "center",
+        "brand_title": "",
+        "color_title": "#232323",
+        "fontsize_title": 16,
+        "fontsize_title_mb": 16,
+        "mg_bottom_title": 12,
+        "enable_background_title": false,
+        "enable_border_title": false,
+        "border_color_title": "#051c42",
+        "brand_des": "",
+        "color_des": "#3c3c3c",
+        "fontsize_des": 16,
+        "mg_bottom_des": 0,
+        "view_all": "",
+        "view_all_fs": 12,
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 0,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "icon_view_all": "",
+        "color_view_all_icon": "#eb492f",
+        "view_all_icon_side": "left",
+        "btn_text": "",
+        "fontsize_btn": 12,
+        "btn_spacing_top": 15,
+        "btn_color": "#828282",
+        "btn_link": "",
+        "enable_autoplay": false,
+        "brand_speed": "3000",
+        "brand_rows": "6",
+        "enable_arrows": false,
+        "enable_dots": false,
+        "enable_center_mode": false,
+        "style_position_arrows": "none",
+        "position_horizontal_arrow": 15,
+        "color_arrow": "",
+        "arrow_background": "",
+        "arrow_background_gradient": "",
+        "arrow_border": "",
+        "color_arrow_hover": "",
+        "arrow_background_hover": "",
+        "arrow_background_gradient_hover": "",
+        "arrow_border_hover": "",
+        "brand_rows_mb": "2",
+        "brand_image_ratio": "square",
+        "item_distance": 25,
+        "margin_bottom_image": 0,
+        "brand_item_border": "none",
+        "border_radius": 0,
+        "border_color": "#e2e5e7",
+        "border_color_hover": "#2d2d2d",
+        "hover_effect": "none",
+        "color_underline_image_hover": "#000000",
+        "fontsize_text": 16,
+        "fontsize_text_mb": 13,
+        "font_weight_title": "400",
+        "margin_bottom_title": 0,
+        "mg_top_desktop": 20,
+        "mg_top_tablet": 20,
+        "mg_top_mobile": 20,
+        "mg_bottom_desktop": 20,
+        "mg_bottom_tablet": 20,
+        "mg_bottom_mobile": 20
+      }
+    },
+    "vendors_Bip4K4": {
       "type": "vendors",
       "settings": {
-        "hero_title": "Snack Wherever You Go",
-        "hero_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-        "thumbnail_image_1": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
-        "thumbnail_desc_1": "Lorem ipsum dolor sit amet",
-        "thumbnail_image_2": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
-        "thumbnail_desc_2": "Lorem ipsum dolor sit amet",
-        "thumbnail_image_3": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
-        "thumbnail_desc_3": "Lorem ipsum dolor sit amet",
-        "thumbnail_image_4": "shopify:\/\/shop_images\/8ad7d835d494ee04659f7ff4fff84621.jpg",
-        "thumbnail_desc_4": "Lorem ipsum dolor sit amet",
-        "vendor_bg_color": "#fffac2",
-        "vendor_logo_1": "shopify:\/\/shop_images\/Vector_2.png",
-        "vendor_logo_2": "shopify:\/\/shop_images\/Path_6510.png",
-        "vendor_logo_3": "shopify:\/\/shop_images\/Amazon.png",
-        "vendor_logo_4": "shopify:\/\/shop_images\/Andronicos.png",
-        "gallery_image_1": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
-        "gallery_desc_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "gallery_url_1": "",
-        "gallery_image_2": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
-        "gallery_desc_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "gallery_url_2": "",
-        "gallery_image_3": "shopify:\/\/shop_images\/6d0f30977d5487b0c54a15a7c66b731f.jpg",
-        "gallery_desc_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "gallery_url_3": "",
-        "gallery_desc_4": "",
-        "gallery_url_4": ""
-      }
-    },
-    "image_banner_simple_6XjYaB": {
-      "type": "image-banner-simple",
-      "blocks": {
-        "heading_8McPmf": {
-          "type": "heading",
-          "settings": {
-            "heading": "How It's Made",
-            "heading_size": 64,
-            "heading_size_mb": 30,
-            "heading_line_height": 1,
-            "heading_color": "#ffffff"
-          }
-        },
-        "text_gMRnJa": {
-          "type": "text",
-          "settings": {
-            "text": "The #1 Organic Ingredient The World Over",
-            "text_size": 36,
-            "text_size_mb": 12,
-            "text_line_height": 1,
-            "margin_top_text": 40,
-            "text_color": "#ffffff",
-            "text_width": "800px"
-          }
-        }
-      },
-      "block_order": [
-        "heading_8McPmf",
-        "text_gMRnJa"
-      ],
-      "settings": {
-        "rich_text_bg": "#ffffff",
-        "rich_text_bg_image": "shopify:\/\/shop_images\/92884fc67535b2b097c9881452dabc80.jpg",
-        "content_align": "center"
-      }
-    },
-    "badge_grid_8m4CAx": {
-      "type": "badge-grid",
-      "blocks": {
-        "badge_8Cc6p8": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_CKEK8r": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_3KMTdE": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_XLnQQn": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_ejfTeT": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_dBVXn9": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_YbXLMJ": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_94U9Hj": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        },
-        "badge_NWeFFx": {
-          "type": "badge",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vegan-icon.svg",
-            "url": "#",
-            "title": "Lorem ipsum dolor sit",
-            "description": "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-          }
-        }
-      },
-      "block_order": [
-        "badge_8Cc6p8",
-        "badge_CKEK8r",
-        "badge_3KMTdE",
-        "badge_XLnQQn",
-        "badge_ejfTeT",
-        "badge_dBVXn9",
-        "badge_YbXLMJ",
-        "badge_94U9Hj",
-        "badge_NWeFFx"
-      ],
-      "settings": {
-      }
-    },
-    "contact_us_bahamii_JwGQtD": {
-      "type": "contact-us-bahamii",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "contact_image": "shopify:\/\/shop_images\/contact-us-placeholder.png"
-      }
-    },
-    "store_locator_stockist_3yGfyj": {
-      "type": "store-locator-stockist",
-      "settings": {
-        "embed_code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u22504\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->",
-        "section_header": "Store Locator",
-        "section_header_size": 64
+        "hero_title": "",
+        "hero_description": "",
+        "thumbnail_desc_1": "",
+        "thumbnail_desc_2": "",
+        "thumbnail_desc_3": "",
+        "thumbnail_desc_4": "",
+        "vendor_bg_color": "#ffd700",
+        "gallery_image_1": "shopify:\/\/shop_images\/4_e373c302-af34-46fc-b834-8125f1c0ab9a.jpg",
+        "gallery_desc_1": "Are Dates A Good Snack For Gestational Diabetes?",
+        "gallery_url_1": "shopify:\/\/blogs\/news\/are-dates-a-good-snack-for-gestational-diabetes",
+        "gallery_image_2": "shopify:\/\/shop_images\/8232129_xl_jpg.jpg",
+        "gallery_desc_2": "Why Date Bars Are The Best Backpacking Snack",
+        "gallery_url_2": "shopify:\/\/blogs\/news\/why-date-bars-are-the-best-backpacking-snack",
+        "gallery_image_3": "shopify:\/\/shop_images\/Accueils-de-Loisirs_2.png",
+        "gallery_desc_3": "What Makes Dates Super Healthy For Kids?",
+        "gallery_url_3": "shopify:\/\/blogs\/news\/what-makes-date-bites-super-healthy-for-kids",
+        "gallery_image_4": "shopify:\/\/shop_images\/lady-bowl_webp.jpg",
+        "gallery_desc_4": "Why Vegans Love Energy Date Snacks",
+        "gallery_url_4": "shopify:\/\/blogs\/news\/why-vegans-love-energy-date-snacks"
       }
     }
   },
@@ -1194,10 +1128,7 @@
     "text_image_CFCnYr",
     "instagram_bahamii_qQahrE",
     "customer_review_block_CVhC63",
-    "vendors_4LgqpJ",
-    "image_banner_simple_6XjYaB",
-    "badge_grid_8m4CAx",
-    "contact_us_bahamii_JwGQtD",
-    "store_locator_stockist_3yGfyj"
+    "brand_slider_A7pR6q",
+    "vendors_Bip4K4"
   ]
 }

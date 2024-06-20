@@ -105,47 +105,60 @@
                                         </label>
                                     {%- else -%}
 
-                                    {%- assign box_count = variant.title | split: " " | first | default: 1 | times: 1 -%}
+                                    {% comment %} custom bahamii variant picker radios ---> {% endcomment %}
+                                    {%- assign single_item_variant = nil -%}
 
+                                    {%- for product_variant in product.variants -%}
+                                      {%- assign variant_title_parts = product_variant.title | split: " " -%}
+                                      {%- assign variant_title_first = variant_title_parts | first -%}
+                                      {%- if variant_title_first == "1" -%}
+                                        {%- assign single_item_variant = product_variant -%}
+                                      {%- endif -%}
+                                    {%- endfor -%}
+                                    
+                                    {%- if single_item_variant != nil -%}
+                                      {%- assign single_item_variant_price = single_item_variant.price -%}
+                                    {%- else -%}
+                                      {%- assign single_item_variant_price = 1000 -%}
+                                    {%- endif -%}
+                                    
+                                    {%- assign variant_title_parts = variant.title | split: " " -%}
+                                    {%- assign variant_title_first = variant_title_parts | first | default: "1" -%}
+                                    {%- assign variant_title_last = variant_title_parts | last | default: "1" -%}
+                                    {%- assign box_count = 1 -%}  <!-- Default value -->
+                                    
+                                    {%- if variant_title_first == "1" or variant_title_first == "3" or variant_title_first == "6" -%}
+                                      {%- assign box_count = variant_title_first | times: 1 -%}
+                                    {%- elsif variant_title_last == "1" or variant_title_last == "3" or variant_title_last == "6" -%}
+                                      {%- assign box_count = variant_title_last | times: 1 -%}
+                                    {%- else -%}
+                                      {%- for part in variant_title_parts -%}
+                                        {%- if part == "1" or part == "3" or part == "6" -%}
+                                          {%- assign box_count = part | times: 1 -%}
+                                        {%- endif -%}
+                                      {%- endfor -%}
+                                    {%- endif -%}
+                                    
+                                    {%- assign compare_at_price = single_item_variant_price | times: box_count -%}
+                                    
                                     <label class="bahamii-product-form-label product-form__label {{ option_stock }}" for="option-{{ product.id }}-{{ option.name }}-{{ forloop.index0 }}-{{ section.id }}" data-variant-id="{{ variant.id }}">
-                                        <span class="text">
-                                            {%- assign value_downcased = value | downcase -%}
-                                            {% case value_downcased %}
-                                                {% when '1 pack' %}
-                                                    <div class="content-wrap one-pack">
-                                                        <h3 class="qty-text one-pack-text">{{ variant.title }}</h3>
-                                                        <h2 class="price-text one-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
-                                                        <div class="img-wrap">
-                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
-                                                        </div>
-                                                    </div>
-                                                {% when '3 pack' %}
-                                                    <div class="content-wrap three-pack">
-                                                        <h3 class="qty-text three-pack-text">{{ variant.title }}</h3>
-                                                        <h2 class="price-text three-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
-                                                        <div class="img-wrap">
-                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
-                                                        </div>
-                                                        <div class="bundle-price-wrap">
-                                                            <span class="original-price">$44.97</span>
-                                                            <span class="bundle-price">{{ variant.price | money }}</span>
-                                                        </div>
-                                                    </div>
-                                                {% when '6 pack' %}
-                                                    <div class="content-wrap six-pack">
-                                                        <h3 class="qty-text six-pack-text">{{ variant.title }}</h3>
-                                                        <h2 class="price-text six-pack-price">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
-                                                        <div class="img-wrap">
-                                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
-                                                        </div>
-                                                        <div class="bundle-price-wrap">
-                                                            <span class="original-price">$54.97</span>
-                                                            <span class="bundle-price">{{ variant.price | money }}</span>
-                                                        </div>
-                                                    </div>
-                                            {% endcase %}
-                                        </span>
+                                      <span class="text">
+                                        <div class="content-wrap">
+                                          <h3 class="qty-text">{{ variant.title }}</h3>
+                                          <h2 class="price-text">{{ variant.price | divided_by: box_count | money }}<span>/box</span></h2>
+                                          <div class="img-wrap">
+                                            <img src="{{ variant.image.src | product_img_url: '300x300' }}" alt="{{ value }}">
+                                          </div>
+                                          {%- if box_count > 1 -%}
+                                            <div class="bundle-price-wrap">
+                                              <span class="original-price">{{ compare_at_price | money }}</span>
+                                              <span class="bundle-price">{{ variant.price | money }}</span>
+                                            </div>
+                                          {%- endif -%}
+                                        </div>
+                                      </span>
                                     </label>
+                                    {% comment %} <--- custom bahamii variant picker radios {% endcomment %}
 
                                     {%- endif -%}
                                 {%- endunless -%}
@@ -308,6 +321,7 @@
         padding: 20px;
     }
 
+/* 
     #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
         content: 'FREE SHIPPING';
         position: absolute;
@@ -325,6 +339,25 @@
         font-weight: 700;
         line-height: 21.527px;
     }
+ */
+
+ #ProductSection-{{ section.id }} .bahamii-product-form-label:first-of-type .content-wrap .bundle-price-wrap:before {
+    content: 'FREE SHIPPING';
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    background: linear-gradient(120deg, #F5B21F 50%, transparent 50%), transparent;
+    background-size: 175% 100%;
+    background-position: right -96px top;
+    color: #FFFFFF;
+    padding: 1px 30px 1px 5px;
+    z-index: 16;
+    text-align: center;
+    font-size: 13.455px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.527px;
+}
 
     #ProductSection-{{ section.id }} .original-price {
         color: #979797;
@@ -427,7 +460,7 @@
             justify-content: center;
         }
 
-        #ProductSection-{{ section.id }} .content-wrap.six-pack .bundle-price-wrap:before {
+        #ProductSection-{{ section.id }} .bahamii-product-form-label:first-of-type .content-wrap .bundle-price-wrap:before {
             top: -7px;
             left: -5px;
             background-size: 225% 100%;

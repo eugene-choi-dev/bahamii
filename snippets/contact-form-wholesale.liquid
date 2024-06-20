@@ -105,6 +105,9 @@
     </div>
     <div class="form-actions">
         {% comment %} <input type="submit" class="button button--primary" value="{{ 'templates.contact.form.send' | t }}" role="button" data-button-message="contact"> {% endcomment %}
-        <input type="submit" class="button button--primary" value="Submit" role="button" data-button-message="contact">
+      {%- if page_title -%}
+<input type="hidden" id="contactFormPageTitle" name="contact[page title]" value="{{ page_title }}">
+{%- endif -%}  
+      <input type="submit" class="button button--primary" value="Submit" role="button" data-button-message="contact">
     </div>
 {%- endform -%}

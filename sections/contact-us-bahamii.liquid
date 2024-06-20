@@ -24,10 +24,10 @@
         </div>
         <div class="contact-item">
           <h2 class="page-subheader contact-title">
-            Wholesale & Bulk Orders
+            {{section.settings.heading}}
           </h2>
           <div class="contact-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+            {{ section.settings.subheading }}
           </div>
           {% render 'contact-form-wholesale' %}
         </div>
@@ -161,6 +161,18 @@
         "type": "image_picker",
         "id": "contact_image",
         "label": "Contact Us Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Wholesale & Bulk Orders"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Can't get enough Bahamii? Want to date some friends? Contact us today about our wholesale options."
       }
     ],
     "presets": [

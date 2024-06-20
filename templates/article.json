@@ -2,53 +2,6 @@
   "sections": {
     "main": {
       "type": "main-article",
-      "blocks": {
-        "lookbook_banner_6fqwbt": {
-          "type": "lookbook_banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Accueils-de-Loisirs_2.png",
-            "margin_bottom": 40,
-            "content_max_width": 400,
-            "title_text": "",
-            "title_color": "",
-            "title_fs": 16,
-            "title_fs_mb": 12,
-            "title_fw": "400",
-            "title_margin_bottom": 30,
-            "button_1_text": "",
-            "button_1_text_color": "",
-            "button_1_background_color": "#232323",
-            "button_1_background_gradient_color": "",
-            "button_1_border_color": "",
-            "button_1_text_color_hover": "",
-            "button_1_background_color_hover": "#232323",
-            "button_1_background_gradient_color_hover": "",
-            "button_1_border_color_hover": "",
-            "button_1_width": 370,
-            "button_1_fs": 16,
-            "button_1_fs_mb": 12,
-            "button_1_fw": "400",
-            "link_1": "",
-            "button_2_text": "",
-            "button_2_text_color": "",
-            "button_2_background_color": "#232323",
-            "button_2_background_gradient_color": "",
-            "button_2_border_color": "",
-            "button_2_text_color_hover": "",
-            "button_2_background_color_hover": "#232323",
-            "button_2_background_gradient_color_hover": "",
-            "button_2_border_color_hover": "",
-            "button_2_width": 370,
-            "button_2_fs": 16,
-            "button_2_fs_mb": 12,
-            "button_2_fw": "400",
-            "link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "lookbook_banner_6fqwbt"
-      ],
       "settings": {
         "show_breadcrumb": false,
         "breadcrumb_alignment": "left",
@@ -106,32 +59,32 @@
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-28_at_5_07_51_PM_png.jpg",
+            "link": "https:\/\/www.instagram.com\/p\/C59Zft3yaTf\/"
           }
         },
         "instagram_zHyyfH": {
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-28_at_5_07_09_PM_png.jpg",
+            "link": "https:\/\/www.instagram.com\/p\/C6e5K2hSW-n\/"
           }
         },
         "instagram_feMtcW": {
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-28_at_5_09_00_PM_png.jpg",
+            "link": "https:\/\/www.instagram.com\/p\/C5g-GmkSKoj\/"
           }
         },
         "instagram_FYXpBf": {
           "type": "instagram",
           "settings": {
             "enable": true,
-            "image": "shopify:\/\/shop_images\/463c8bdb59a87c88b55b46813e9d0879.jpg",
-            "link": "https:\/\/www.instagram.com\/reel\/Cx8xNFkO3sd\/"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-05-28_at_5_08_26_PM_png.jpg",
+            "link": "https:\/\/www.instagram.com\/p\/C5Oy3XxSjpJ\/"
           }
         }
       },
@@ -149,12 +102,12 @@
         "padding_full_width": 100,
         "disable_padding_content": false,
         "type_instagram": "default",
-        "block_layout": "grid",
+        "block_layout": "scroll",
         "scroll_from": "rtl",
         "scroll_time": "30",
         "mg_top_desktop": 0,
         "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
+        "mg_top_mobile": 45,
         "mg_bottom_desktop": 20,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
@@ -169,7 +122,7 @@
         "color_title": "#000000",
         "mg_bottom_title": 0,
         "fontsize_title": 48,
-        "fontsize_title_mb": 16,
+        "fontsize_title_mb": 30,
         "instagram_des": "",
         "color_des": "#3c3c3c",
         "fontsize_des": 16,
@@ -205,9 +158,9 @@
         "instagram_item_limit": 5,
         "grid_gap": 15,
         "enable_hide_portion": false,
-        "slide_ins": "default_ins",
+        "slide_ins": "centermode",
         "display_arrow": true,
-        "enable_hover_arrow": false,
+        "enable_hover_arrow": true,
         "display_dots": false,
         "icon_for_image": "",
         "icon_style": "style_1",
@@ -224,9 +177,9 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Nicole<br><p>Mother<\/p>",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "My kids love Bahamii! It's a great snack for them after school when they're heading to their sports activities. I also keep a pack in my purse for myself."
           }
         },
         "review_RG4Lyk": {
@@ -235,9 +188,9 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Matt Koart<br><p>Former NFL Defense End<\/p>",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "My wife stole my Bahamii and scarfed it down before I could taste it.<br>But... she LOVED it and wants me to order some!"
           }
         },
         "review_q4BVwQ": {
@@ -246,9 +199,9 @@
             "heading": "",
             "sub_heading": "",
             "rating": "star5",
-            "name": "- John Smith",
+            "name": "- Anonymous",
             "date": "",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
+            "body": "Bahamii does exactly what it says, my blood sugar levels stayed even and I satisfied my sweet tooth and was delicious."
           }
         }
       },

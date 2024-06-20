@@ -404,12 +404,14 @@
                                     </div>
                                 {%- endif -%}
 
+                            {% comment %} 
                                 <div class="productView-nav style-1 image-fit-{{ media_fit }}" 
                                     data-image-gallery-main
                                     data-arrows-desk="{{ main_image_arrows_desktop }}"
                                     data-counter-mobi="{{ main_image_counter_mobile }}"
                                     data-media-count="{{ product.media.size }}"
                                 >
+                                
                                     {%- for media in product.media -%}
                                         {%- case media.media_type -%}
                                             {%- when 'image' -%}
@@ -444,6 +446,7 @@
                                                                 data-cursor-image
                                                                 {% if settings.enable_lazyload %}class="lazyload" loading="lazy"{% endif %}
                                                             />
+
                                                             {%- if settings.enable_lazyload and forloop.first == false -%}<span class="data-lazy-loading"></span>{%- endif -%}
                                                         </div>
                                                     </div>
@@ -590,6 +593,34 @@
                                         {%- endcase -%}
                                     {%- endfor -%}
                                 </div>
+                            {% endcomment %}
+
+                            <div class="productView-nav style-1 image-fit-{{ media_fit }}" 
+                            data-image-gallery-main
+                            data-arrows-desk="{{ main_image_arrows_desktop }}"
+                            data-counter-mobi="{{ main_image_counter_mobile }}"
+                            data-media-count="{{ product.media.size }}"
+                        >
+                            <div class="productView-image productView-image-{{ media_size }} fit-{{ media_fit }}">
+                                <div class="productView-img-container product-single__media" data-media-id="product_featured_img_bahamii">
+                                    <div 
+                                        class="media"
+                                        {% if product_image_popup == 'fancybox' %} data-fancybox="images" href="{{ section.settings.product_featured_img_bahamii | img_url: 'master' }}" {% endif %}
+                                    >
+                                        <img id="product-featured-image-bahamii"
+                                            src="{{ section.settings.product_featured_img_bahamii | img_url: 'master' }}"
+                                            alt="Featured Image Bahamii"
+                                            sizes="auto"
+                                            data-sizes="auto"
+                                            data-main-image
+                                            data-cursor-image
+                                            class="lazyload" loading="lazy"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                                 {%- if video_layout == 'popup' -%}
                                     <div class="productView-videoPopup">
                                         {%- for media in product.media -%}
@@ -971,6 +1002,12 @@
         {
             "type": "header",
             "content": "t:settings_schema.general.name"
+        },
+        {
+            "type": "image_picker",
+            "id": "product_featured_img_bahamii",
+            "label": "Featured Product Image",
+            "info": "Manually set featured product image"
         },
         {
             "type": "text",

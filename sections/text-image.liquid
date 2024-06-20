@@ -3,7 +3,7 @@
     <div class="text-image-wrap {% if section.settings.center_align_text %}center-align-text{% endif %}">
       <div class="text-wrapper" style="font-size: {{ section.settings.font_size }}px;transform: translate({{ section.settings.text_translate_x }}%, {{ section.settings.text_translate_y }}%); width: {{ section.settings.text_width }}%">
         {{ section.settings.text }}
-        {% if section.settings.button_text %}
+        {% if section.settings.button_text != blank %}
           <a href="{{ section.settings.button_url }}" class="custom-button" style="font-size: {{ section.settings.button_font_size }}px; color: {{ section.settings.button_font_color }}; font-weight: {{ section.settings.button_font_weight }}; background-color: {{ section.settings.button_background_color }}; height: {{ section.settings.button_height }}px; width: {{ section.settings.button_width }}px; text-align: center;">
             {{ section.settings.button_text }}
           </a>
@@ -252,7 +252,7 @@
   "name": "Text and Image",
   "settings": [
     {
-      "type": "richtext",
+      "type": "textarea",
       "id": "text",
       "label": "Text"
     },

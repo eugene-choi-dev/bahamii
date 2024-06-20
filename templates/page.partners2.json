@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "image_banner_simple_FkAjYE": {
+      "type": "image-banner-simple",
+      "blocks": {
+        "content_wVxn7M": {
+          "type": "content",
+          "settings": {
+            "content_top": "",
+            "content_bottom": "",
+            "alignment_content": "center",
+            "content_size": 16,
+            "margin_top_content": 20,
+            "content_color": "#000000",
+            "content_width": "800px",
+            "button_text_more": "Read More",
+            "button_text_less": "Read Less",
+            "button_text_font_size": 14,
+            "button_text_font_weight": "700",
+            "margin_top_button_text": 30,
+            "button_text_color": "#ffffff",
+            "button_text_border_color": "#000000",
+            "button_text_bg_color": "#000000",
+            "button_text_bg_color_gradient": "",
+            "button_text_color_hover": "#000000",
+            "button_text_border_color_hover": "#000000",
+            "button_text_bg_color_hover": "#ffffff",
+            "button_text_bg_color_hover_gradient": "",
+            "button_text_more_width": 270,
+            "pd_top_button_text": 12,
+            "pd_bottom_button_text": 12
+          }
+        },
+        "heading_pw4r3U": {
+          "type": "heading",
+          "settings": {
+            "heading": "Partners",
+            "heading_size": 67,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "content_wVxn7M",
+        "heading_pw4r3U"
+      ],
+      "settings": {
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_image": "shopify:\/\/shop_images\/All-Fan_20240517_DSC03876.webp",
+        "content_align": "center"
+      }
+    },
+    "rich_text_kkrpiN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Njp78E": {
+          "type": "heading",
+          "settings": {
+            "heading": "Boys & Girls Club",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_XcRJiB": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"center\"><img src=\"https:\/\/upload.wikimedia.org\/wikipedia\/en\/f\/f5\/Boys_%26_Girls_Clubs_of_America_%28logo%29.svg\" width=\"250px\"><\/div>\n<div align=\"left\"><p>Our partnership with the Boys and Girls Club is growing and creating a lasting impression on the kids. Our founder, Noah Nazarian, travels to different BGC locations to mentor and speak to club members about how he started Bahamii with his two brothers. Noah shares the challenges and lessons he has learned growing Bahamii with the goal of providing a deeper foundation for the kids to turn their own ideas into real businesses.<\/p><\/div><br><br>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Njp78E",
+        "text_XcRJiB"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "image_banner_simple_FkAjYE",
+    "rich_text_kkrpiN"
+  ]
+}

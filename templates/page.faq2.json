@@ -1,0 +1,554 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "rich_text_Bt8L4x": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Tn9Gxf": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Are Bahamii Date & Energy Bars?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_8PeCUH": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Bahamii Date & Nut Energy Bars are organic and combine superfood ingredients to provide a nutrient dense, convenient, and tasty energy bars for diabetics, athletes, and even kids. Enjoy them with your morning coffee, before a workout, on a hike or on any other adventure!<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tn9Gxf",
+        "text_8PeCUH"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_DcrYqK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QQQfY3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is Bahamii a Functional Food?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_MCNkdN": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Yes! Functional foods have a positive effect on the body beyond basic nutrition by promoting optimal health and reducing the risk of disease. As a functional food, Bahamii date bars are an on-the-go stabilizing snack bars for diabetics, healthy date snacks for parents to offer their children, and a great source of energy without caffeine. Bahamii date energy bars are a perfect sweet healthy vegan snack for diabetics that want to avoid a spike and crash in blood sugar. They also provide confidence for parents looking to feed their children with a healthy snack, and athletes looking to improve their performance, by delivering fuel from organic ingredients.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QQQfY3",
+        "text_MCNkdN"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_fGtnTy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dGR4FB": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Are Our Premium & Simple Ingredients?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_U77hhi": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>We use organic dates as the number one ingredient to ensure that the taste and texture of the date is dominant. Each Bahamii bar is over 50% date! This results in a sweet flavor and a moist consistency WITHOUT added sugar, artificial colors, powdered flavors or preservatives that make conventional snacks dry and chalky. We combine our dates with other superfoods such as organic coconut and honey to provide a non-processed, filling, fresh, and nutrient dense snack. Our date energy bars are the best organic snacks and are perfect for a sweet and satisfying treat.\n<br>\n<b>Chocolate Almond Ingredients:<\/b> Organic Dates, Organic Almonds, Organic Cocoa, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt, Organic Almond Extract.\n<br>\n<b>Coconut Vanilla Ingredients:<\/b> Organic Dates, Organic Almonds, Organic Shredded Coconut, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt.\n<br>\n<b>Honey Cinnamon Ingredients:<\/b> Organic Dates, Organic Almonds, Organic Clover Honey, Organic Coconut Oil, Organic Vanilla Extract, Sea Salt, Organic Cinnamon.\n<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dGR4FB",
+        "text_U77hhi"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_NxLh4M": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VmCRRb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Should People Living With Or At Risk For DIABETES Eat Bahamii Bites?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_rcn7kX": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Yes, Bahamii bars provide many benefits for diabetics. Bahamii bars are energy bars for diabetics with a low glycemic index, low carb count, natural protein, and NO ADDED sugar. Diabetics can eat Bahamii bars to gradually increase and sustain their blood sugar without a crash. With our individual packaging and portion control, diabetics can conveniently carry and calculate their insulin dose by tracking their carb intake. For those seeking healthy date snacks, Bahamii bars are the answer. They are also a top choice for healthy packaged snacks for kids and a satisfying healthy vegan snack for all ages.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VmCRRb",
+        "text_rcn7kX"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_iFpamJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JhCzXn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is The Packaging Recycleable?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_8k8Tcm": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Yes! Our date energy bar boxes are made from recycleable materials.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JhCzXn",
+        "text_8k8Tcm"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_6gKGDN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_awMJ9D": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Many Flavors Of Bahamii Are There?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_yfyLnf": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>There are THREE flavors for our date energy bars: Chocolate Almond, Coconut Vanilla and Honey Cinnamon.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_awMJ9D",
+        "text_yfyLnf"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_QCTy8T": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LAynqX": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is The Shelf Life Of Bahamii Bites?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_Dnz6id": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Bahamii date energy bars have a shelf life of 9 months unrefrigerated without the use of preservatives. This is due to the naturally long shelf life of our ingredients.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LAynqX",
+        "text_Dnz6id"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_Wwh9hj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m7b3Wt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are Bahamii Date Energy bars Gluten-Free?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_YkMDHi": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Yes, all flavors are gluten-free!<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_m7b3Wt",
+        "text_YkMDHi"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_q7mLxM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yCYjch": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are Bahamii Date Energy Bars Vegan?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_PUH9Rj": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Yes, our Chocolate Almond and Coconut Vanilla favors are 100% vegan! However, some vegans exclude honey from their diets leaving out Honey Cinnamon flavor up to the decision of the consumer.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yCYjch",
+        "text_PUH9Rj"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_zdiCQY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGgRUV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Where Else Can I Purchase Bahamii Date Energy Bites?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_UcUqKT": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Search for where you can find <u><a href=\"\/pages\/store-locator\">Bahamii bars nearest you!<\/a><\/u><\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGgRUV",
+        "text_UcUqKT"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_MrkwRw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_44d6gm": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is A Fun Way To Eat My Bahamii Date Bars?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_MLjBEq": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Try freezing or chilling yur Bahamii bars!<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_44d6gm",
+        "text_MLjBEq"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 10,
+        "mg_bottom_tablet": 10,
+        "mg_bottom_mobile": 10,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Bt8L4x",
+    "rich_text_DcrYqK",
+    "rich_text_fGtnTy",
+    "rich_text_NxLh4M",
+    "rich_text_iFpamJ",
+    "rich_text_6gKGDN",
+    "rich_text_QCTy8T",
+    "rich_text_Wwh9hj",
+    "rich_text_q7mLxM",
+    "rich_text_zdiCQY",
+    "rich_text_MrkwRw"
+  ]
+}

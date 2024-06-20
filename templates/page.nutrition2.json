@@ -1,0 +1,361 @@
+{
+  "sections": {
+    "rich_text_dFRpb6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FQQEDz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dates Are A Functional Food",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_NncC6K": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Functional foods are foods that have a potentially positive effect on health beyond basic nutrition.<\/p><br>\n<b> Our date bars are a special superfood, which may provide many health benefits and have a potentially positive effect on health beyond basic nutrition<\/b>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FQQEDz",
+        "text_NncC6K"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "rich_text_bg_image": "shopify:\/\/shop_images\/ChocolateAlmondProducts_0003_Backgroundcopy2_5c2679b4-d585-459c-ac8f-885d4a719875.jpg",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_YxKiyt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KmyRKd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Dates?",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_XBRpfw": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Dates are high in fiber and contain a low glycemic index making it a great source of energy ⚡️ and nutrition. Research indicates that foods high in fiber and contain a low glycemic index slow the rate of digestion and MAY cause a more gradual and lower increase in blood sugar making it a healthy vegan snack option for people living with or at risk for diabetes. They are also great healthy date snacks for kids.<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KmyRKd",
+        "text_XBRpfw"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_7QaTpq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FVE3X4": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Naturally Sweet, Healthy, and Filling Snack",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "text_CiYirF": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\"><p>Now you can enjoy the satisfying feeling of sweets without feeling guilty! Enjoy Bahamii with your morning beverages ☕️, before a workout, on a hike, and during any other adventure 🤸🏻‍♀️. They are also great healthy date snacks for the office, school, or wherever your day takes you!<\/p><\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FVE3X4",
+        "text_CiYirF"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_Y7bjCr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ePC7i3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Chocolate Almond",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "button_DEzfCj": {
+          "type": "button",
+          "settings": {
+            "button_style": "button_1",
+            "button_label": "Shop Chocolate Almond",
+            "margin_top_button": 0,
+            "button_link": "shopify:\/\/products\/chocolate-almond",
+            "button_color": "#ffffff",
+            "enable_underline_button": false,
+            "button_border_color": "#000000",
+            "button_bg_color": "#000000",
+            "button_bg_gradient": "",
+            "button_color_hover": "#000000",
+            "button_border_color_hover": "#000000",
+            "button_bg_color_hover": "#ffffff",
+            "button_bg_gradient_hover": "",
+            "button_width": "270px"
+          }
+        },
+        "text_69nf8Q": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/chocolate-almond-label-vertical.png?v=1717695720\" align=\"left\" hspace=\"20px\" width=\"100px\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/chocolate-almond-nutrition.svg?v=1717695763\" align=\"right\" width=\"119px\" border=\"1px\">\n<p>Get ready to indulge in the deliciousness of our Chocolate Almond Dates. 🍫 Our date energy bars, one of the best organic snacks, is made with nothing but the good stuff. It's basically like a sweet symphony for your tastebuds! 🎶<br>\nBahamii's date bars is a wholesome, energizing snack that's perfect for any time of day. 💪 Whether you're treating yourself to a midday boost or satisfying those late-night cravings, this bar, also suitable as one of the best school snacks, has got your back. And let's not forget the best part – it tastes absolutely incredible!<\/p>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ePC7i3",
+        "button_DEzfCj",
+        "text_69nf8Q"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_FifFRN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xfbyjM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Coconut Vanilla",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "button_rNgrNU": {
+          "type": "button",
+          "settings": {
+            "button_style": "button_1",
+            "button_label": "Shop Coconut Vanilla",
+            "margin_top_button": 30,
+            "button_link": "shopify:\/\/products\/coconut-vanilla",
+            "button_color": "#ffffff",
+            "enable_underline_button": false,
+            "button_border_color": "#000000",
+            "button_bg_color": "#000000",
+            "button_bg_gradient": "",
+            "button_color_hover": "#000000",
+            "button_border_color_hover": "#000000",
+            "button_bg_color_hover": "#ffffff",
+            "button_bg_gradient_hover": "",
+            "button_width": "270px"
+          }
+        },
+        "text_8CbN3X": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/coconut-vanilla-label-vertical.png?v=1717695790\" align=\"left\" hspace=\"20px\" width=\"100px\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/coconut-vanilla-nutrition.svg?v=1717695824\" width=\"119\" border=\"1\" align=\"right\"><p>Our Coconut Vanilla bar is made with only the finest organic ingredients. Plus, we add a touch of organic vanilla extract and a sprinkle of sea salt for that extra burst of flavor. It's like a tropical vacation in a bar! 🌴 Bahamii's date energy bites are a delightful creation and a fantastic alternative to traditional snacks, making them an ideal choice for those seeking healthy date snacks.<br>\n\nOur Coconut Vanilla date bites is a deliciously sweet and satisfying treat that will give you the energy boost you need to conquer your day. 🌟 So, whether you're on the go, in need of a quick snack, or simply feeling that afternoon slump, our Coconut Vanilla bar is here to deliver the goods. It's a guilt-free indulgence that will satisfy your sweet tooth and give you the boost you need to keep going! 👊\n<\/p>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xfbyjM",
+        "button_rNgrNU",
+        "text_8CbN3X"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    },
+    "rich_text_HX3Tjm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UMtQHp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Honey Cinnamon",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        },
+        "button_KiFyVG": {
+          "type": "button",
+          "settings": {
+            "button_style": "button_1",
+            "button_label": "Shop Honey Cinnamon",
+            "margin_top_button": 30,
+            "button_link": "shopify:\/\/products\/honey-cinnamon",
+            "button_color": "#ffffff",
+            "enable_underline_button": false,
+            "button_border_color": "#000000",
+            "button_bg_color": "#000000",
+            "button_bg_gradient": "",
+            "button_color_hover": "#000000",
+            "button_border_color_hover": "#000000",
+            "button_bg_color_hover": "#ffffff",
+            "button_bg_gradient_hover": "",
+            "button_width": "270px"
+          }
+        },
+        "text_pFef4x": {
+          "type": "text",
+          "settings": {
+            "text": "<div align=\"left\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/honey-cinnamon-label-vertical.png?v=1717695608\" align=\"left\" hspace=\"20px\" width=\"100px\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0514\/4625\/1706\/files\/honey-cinnamon-nutrition.svg?v=1717695676\" width=\"119\" border=\"1px\" align=\"right\"><p>Get ready to have your taste buds do a happy dance, because Bahamii is bringing you the delectable Honey Cinnamon date bites! 🍯 Let's break it down and get to know the ingredient that make this date energy bites so irresistible. The star of the show? Organic cinnamon, adding that warm and cozy touch that makes your taste buds go, 'YAS!' 💃 It's a bit like a snack factory where all the deliciousness comes together. So, for all you food adventurers out there, brace yourselves for a flavor-packed journey!\n<br>\nSo, whether you need a mid-afternoon energy boost or a tasty treat to conquer those late-night cravings, our Honey Cinnamon bar, one of the best organic snacks, is here for you! Trust me, once you take a bite, there's no going back. It's like finding your snacking soulmate. 💑\n<\/p>\n<\/div>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UMtQHp",
+        "button_KiFyVG",
+        "text_pFef4x"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center"
+      }
+    }
+  },
+  "order": [
+    "rich_text_dFRpb6",
+    "rich_text_YxKiyt",
+    "rich_text_7QaTpq",
+    "rich_text_Y7bjCr",
+    "rich_text_FifFRN",
+    "rich_text_HX3Tjm"
+  ]
+}

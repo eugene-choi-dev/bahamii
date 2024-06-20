@@ -251,10 +251,15 @@
     .flavor-img-container {
         height: 150px;
         flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .flavor-img-container img {
-        object-fit: none;
+        object-fit: cover;
+        width: 80%;
+        margin: 2%;
     }
 
     .flavor-item .flavor-text {
@@ -350,6 +355,7 @@
         object-fit: cover;
         width: 100%;
         height: 80%;
+        margin: 0;
     }
 
     .choose-flavor.flavor-mobile .flavor-item .flavor-text {
@@ -364,6 +370,18 @@
 }
     /* <--- BAHAMII CUSTOM STYLES */
     </style>
+    {% assign flavor_1_img_url = '' %}
+    {% assign flavor_2_img_url = '' %}
+    {% assign flavor_3_img_url = '' %}
+
+    {% for block in section.blocks %}
+        {% if block.type == 'largeImg' %}
+            {% assign flavor_1_img_url = block.settings.flavor_1_img | image_url: width: 200 %}
+            {% assign flavor_2_img_url = block.settings.flavor_2_img | image_url: width: 200 %}
+            {% assign flavor_3_img_url = block.settings.flavor_3_img | image_url: width: 200 %}
+        {% endif %}
+    {% endfor %}
+  
     {%- if section.settings.id_section != blank -%}
     <div id="{{ section.settings.id_section }}">
     {%- endif -%}
@@ -718,29 +736,29 @@
                                                     {%- endif -%}
                                                 {%- endif -%}
                                                 {% comment %} Bahamii Custom Flavor Selector {% endcomment %}
-                                                <div class="choose-flavor flavor-desktop">
-                                                    <h2>Choose your flavor:</h2>
-                                                    <div class="flavor-item-wrap">
-                                                        <a href="#feat-choc_almond" class="flavor-item flavor-1">
-                                                            <div class="flavor-img-container">
-                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/choc-almond-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
-                                                            </div>
-                                                            <p class="flavor-text">Chocolate Almond</p>
-                                                        </a>
-                                                        <a href="#feat-coco_vanilla" class="flavor-item flavor-2">
-                                                            <div class="flavor-img-container">
-                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/coco-van-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
-                                                            </div>
-                                                            <p class="flavor-text">Coconut Vanilla</p>
-                                                        </a>
-                                                        <a href="#feat-honey_cinn" class="flavor-item flavor-3">
-                                                            <div class="flavor-img-container">
-                                                                <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/hon-cinn-box_300x300_crop_center.png?v=1716171499" alt="Flavor Image">
-                                                            </div>
-                                                            <p class="flavor-text">Honey Cinnamon</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
+<div class="choose-flavor flavor-desktop">
+    <h2>Choose your flavor:</h2>
+    <div class="flavor-item-wrap">
+        <a href="#feat-choc_almond" class="flavor-item flavor-1">
+            <div class="flavor-img-container">
+                <img src="{{ flavor_1_img_url }}" alt="Flavor 1 Image">
+            </div>
+            <p class="flavor-text">Chocolate Almond</p>
+        </a>
+        <a href="#feat-coco_vanilla" class="flavor-item flavor-2">
+            <div class="flavor-img-container">
+                <img src="{{ flavor_2_img_url }}" alt="Flavor 2 Image">
+            </div>
+            <p class="flavor-text">Coconut Vanilla</p>
+        </a>
+        <a href="#feat-honey_cinn" class="flavor-item flavor-3">
+            <div class="flavor-img-container">
+                <img src="{{ flavor_3_img_url }}" alt="Flavor 3 Image">
+            </div>
+            <p class="flavor-text">Honey Cinnamon</p>
+        </a>
+    </div>
+</div>
                                                 {% comment %} Bahamii Custom Flavor Selector {% endcomment %}
                                             </div>
 
@@ -1141,48 +1159,24 @@
                     </div>
                 </div>
             </div>
-            {% comment %} <div class="choose-flavor flavor-mobile">
-                <h2>Choose your flavor:</h2>
-                <div class="flavor-item-wrap">
-                    <div class="flavor-item flavor-1">
-                        <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/choc-almond-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
-                        </div>
-                        <p class="flavor-text">Chocolate Almond</p>
-                    </div>
-                    <div class="flavor-item flavor-2">
-                        <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/coco-van-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
-                        </div>
-                        <p class="flavor-text">Coconut Vanilla</p>
-                    </div>
-                    <div class="flavor-item flavor-3">
-                        <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/hon-cinn-box_300x300_crop_center.png?v=1716171499" alt="Flavor Image">
-                        </div>
-                        <p class="flavor-text">Honey Cinnamon</p>
-                    </div>
-                </div>
-            </div> {% endcomment %}
-
             <div class="choose-flavor flavor-mobile">
                 <h2>Choose your flavor:</h2>
                 <div class="flavor-item-wrap">
                     <a href="#feat-choc_almond" class="flavor-item flavor-1">
                         <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/choc-almond-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                            <img src="{{ flavor_1_img_url }}" alt="Flavor 1 Image">
                         </div>
                         <p class="flavor-text">Chocolate Almond</p>
                     </a>
                     <a href="#feat-coco_vanilla" class="flavor-item flavor-2">
                         <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/coco-van-box_300x300_crop_center.png?v=1716171498" alt="Flavor Image">
+                            <img src="{{ flavor_2_img_url }}" alt="Flavor 2 Image">
                         </div>
                         <p class="flavor-text">Coconut Vanilla</p>
                     </a>
                     <a href="#feat-honey_cinn" class="flavor-item flavor-3">
                         <div class="flavor-img-container">
-                            <img src="https://cdn.shopify.com/s/files/1/0514/4625/1706/files/hon-cinn-box_300x300_crop_center.png?v=1716171499" alt="Flavor Image">
+                            <img src="{{ flavor_3_img_url }}" alt="Flavor 3 Image">
                         </div>
                         <p class="flavor-text">Honey Cinnamon</p>
                     </a>
