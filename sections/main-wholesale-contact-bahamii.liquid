@@ -1,0 +1,257 @@
+<link rel="stylesheet" href="{{ 'component-contact.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-contact-form.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-contact.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-contact-form.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- liquid
+    assign padding_top = section.settings.mg_top_desktop | append: 'px'
+    assign padding_bottom = section.settings.mg_bottom_desktop | append: 'px'
+    assign padding_top_tablet = section.settings.mg_top_tablet | append: 'px'
+    assign padding_bottom_tablet = section.settings.mg_bottom_tablet | append: 'px'
+    assign padding_top_mobile = section.settings.mg_top_mobile | append: 'px'
+    assign padding_bottom_mobile = section.settings.mg_bottom_mobile | append: 'px'
+    assign show_breadcrumb = section.settings.show_breadcrumb
+    assign breadcrumb_alignment = section.settings.breadcrumb_alignment
+    assign breadcrumb_bg = section.settings.breadcrumb_bg
+    assign breadcrumb_gradient = section.settings.breadcrumb_gradient
+    assign breadcrumb_bg_mb = section.settings.breadcrumb_bg_mb
+    assign breadcrumb_gradient_mb = section.settings.breadcrumb_gradient_mb
+    assign show_page_title = section.settings.show_page_title
+    assign page_title_alignment = section.settings.page_title_alignment
+    assign container = section.settings.container
+    assign contact_form_title = section.settings.contact_form_title
+    assign contact_form_text = section.settings.contact_form_text
+
+-%}
+
+<div data-section-id="{{ section.id }}" data-section-type="contact" id="ContactSection-{{ section.id }}" data-section="{{ section.id }}">
+    <div class="contact-form-wrap">
+        <div class="contact-img-container scroll-trigger animate--slide-in">
+            <img src="{{ section.settings.contact_image | img_url: 'master' }}" alt="Contact Image">
+        </div>
+        <div class="contact-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%} container-full{% else %}container{% endif %}">
+            {%- if show_page_title -%}
+                <h1 class="page-header text-{{ page_title_alignment }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+                    {{ page.title | escape }}
+                </h1>
+            {%- endif -%}
+            <div class="page-content contact-content{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+                <div class="contact contact-1">
+                    <div class="contact-item {% if show_contact_info %}{% if has_contact_info %}contact-itemLeft{% endif %}{% endif %}">
+                        {%- if contact_form_title != blank -%}
+                            <h2 class="page-subheader contact-title{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+                                {{ contact_form_title | escape }}
+                            </h2>
+                        {%- endif %}
+                        {%- if contact_form_text != blank -%}
+                            <div class="contact-text{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+                                {{ contact_form_text }}
+                            </div>
+                        {%- endif %}
+                        {% render 'contact-form-wholesale-bahamii',
+                            section: section
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css" media="screen">
+    #ContactSection-{{ section.id }}{
+        padding-top: {{ padding_top }};
+        padding-bottom: {{ padding_bottom }};
+    }
+
+    #ContactSection-{{ section.id }} .contact.contact-1 .contact-address + .contact-store {
+        {% if enable_border_top %}
+            border-top: 1px solid #dedede;
+            padding-top: 5px;
+        {% else %}
+            padding-top: 0;
+        {% endif %}
+        
+        margin-top: 15px;
+    }
+    
+    @media (max-width: 1024px) {
+        #ContactSection-{{ section.id }}{
+            padding-top: {{ padding_top_tablet }};
+            padding-bottom: {{ padding_bottom_tablet }};
+        }
+    }
+    
+    @media (max-width: 550px) {
+        #ContactSection-{{ section.id }}{
+            padding-top: {{ padding_top_mobile }};
+            padding-bottom: {{ padding_bottom_mobile }};
+        }
+    }
+
+    /* bahamii custom styles ---> */
+    #ContactSection-{{ section.id }} {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-message {
+        width: 100%;
+    }
+
+    #ContactSection-{{ section.id }} .contact-text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-field {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-field .form-input {
+        border: none !important;
+        background: #f2dab2;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        color: black !important;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form input::placeholder,
+    #ContactSection-{{ section.id }} .contact-form textarea::placeholder {
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        color: black !important;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-field {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-field.message {
+        width: 100%;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-actions .button {
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 0;
+    }
+
+    #ContactSection-{{ section.id }} .contact-form .form-actions {
+        width: 100% !important;
+        margin: 0;
+        margin-top: 0;
+    }
+
+    @media (min-width: 1025px) {
+        #ContactSection-{{ section.id }} {
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        #ContactSection-{{ section.id }} .contact-form-wrap {
+            display: flex;
+            margin: 0 auto; 
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
+
+        #ContactSection-{{ section.id }} .contact-img-container {
+            flex: 1;
+        }
+
+        #ContactSection-{{ section.id }} .contact-container.container {
+            flex: 2;
+        }
+
+        #ContactSection-{{ section.id }} .page-header {
+            padding-top: 0 !important;
+        }
+
+        #ContactSection-{{ section.id }} .contact-form .form-field,
+        #ContactSection-{{ section.id }} .contact-form .form-actions {
+            display: inline-block;
+            width: calc(50% - 10px);
+        }
+
+        #ContactSection-{{ section.id }} .contact-form .form-field {
+        }
+
+        #ContactSection-{{ section.id }} .contact-form .form-field:nth-child(odd) {
+        }
+    }
+    /* <--- bahamii custom styles */
+</style>
+
+{% schema %}
+	{
+		"name": "Wholesale Contact Bahamii",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "contact_image",
+                "label": "Image"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_page_title",
+                "label": "t:sections.general.settings.page-title.label__1",
+                "default": true
+            },
+            {
+                "type": "select",
+                "id": "page_title_alignment",
+                "label": "t:sections.general.settings.page-title.label__2",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "t:sections.general.settings.page-title.options__1"
+                    },
+                    {
+                        "value": "center",
+                        "label": "t:sections.general.settings.page-title.options__2"
+                    },
+                    {
+                        "value": "right",
+                        "label": "t:sections.general.settings.page-title.options__3"
+                    }
+                ],
+                "default": "left"
+            },
+            {
+                "type": "textarea",
+                "id": "contact_form_text",
+                "label": "t:sections.image-banner.blocks.image.settings.content.label__16"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Wholesale Contact Bahamii",
+                "category": "Contact"
+            }
+        ]
+	}
+{% endschema %}

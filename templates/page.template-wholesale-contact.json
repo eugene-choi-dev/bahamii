@@ -1,36 +1,8 @@
 {
   "sections": {
-    "google-map": {
-      "type": "google-map",
-      "settings": {
-        "show_custom_map": true,
-        "container": "fullwidth",
-        "mg_top_desktop": 0,
-        "mg_top_tablet": 0,
-        "mg_top_mobile": 0,
-        "mg_bottom_desktop": 30,
-        "mg_bottom_tablet": 0,
-        "mg_bottom_mobile": 0,
-        "block_title": "",
-        "block_text": "",
-        "block_align": "center",
-        "block_max_width": 300,
-        "btn_text": "",
-        "btn_text_color": "",
-        "btn_border_color": "",
-        "btn_bg_color": "",
-        "btn_bg_color_gradient": "",
-        "btn_text_color_hover": "",
-        "btn_border_color_hover": "",
-        "btn_bg_color_hover": "",
-        "btn_bg_color_hover_gradient": "",
-        "btn_max_width": 205,
-        "btn_link": "",
-        "block_content": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3153.0985086794008!2d-122.40480278434755!3d37.7877311191863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808814a1b309%3A0x616fef8687897e9!2s685%20Market%20St%2C%20San%20Francisco%2C%20CA%2094105%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1658982243728!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
-      }
-    },
     "main": {
       "type": "main-contact-us-1",
+      "disabled": true,
       "settings": {
         "show_breadcrumb": true,
         "breadcrumb_alignment": "left",
@@ -47,7 +19,7 @@
         "mg_bottom_desktop": 0,
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0,
-        "contact_form_text": "<span>Have a question or comment?\n<br>\nUse the form below to send us a message or contact us by mail at:<\/span>",
+        "contact_form_text": "",
         "show_contact_info": false,
         "contact_info_title": "Get In Touch!",
         "contact_info_text": "We'd love to hear from you - please use the form to send us your message or ideas. Or simply pop in for a cup of fresh tea and a cookie:",
@@ -56,10 +28,19 @@
         "contact_info_content_2": "<p>Opening Hours:\n<br>\nMON to SAT: \n9:00AM - 10:00PM\n<br>\nSUN: 10:00AM - 6:00PM<\/p>",
         "enable_border_top": true
       }
+    },
+    "main_wholesale_contact_bahamii_XqeRFU": {
+      "type": "main-wholesale-contact-bahamii",
+      "settings": {
+        "contact_image": "shopify:\/\/shop_images\/20240515_A7siii_DSC04045-white_4-3.jpg",
+        "show_page_title": true,
+        "page_title_alignment": "left",
+        "contact_form_text": ""
+      }
     }
   },
   "order": [
-    "google-map",
-    "main"
+    "main",
+    "main_wholesale_contact_bahamii_XqeRFU"
   ]
 }

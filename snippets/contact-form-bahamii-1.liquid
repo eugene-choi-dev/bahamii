@@ -1,0 +1,96 @@
+{%- assign contact_form_id = 'ContactForm-' | append: section.id -%}
+
+{%- form 'contact', id: contact_form_id, class: 'contact-form' -%}
+    {%- if form.posted_successfully? -%}
+        <div class="form-message hidden" data-form-message="contact">
+            <div class="alertBox alertBox--success">
+                <p class="alertBox-message">
+                    {{ 'templates.contact.form.post_success' | t }}
+                </p>
+            </div>
+        </div>
+    {%- elsif form.errors -%}
+        <div class="form-message hidden" data-form-message="contact">
+            <div class="alertBox alertBox--error">
+                <p class="alertBox-message">
+                    <ul>
+                        {% for field in form.errors %}
+                            <li>
+                                {{ form.errors.translated_fields[field] | capitalize }} - {{ form.errors.messages[field] }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </p>
+            </div>
+        </div>
+    {%- endif -%}
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <input class="form-input form-input-placeholder"
+            type="text"
+            id="contactFormFirstName-{{ section.id }}"
+            name="contact[first_name]"
+            autocomplete="given-name"
+            autocapitalize="words"
+            value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
+            placeholder="First Name"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <input class="form-input form-input-placeholder"
+            type="text"
+            id="contactFormLastName-{{ section.id }}"
+            name="contact[last_name]"
+            autocomplete="family-name"
+            autocapitalize="words"
+            value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}"
+            placeholder="Last Name"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field{% if form.errors contains "email" %} form-field--error{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <input class="form-input form-input-placeholder{% if form.errors contains "email" %} error{% endif %}"
+            type="email"
+            name="contact[email]"
+            id="contactFormEmail-{{ section.id }}"
+            spellcheck="false"
+            autocomplete="email"
+            autocorrect="off"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            placeholder="Email"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+            {% endif %}
+            required
+        >
+    </div>
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <input class="form-input form-input-placeholder"
+            type="tel"
+            id="ContactFormPhone-{{ section.id }}"
+            name="contact[phone]"
+            autocomplete="tel"
+            pattern="[0-9]*"
+            value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+            placeholder="Phone"
+            aria-required="false"
+        >
+    </div>
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %} message">
+        <textarea class="form-input form-input-hiddenPlaceholder" rows="8" name="contact[body]" id="contactFormMessage-{{ section.id }}" 
+            placeholder="Message"
+            aria-required="true"
+            aria-invalid="true"
+            required
+        >{{- form.body -}}</textarea>
+    </div>
+    <div class="form-actions{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        {%- if page_title -%}
+            <input type="hidden" id="contactFormPageTitle" name="contact[page title]" value="{{ page_title }}">
+        {%- endif -%}  
+        <input type="submit" class="button button--primary" value="{{ 'templates.contact.form.send' | t }}" role="button" data-button-message="contact">
+    </div>
+{%- endform -%}

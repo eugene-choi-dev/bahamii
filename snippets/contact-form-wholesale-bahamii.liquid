@@ -24,42 +24,41 @@
             </div>
         </div>
     {%- endif -%}
-    <div class="form-field">
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder"
             type="text"
             id="contactFormFirstName-{{ section.id }}"
             name="contact[first_name]"
-            placeholder="First Name"
             autocomplete="given-name"
             autocapitalize="words"
-            value="{% if form.first_name %}{{ form.first_name }}{% endif %}"
+            value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
+            placeholder="First Name"
             aria-required="false"
         >
     </div>
-    <div class="form-field">
-
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder"
             type="text"
             id="contactFormLastName-{{ section.id }}"
             name="contact[last_name]"
-            placeholder="Last Name"
             autocomplete="family-name"
             autocapitalize="words"
-            value="{% if form.last_name %}{{ form.last_name }}{% endif %}"
+            value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}"
+            placeholder="Last Name"
             aria-required="false"
         >
     </div>
-    <div class="form-field{% if form.errors contains "email" %} form-field--error{% endif %}">
+    <div class="form-field{% if form.errors contains "email" %} form-field--error{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder{% if form.errors contains "email" %} error{% endif %}"
             type="email"
             name="contact[email]"
             id="contactFormEmail-{{ section.id }}"
-            placeholder="Email"
             spellcheck="false"
             autocomplete="email"
             autocorrect="off"
             autocapitalize="off"
             value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            placeholder="Email"
             aria-required="true"
             {% if form.errors contains 'email' %}
                 aria-invalid="true"
@@ -68,46 +67,72 @@
             required
         >
     </div>
-    <div class="form-field">
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder"
             type="tel"
             id="ContactFormPhone-{{ section.id }}"
             name="contact[phone]"
-            placeholder="Phone"
             autocomplete="tel"
             pattern="[0-9]*"
             value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+            placeholder="Phone"
             aria-required="false"
         >
     </div>
-    <div class="form-field">
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder"
             type="text"
-            id="contactFormZip-{{ section.id }}"
-            name="contact[zip]"
-            placeholder="Zip Code"
+            id="contactFormZipCode-{{ section.id }}"
+            name="contact[zip_code]"
             autocomplete="postal-code"
-            pattern="[0-9]*"
-            value="{% if form.zip %}{{ form.zip }}{% endif %}"
+            autocapitalize="off"
+            value="{% if form.zip_code %}{{ form.zip_code }}{% endif %}"
+            placeholder="Zip Code"
             aria-required="false"
         >
     </div>
-    <div class="form-field">
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
         <input class="form-input form-input-placeholder"
-            type="url"
+            type="text"
             id="contactFormWebsite-{{ section.id }}"
             name="contact[website]"
-            placeholder="Website"
             autocomplete="url"
+            autocapitalize="off"
             value="{% if form.website %}{{ form.website }}{% endif %}"
+            placeholder="Website"
             aria-required="false"
         >
     </div>
-    <div class="form-actions">
-        {% comment %} <input type="submit" class="button button--primary" value="{{ 'templates.contact.form.send' | t }}" role="button" data-button-message="contact"> {% endcomment %}
-      {%- if page_title -%}
-<input type="hidden" id="contactFormPageTitle" name="contact[page title]" value="{{ page_title }}">
-{%- endif -%}  
-      <input type="submit" class="button button--primary" value="Submit" role="button" data-button-message="contact">
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <select class="form-input form-input-placeholder"
+            id="contactFormQuantity-{{ section.id }}"
+            name="contact[quantity]"
+            aria-required="true"
+            required
+        >
+            <option value="" disabled selected>Quantity</option>
+            <option value="50+">50+</option>
+            <option value="100+">100+</option>
+            <option value="250+">250+</option>
+            <option value="500+">500+</option>
+            <option value="1,000+">1,000+</option>
+            <option value="3,000+">3,000+</option>
+            <option value="5,000+">5,000+</option>
+            <option value="10,000+">10,000+</option>
+        </select>
+    </div>
+    <div class="form-field{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %} message">
+        <textarea class="form-input form-input-hiddenPlaceholder" rows="8" name="contact[body]" id="contactFormMessage-{{ section.id }}" 
+            placeholder="Message"
+            aria-required="true"
+            aria-invalid="true"
+            required
+        >{{- form.body -}}</textarea>
+    </div>
+    <div class="form-actions{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        {%- if page_title -%}
+            <input type="hidden" id="contactFormPageTitle" name="contact[page title]" value="{{ page_title }}">
+        {%- endif -%}  
+        <input type="submit" class="button button--primary" value="{{ 'templates.contact.form.send' | t }}" role="button" data-button-message="contact">
     </div>
 {%- endform -%}
